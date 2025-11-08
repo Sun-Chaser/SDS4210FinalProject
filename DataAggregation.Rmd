@@ -1,0 +1,134 @@
+---
+title: "4210FinalProjectDataAggregationAndClean"
+author: "Jack Yang"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+#Setup and Library Loading Chunk
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(tibble)
+library(purrr)
+library(rlang)
+
+UA <- "Honghao Yang honghao@wustl.edu (Class project; R script)"
+```
+
+#Import Raw Dataset
+
+```{r}
+get_frame <- function(concept = "NetIncomeLoss", unit = "USD", frame = "CY2024Q4") {
+  url <- sprintf("https://data.sec.gov/api/xbrl/frames/%s/%s/%s.json",
+                 paste0("us-gaap/", concept), unit, frame)
+  print(url)
+  r <- GET(url, add_headers(`User-Agent` = UA))
+  stop_for_status(r)
+  jj <- fromJSON(content(r, "text", encoding = "UTF-8"), simplifyVector = TRUE)
+
+  df <- as_tibble(jj$data)
+  
+  df <- subset(df, select = -c(accn, start, end))
+
+  # Ensure optional columns exist (fill with NA if missing)
+  optional <- c("entityName","loc", "val", "cik")
+  for (nm in setdiff(optional, names(df))) df[[nm]] <- NA
+  
+
+  
+  return(df[])
+}
+
+# Make frame keys like "CY2024Q1"..."CY2024Q4" for a year range
+make_quarter_frames <- function(start_year, end_year) {
+  yrs <- seq.int(start_year, end_year)
+  unlist(lapply(yrs, function(y) sprintf("CY%dQ%d", y, 1:4)), use.names = FALSE)
+}
+
+# Fetch all frames for a concept/unit over a year range (inclusive)
+fetch_frames_range <- function(start_year, end_year,
+                               concept = "NetIncomeLoss",
+                               unit = "USD",
+                               sleep = 0.2) {
+  frames <- make_quarter_frames(start_year, end_year)
+  out <- vector("list", length(frames))
+  names(out) <- sub("^CY", "", frames)        # e.g., "2024Q4"
+
+  for (i in seq_along(frames)) {
+    fr <- frames[i]
+    out[[i]] <- tryCatch(
+      {
+        Sys.sleep(sleep)                       # be polite to SEC
+        get_frame(concept, unit, fr)
+      },
+      error = function(e) {
+        message("Skipped ", fr, " (", conditionMessage(e), ")")
+        NULL
+      }
+    )
+  }
+  out
+}
+```
+
+```{r}
+# Pull NetIncomeLoss for all quarters 2022–2024
+all_22_24 <- fetch_frames_range(2008, 2024, concept = "NetIncomeLoss", unit = "USD")
+```
+```{r}
+join_frames_wide_keep_once <- function(frames_list,
+                                       id_cols   = c("cik","entityName", "loc"),
+                                       value_col = "val",
+                                       keep_cols = c("cik")) {
+  stopifnot(length(frames_list) > 0)
+
+  cleaned <- imap(frames_list, function(df, lab) {
+    if (is.null(df) || !nrow(df)) return(NULL)
+
+    # Only use IDs/keep columns that are present in this df
+    present_id   <- intersect(id_cols,   names(df))
+    present_keep <- intersect(keep_cols, names(df))
+    if (!length(present_id)) {
+      warning("No id_cols found in one frame; skipping it.")
+      return(NULL)
+    }
+
+    df %>%
+      select(any_of(c(present_id, present_keep, value_col))) %>%
+      group_by(across(any_of(present_id))) %>%
+      summarise(
+        across(any_of(present_keep), ~{
+          u <- unique(na.omit(.x))
+          if (length(u)) u[1] else dplyr::first(.x)
+        }, .names = "{.col}"),
+        !!lab := dplyr::first(.data[[value_col]]),
+        .groups = "drop"
+      )
+  }) %>% compact()
+
+  # Full-join everything on the full id_cols set (missing IDs will be created as NA)
+  out <- reduce(cleaned, full_join, by = id_cols)
+
+  out
+}
+```
+
+```{r}
+wide <- join_frames_wide_keep_once(all_22_24,
+                                   id_cols   = c("cik","entityName", "loc"),
+                                   value_col = "val",
+                                   keep_cols = c("cik")) 
+head(wide)
+```
+
+
+```{r}
+# Access a specific quarter
+ni_2024q4 <- all_22_24[["2024Q4"]]
+```
+
+
