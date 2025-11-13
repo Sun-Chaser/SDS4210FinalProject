@@ -338,3 +338,94 @@ ggplot(plot_df, aes(x = x_latent, y = y, color = .data[[ind_col]])) +
 
 ```
 
+# Make classified dataset using CIK
+```{r}
+sic_to_division <- function(s) {
+  s <- suppressWarnings(as.integer(s))
+  dplyr::case_when(
+    is.na(s) ~ "Unknown",
+    s>=100  & s<=999   ~ "Agriculture/Forestry/Fishing",
+    s>=1000 & s<=1499  ~ "Mining",
+    s>=1500 & s<=1799  ~ "Construction",
+    s>=2000 & s<=3999  ~ "Manufacturing",
+    s>=4000 & s<=4999  ~ "Transportation/Public Utilities",
+    s>=5000 & s<=5199  ~ "Wholesale Trade",
+    s>=5200 & s<=5999  ~ "Retail Trade",
+    s>=6000 & s<=6799  ~ "Finance/Insurance/Real Estate",
+    s>=7000 & s<=8999  ~ "Services",
+    s>=9100 & s<=9729  ~ "Public Administration",
+    s>=9900 & s<=9999  ~ "Nonclassifiable",
+    TRUE ~ "Other"
+  )
+}
+
+# --- Build per-company CI; x = SIC + Normal noise ---
+make_company_ci_df <- function(cleaned_data,
+                               quarter_regex = "^\\d{4}Q[1-4]$",
+                               noise_sd = 1,
+                               seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  qcols <- grep(quarter_regex, names(cleaned_data), value = TRUE)
+  stopifnot(length(qcols) > 0)
+
+  long <- cleaned_data %>%
+    select(cik, entityName, sic, all_of(qcols)) %>%
+    pivot_longer(all_of(qcols), names_to = "quarter", values_to = "gross_income") %>%
+    filter(!is.na(gross_income))
+
+  ci <- long %>%
+    group_by(cik, entityName, sic) %>%
+    summarise(
+      n      = n(),
+      mean_y = mean(gross_income),
+      sd_y   = sd(gross_income),
+      se_y   = sd_y / sqrt(n),
+      y_lo   = mean_y - 1.96*se_y,
+      y_hi   = mean_y + 1.96*se_y,
+      .groups = "drop"
+    ) %>%
+    mutate(
+      sic_num      = suppressWarnings(as.integer(sic)),
+      sic_num      = ifelse(is.na(sic_num), as.numeric(factor(sic)), sic_num),
+      x            = sic_num + rnorm(n(), 0, noise_sd),
+      sic_division = sic_to_division(sic)
+    )
+
+  ci
+}
+```
+
+```{r}
+company_ci <- make_company_ci_df(cleaned_data, noise_sd = 1, seed = 4210)
+head(company_ci)
+```
+
+# Plot visualization
+```{r}
+plot_df    <- company_ci %>% filter(!is.na(mean_y), !is.na(x), !is.na(sic_division))
+
+# ---- Plot 1: linear y ----
+p_linear <- ggplot(plot_df, aes(x = x, y = mean_y, color = sic_division)) +
+  geom_point(alpha = 0.7, size = 1.8) +
+  geom_errorbar(aes(ymin = y_lo, ymax = y_hi), width = 0) +
+  labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI)",
+       color = "Industry division") +
+  scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
+  theme_minimal(base_size = 12) + theme(legend.position = "bottom")
+
+# ---- Plot 2: log1p y ----
+plot_df_log <- plot_df %>% filter(y_hi > -1)   # ensure log1p domain
+p_log <- ggplot(plot_df_log, aes(x = x, y = mean_y, color = sic_division)) +
+  geom_point(alpha = 0.7, size = 1.8) +
+  geom_errorbar(aes(ymin = y_lo, ymax = y_hi), width = 0) +
+  scale_y_continuous(trans = "log1p",
+                     labels = label_number(scale_cut = cut_short_scale())) +
+  labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI) — log1p",
+       color = "Industry division") +
+  theme_minimal(base_size = 12) + theme(legend.position = "bottom")
+
+# Print or save
+p_linear
+p_log
+```
+
