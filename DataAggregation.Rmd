@@ -19,6 +19,10 @@ library(tidyr)
 library(stringr)
 library(ggplot2)
 library(scales)
+library(KFAS)
+library(MARSS)
+library(zoo)
+library(scales)
 
 UA <- "Brian Wei, Honghao Yang, Justin Choi, Tengis Kelley | b.j.wei@wustl.edu, honghao@wustl.edu, c.younghwan@wustl.edu, k.tengis@wustl.edu | (Class project; R script)"
 ```
@@ -315,28 +319,55 @@ table(temporal_df$sic_division)
 # Initial Visualization
 
 ```{r}
-ind_col <- if ("sic_division" %in% names(temporal_df)) "sic_division" else
-           if ("industry" %in% names(temporal_df)) "industry" else "industry_type"
+plot_temporal_scatter <- function(
+  df,
+  industry_cols = c("sic_division","industry","industry_type"),
+  x_col = "x_latent",
+  y_col = "y",
+  point_alpha = 0.6,
+  point_size  = 1.8,
+  legend_bottom = TRUE
+) {
+  # choose the first industry column that exists
+  ind_col <- industry_cols[industry_cols %in% names(df)][1]
+  if (is.na(ind_col)) stop("No industry column found. Looked for: ", paste(industry_cols, collapse=", "))
 
-plot_df <- temporal_df %>%
-  filter(!is.na(x_latent), !is.na(y), !is.na(.data[[ind_col]])) %>%
-  mutate(across(all_of(ind_col), ~factor(.)))
+  # filter & factor
+  plot_df <- df %>%
+    filter(!is.na(.data[[x_col]]), !is.na(.data[[y_col]]), !is.na(.data[[ind_col]])) %>%
+    mutate(!!ind_col := factor(.data[[ind_col]]))
 
-# Normal scale
-ggplot(plot_df, aes(x = x_latent, y = y, color = .data[[ind_col]])) +
-  geom_point(alpha = 0.6, size = 1.8) +
-  labs(x = "Latent time index (noisy)", y = "Gross income", color = "Industry") +
-  scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
-  theme_minimal(base_size = 12)
+  # theme tweak
+  base_theme <- theme_minimal(base_size = 12) +
+    theme(legend.position = if (legend_bottom) "bottom" else "right")
 
-# Log scale
-ggplot(plot_df, aes(x = x_latent, y = y, color = .data[[ind_col]])) +
-  geom_point(alpha = 0.6, size = 1.8) +
-  scale_y_continuous(trans = "log1p", labels = label_number(scale_cut = cut_short_scale())) +
-  labs(x = "Latent time index (noisy)", y = "Gross income (log1p)", color = "Industry") +
-  theme_minimal(base_size = 12)
+  # Normal scale
+  p_linear <- ggplot(plot_df, aes(x = .data[[x_col]], y = .data[[y_col]], color = .data[[ind_col]])) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    labs(x = "Latent time index (noisy)", y = "Gross income", color = "Industry") +
+    scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
+    base_theme
 
+  # Log scale (ensure domain for log1p)
+  plot_df_log <- filter(plot_df, .data[[y_col]] > -1)
+  p_log <- ggplot(plot_df_log, aes(x = .data[[x_col]], y = .data[[y_col]], color = .data[[ind_col]])) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    scale_y_continuous(trans = "log1p",
+                       labels = label_number(scale_cut = cut_short_scale())) +
+    labs(x = "Latent time index (noisy)", y = "Gross income (log1p)", color = "Industry") +
+    base_theme
+
+  list(linear = p_linear, log = p_log)
+}
 ```
+
+```{r}
+# ---- usage ----
+plots <- plot_temporal_scatter(temporal_df)
+plots$linear
+plots$log
+```
+
 
 # Make classified dataset using CIK
 ```{r}
@@ -402,30 +433,178 @@ head(company_ci)
 
 # Plot visualization
 ```{r}
-plot_df    <- company_ci %>% filter(!is.na(mean_y), !is.na(x), !is.na(sic_division))
+plot_company_ci <- function(
+  df,
+  x_col   = "x",
+  mean_col= "mean_y",
+  lo_col  = "y_lo",
+  hi_col  = "y_hi",
+  color_cols = c("sic_division","industry","industry_type"),
+  point_alpha = 0.7,
+  point_size  = 1.8,
+  legend_bottom = TRUE
+){
+  # choose color column
+  color_col <- color_cols[color_cols %in% names(df)][1]
+  if (is.na(color_col)) stop("No industry column found. Looked for: ", paste(color_cols, collapse=", "))
 
-# ---- Plot 1: linear y ----
-p_linear <- ggplot(plot_df, aes(x = x, y = mean_y, color = sic_division)) +
-  geom_point(alpha = 0.7, size = 1.8) +
-  geom_errorbar(aes(ymin = y_lo, ymax = y_hi), width = 0) +
-  labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI)",
-       color = "Industry division") +
-  scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
-  theme_minimal(base_size = 12) + theme(legend.position = "bottom")
+  # base filtered data
+  plot_df <- df %>%
+    filter(!is.na(.data[[mean_col]]),
+           !is.na(.data[[x_col]]),
+           !is.na(.data[[color_col]])) %>%
+    mutate(!!color_col := factor(.data[[color_col]]))
 
-# ---- Plot 2: log1p y ----
-plot_df_log <- plot_df %>% filter(y_hi > -1)   # ensure log1p domain
-p_log <- ggplot(plot_df_log, aes(x = x, y = mean_y, color = sic_division)) +
-  geom_point(alpha = 0.7, size = 1.8) +
-  geom_errorbar(aes(ymin = y_lo, ymax = y_hi), width = 0) +
-  scale_y_continuous(trans = "log1p",
-                     labels = label_number(scale_cut = cut_short_scale())) +
-  labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI) — log1p",
-       color = "Industry division") +
-  theme_minimal(base_size = 12) + theme(legend.position = "bottom")
+  base_theme <- theme_minimal(base_size = 12) +
+    theme(legend.position = if (legend_bottom) "bottom" else "right")
 
-# Print or save
-p_linear
-p_log
+  # Linear y
+  p_linear <- ggplot(plot_df, aes(x = .data[[x_col]], y = .data[[mean_col]], color = .data[[color_col]])) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    geom_errorbar(aes(ymin = .data[[lo_col]], ymax = .data[[hi_col]]), width = 0) +
+    scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
+    labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI)", color = "Industry division") +
+    base_theme
+
+  # Log1p y (keep valid domain)
+  plot_df_log <- plot_df %>% filter(.data[[hi_col]] > -1)
+  p_log <- ggplot(plot_df_log, aes(x = .data[[x_col]], y = .data[[mean_col]], color = .data[[color_col]])) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    geom_errorbar(aes(ymin = .data[[lo_col]], ymax = .data[[hi_col]]), width = 0) +
+    scale_y_continuous(trans = "log1p", labels = label_number(scale_cut = cut_short_scale())) +
+    labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI) — log1p", color = "Industry division") +
+    base_theme
+
+  list(linear = p_linear, log = p_log)
+}
+
+```
+
+```{r}
+plots_ci <- plot_company_ci(company_ci)
+plots_ci$linear
+plots_ci$log
+```
+
+
+# EM algorithm with Kalman Filter
+```{r}
+# Quarter column finder
+quarter_cols <- function(df, regex = "^\\d{4}Q[1-4]$") {
+  qs <- grep(regex, names(df), value = TRUE)
+  qs[order(as.integer(substr(qs, 1, 4)),
+           as.integer(sub(".*Q", "", qs)))]
+}
+
+# Fallbacks (always return length(y))
+fallback_impute <- function(y) {
+  # 1) LOCF/ NOCB
+  y_l <- na.locf(y, na.rm = FALSE)
+  y_ln <- na.locf(y_l, fromLast = TRUE, na.rm = FALSE)
+  # 2) If still NA (all-missing series), use 0
+  y_ln[is.na(y_ln)] <- 0
+  y_ln
+}
+
+# EM + Kalman for ONE series on asinh scale, with hard fallbacks
+em_impute_series_asinh <- function(y, maxit = 200, asinh_scale = 1) {
+  n <- length(y)
+  z <- asinh(y / asinh_scale)
+
+  # If <2 non-missing, return flat mean (or zeros if all NA)
+  if (sum(is.finite(z)) < 2) {
+    mu <- if (any(is.finite(z))) mean(z[is.finite(z)]) else 0
+    return(list(z_hat = rep(mu, n)))
+  }
+
+  yt <- matrix(z, nrow = 1)
+  mod <- list(
+    Z = matrix(1), A = "zero",
+    R = matrix("r"),
+    B = matrix(1), U = "zero",
+    Q = matrix("q"),
+    x0 = "unequal"
+  )
+
+  fit <- tryCatch(
+    MARSS(yt, model = mod,
+          control = list(maxit = maxit, conv.test.slope.tol = 1e-4),
+          silent = TRUE),
+    error = function(e) NULL
+  )
+
+  if (is.null(fit) || !is.list(fit) || is.null(fit$par) ) {
+    # MARSS failed → fallback to smooth LOCF on original scale
+    y_imp <- fallback_impute(y)
+    z_hat <- asinh(y_imp / asinh_scale)
+    return(list(z_hat = z_hat))
+  }
+
+  z_hat <- tryCatch(
+    as.numeric(fitted(fit, type = "ytT")$ytT),
+    error = function(e) NULL
+  )
+
+  # Final safety: always return length n
+  if (is.null(z_hat) || length(z_hat) != n) {
+    y_imp <- fallback_impute(y)
+    z_hat <- asinh(y_imp / asinh_scale)
+  }
+  list(z_hat = z_hat)
+}
+
+# Main: impute all companies in cleaned_data (wide quarters)
+kalman_em_impute_marss <- function(cleaned_data,
+                                   q_regex = "^\\d{4}Q[1-4]$",
+                                   maxit = 200,
+                                   asinh_scale = 1) {
+  qs <- quarter_cols(cleaned_data, q_regex)
+  stopifnot(length(qs) > 0)
+
+  X <- as.matrix(cleaned_data[, qs, drop = FALSE])
+  storage.mode(X) <- "double"
+
+  Zhat <- matrix(NA_real_, nrow = nrow(X), ncol = ncol(X))
+
+  for (i in seq_len(nrow(X))) {
+    res <- em_impute_series_asinh(X[i, ], maxit = maxit, asinh_scale = asinh_scale)
+    # guarantee correct length before assignment
+    if (length(res$z_hat) != ncol(X)) {
+      # last-resort guard (should not happen)
+      res$z_hat <- rep(mean(asinh(X[i, ]/asinh_scale), na.rm = TRUE) %||% 0, ncol(X))
+    }
+    Zhat[i, ] <- res$z_hat
+  }
+
+  # Back-transform to original scale
+  Yimp <- asinh_scale * sinh(Zhat)
+
+  out <- cleaned_data
+  out[, qs] <- Yimp
+  out
+}
+
+```
+
+
+```{r}
+imputed_wide <- kalman_em_impute_marss(cleaned_data, maxit = 200, asinh_scale = 1)
+```
+
+```{r}
+temporal_df_full  <- make_temporal_df(imputed_wide, noise_sd = 1, seed = 4210)
+company_ci_full   <- make_company_ci_df(imputed_wide, noise_sd = 1, seed = 4210)
+```
+
+```{r}
+# ---- usage ----
+plots_full <- plot_temporal_scatter(temporal_df_full)
+plots_full$linear
+plots_full$log
+```
+```{r}
+plots_ci_full <- plot_company_ci(company_ci_full)
+plots_ci_full$linear
+plots_ci_full$log
 ```
 
