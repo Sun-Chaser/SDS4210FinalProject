@@ -32,4 +32,6 @@ df_reduced = (
     .agg(pl.col("gross_income").sum().alias("yearly_gross")) 
 )
 
+df_reduced.write_csv("yearly_gross_with_cluster.csv") 
+
 
