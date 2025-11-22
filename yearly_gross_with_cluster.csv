@@ -1,0 +1,1665 @@
+year,cik,entityName,loc,sicDescription,pred_cluster,yearly_gross
+2021,825324,Good Times Restaurants Inc.,US-CO,Retail-Eating  Places,6,0.28695
+2024,1177609,"Five Below, Inc.",US-PA,Retail-Variety Stores,6,2.53611
+2021,926282,"ADTRAN Holdings, Inc.",US-AL,Telephone & Telegraph Apparatus,7,-0.14872
+2023,1136893,"Fidelity National Information Services, Inc.",US-FL,"Services-Business Services, NEC",9,-66.54999999999991
+2022,39020,"FREQUENCY ELECTRONICS, INC.",US-NY,Instruments For Meas & Testing of  Electricity & Elec Signals,7,-0.06482
+2023,1020859,"UNITED NATURAL FOODS, INC.",US-RI,"Wholesale-Groceries, General Line",6,-0.39999999999999925
+2022,783412,DAILY JOURNAL CORPORATION,US-CA,Newspapers: Publishing or  Publishing & Printing,6,-0.29710000000000014
+2023,1434524,CLEARSIGN TECHNOLOGIES CORPORATION,US-OK,"Industrial Instruments For Measurement, Display, and Control",1,-0.05194
+2024,1383312,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",US-NY,"Services-Business Services, NEC",9,6.495999999999979
+2024,1387467,Alpha and Omega Semiconductor Limited,BM-,Semiconductors & Related Devices,7,-0.3153399999999999
+2021,765207,"FIRST BANCORP, INC",US-ME,National Commercial Banks,4,0.36269
+2023,1066194,eGain Corporation,US-CA,Services-Prepackaged Software,5,0.0701
+2021,73290,"BIOMERICA, INC.",US-CA,In Vitro & In Vivo Diagnostic Substances,2,-0.06916937
+2022,105132,WD-40 COMPANY,US-CA,Miscellaneous Chemical Products,2,0.62465
+2022,1169561,"Commvault Systems, Inc",US-NJ,Services-Prepackaged Software,5,0.3574
+2024,1397016,"OPTEX SYSTEMS HOLDINGS, INC.",US-TX,Optical Instruments & Lenses,1,0.04428
+2021,33002,"ENNIS, INC.",US-TX,Manifold Business Forms,9,0.3069000000000001
+2024,1521951,"FIRST BUSINESS FINANCIAL SERVICES, INC.",US-WI,State Commercial Banks,4,0.4424500000000001
+2022,1544190,"SHEPHERD’S FINANCE, LLC",US-FL,Short-Term Business Credit Institutions,8,0.0176
+2023,1437517,"CYBERLOQ TECHNOLOGIES, INC.",US-FL,Services-Prepackaged Software,5,-0.010265300000000002
+2024,1438133,"Tandem Diabetes Care, Inc.",US-CA,Surgical & Medical Instruments & Apparatus,1,-0.96025
+2022,108312,"WOODWARD, INC.",US-CO,Electrical Industrial Apparatus,1,1.564040000000001
+2024,779544,ARK RESTAURANTS CORP.,US-NY,Retail-Eating  Places,6,0.02995
+2023,107140,"JOHN WILEY & SONS, INC.",US-NJ,Books: Publishing or  Publishing & Printing,6,-2.970529999999998
+2021,913778,BF GARDEN TAX CREDIT FUND IV L.P.,US-MA,Operators of  Apartment Buildings,9,0.01852165
+2022,926282,"ADTRAN Holdings, Inc.",US-AL,Telephone & Telegraph Apparatus,7,-0.8285199999999999
+2024,1040130,"PETMED EXPRESS, INC.",US-FL,Retail-Drug Stores and Proprietary Stores,6,0.033460000000000004
+2021,1327567,"PALO ALTO NETWORKS, INC",US-CA,"Computer Peripheral Equipment, NEC",7,-4.873000000000001
+2021,1295947,PRESTIGE CONSUMER HEALTHCARE INC.,US-NY,Pharmaceutical Preparations,2,1.94168
+2024,1040470,AEHR TEST SYSTEMS,US-CA,Instruments For Meas & Testing of  Electricity & Elec Signals,7,-0.033100000000000004
+2022,40570,GEE GROUP INC.,US-FL,Services-Employment Agencies,9,0.07007000000000001
+2021,920427,"Unity Bancorp, Inc.",US-NJ,State Commercial Banks,4,0.3611899999999999
+2022,1110803,"Illumina, Inc.",US-CA,Laboratory Analytical Instruments,1,-44.03999999999989
+2024,1627223,The Chemours Company,US-DE,Chemicals & Allied Products,2,0.7399999999999991
+2024,1634117,"BARNES & NOBLE EDUCATION, INC.",US-NJ,Retail-Miscellaneous Shopping Goods Stores,6,-0.6999600000000001
+2023,862668,Escalon Medical Corp.,US-PA,Electromedical & Electrotherapeutic Apparatus,1,0.01072952
+2023,1224608,"CNO Financial Group, Inc.",US-IN,Accident & Health Insurance,9,2.765000000000002
+2024,1157647,"Western New England Bancorp, Inc.",US-MA,"Savings Institution, Federally Chartered",8,0.11666
+2023,1403475,Bank of Marin Bancorp,US-CA,State Commercial Banks,4,0.19896
+2022,935703,"DOLLAR TREE, INC.",US-VA,Retail-Variety Stores,6,14.300999999999991
+2023,70502,NATIONAL RURAL UTILITIES COOPERATIVE FINANCE CORPORATION,US-VA,Miscellaneous Business Credit Institution,8,7.02091999999999
+2021,1127475,"DIGITAL BRAND MEDIA & MARKETING GROUP, INC.",US-NY,"Services-Business Services, NEC",9,-0.006154809999999998
+2024,1525306,First America Resources Corporation,US-IL,"Wholesale-Electronic Parts & Equipment, NEC",1,0.0009537199999999999
+2024,108385,WORLD ACCEPTANCE CORPORATION,US-SC,Personal Credit Institutions,8,1.18563
+2024,785786,PLEXUS CORP.,US-WI,Printed Circuit Boards,7,1.03786
+2022,1037038,Ralph Lauren Corporation,US-NY,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,7.08099999999998
+2022,874866,CORVEL CORPORATION,US-TX,"Insurance Agents, Brokers & Service",3,0.46988
+2023,1032220,"Maximus, Inc.",US-VA,"Services-Business Services, NEC",9,1.576620000000001
+2022,729986,UNITED BANKSHARES INC/WV,US-WV,State Commercial Banks,4,3.7962700000000007
+2022,15357,CHASE GENERAL CORP,US-MO,Sugar & Confectionery Products,2,0.0018134800000000001
+2021,1530425,"ARTISAN CONSUMER GOODS, INC.",US-WA,Metal Mining,1,-0.0006568400000000001
+2021,704172,"PHI GROUP, INC.",US-CA,Services-Management Services,9,-0.00851468
+2022,1506251,"Citius Pharmaceuticals, Inc.",US-NJ,Pharmaceutical Preparations,2,-0.2888196299999998
+2023,926282,"ADTRAN Holdings, Inc.",US-AL,Telephone & Telegraph Apparatus,7,-2.349070000000001
+2023,1403161,VISA INC.,US-CA,"Services-Business Services, NEC",9,174.5899999999998
+2022,1092796,"Smith & Wesson Brands, Inc.",US-TN,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,-2.645839999999996
+2023,707549,LAM RESEARCH CORPORATION,US-CA,"Special Industry Machinery, NEC",1,34.696799999999925
+2021,1170010,"CARMAX, INC.",US-VA,Retail-Auto Dealers & Gasoline Stations,6,12.267609999999971
+2021,6281,"Analog Devices, Inc.",US-MA,Semiconductors & Related Devices,7,17.096039999999952
+2023,48465,HORMEL FOODS CORPORATION,US-MN,Meat Packing Plants,1,7.614599999999999
+2024,1517681,"PROPANC BIOPHARMA, INC.",AU-,Pharmaceutical Preparations,2,-0.01837893
+2024,834071,TOYOTA MOTOR CREDIT CORPORATION,US-TX,Personal Credit Institutions,8,15.43999999999996
+2022,788920,"PRO-DEX, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,0.06366
+2023,1003078,"MSC INDUSTRIAL DIRECT CO., INC.",US-NY,Wholesale-Industrial Machinery & Equipment,1,3.3885000000000023
+2021,946673,BANNER CORPORATION,US-WA,State Commercial Banks,4,2.010480000000003
+2022,828530,ADMIRAL FINANCIAL CORP.,US-FL,"Savings Institution, Federally Chartered",8,0.0
+2021,1525306,First America Resources Corporation,US-IL,"Wholesale-Electronic Parts & Equipment, NEC",1,-0.00016239000000000002
+2021,1005731,IDT CORPORATION,US-NJ,Telephone Communications (No Radiotelephone),9,0.7770500000000001
+2021,820771,GOLIATH FILM AND MEDIA HOLDINGS,US-NV,Services-Motion Picture & Video Tape Distribution,9,0.00005416999999999998
+2023,1481504,"XERIANT, INC.",US-FL,Aircraft,1,-0.02320671
+2022,1666138,Atkore Inc.,US-IL,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,9.15594999999999
+2024,1629210,PARAMOUNT GOLD NEVADA CORP.,US-NV,Metal Mining,1,-0.07231717
+2021,1005210,SUBURBAN PROPANE PARTNERS LP,US-NJ,Retail-Miscellaneous Retail,6,0.96472
+2024,1434524,CLEARSIGN TECHNOLOGIES CORPORATION,US-OK,"Industrial Instruments For Measurement, Display, and Control",1,-0.05299
+2021,1414382,"Concrete Leveling Systems, Inc.",US-OH,Misc Industrial & Commercial Machinery & Equipment,1,-0.00047023000000000003
+2024,707549,LAM RESEARCH CORPORATION,US-CA,"Special Industry Machinery, NEC",1,42.391139999999965
+2023,918646,EAGLE MATERIALS INC,US-TX,"Cement, Hydraulic",0,5.17724
+2023,47217,HP INC.,US-CA,Computer & office Equipment,1,39.879999999999995
+2021,918965,"ScanSource, Inc.",US-SC,Wholesale-Computers & Peripheral Equipment & Software,1,0.71521
+2021,875582,NORTHERN TECHNOLOGIES INTERNATIONAL CORPORATION,US-MN,"Coating, Engraving & Allied Services",1,0.0813140899999999
+2023,717423,MURPHY OIL CORPORATION,US-TX,Crude Petroleum & Natural Gas,0,6.615999999999988
+2024,1589526,BLUE BIRD CORPORATION,US-GA,Truck & Bus Bodies,1,1.1216700000000002
+2022,1157647,"Western New England Bancorp, Inc.",US-MA,"Savings Institution, Federally Chartered",8,0.2588700000000001
+2023,1376986,TENNESSEE VALLEY AUTHORITY,US-TN,Electric Services,9,0.5900000000000001
+2023,320187,"NIKE, Inc.",US-OR,Rubber & Plastics Footwear,1,55.0799999999999
+2022,320187,"NIKE, Inc.",US-OR,Rubber & Plastics Footwear,1,55.910000000000004
+2023,37785,FMC CORPORATION,US-PA,Chemicals & Allied Products,2,13.215
+2023,9092,"BADGER METER, INC.",US-WI,Totalizing Fluid Meters & Counting Devices,1,0.92598
+2023,15357,CHASE GENERAL CORP,US-MO,Sugar & Confectionery Products,2,-0.00121716
+2023,1005286,"LIFECORE BIOMEDICAL, INC.",US-MN,Pharmaceutical Preparations,2,-0.6955
+2021,1604028,"ADVANCED DRAINAGE SYSTEMS, INC.",US-OH,Plastics Foam Products,1,2.78798
+2023,1511737,UBIQUITI INC.,US-NY,Radio & Tv Broadcasting & Communications Equipment,7,3.670200000000002
+2024,15357,CHASE GENERAL CORP,US-MO,Sugar & Confectionery Products,2,-0.0009319199999999999
+2021,1002047,"NetApp, Inc.",US-CA,Computer Storage Devices,7,8.600000000000001
+2021,1282648,Battalion Oil Corp,US-TX,Crude Petroleum & Natural Gas,0,-0.2831699999999989
+2022,63296,MATTHEWS INTERNATIONAL CORP,US-PA,Nonferrous Foundries (Castings),1,0.07584
+2021,1629210,PARAMOUNT GOLD NEVADA CORP.,US-NV,Metal Mining,1,-0.07325102
+2023,1037038,Ralph Lauren Corporation,US-NY,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,7.72099999999998
+2023,63296,MATTHEWS INTERNATIONAL CORP,US-PA,Nonferrous Foundries (Castings),1,0.2429999999999998
+2024,320193,Apple Inc.,US-CA,Electronic Computers,7,1028.619999999998
+2023,356309,NEW JERSEY RESOURCES CORPORATION,US-NJ,Natural Gas Distribution,0,2.0272200000000002
+2024,102037,UNIVERSAL CORPORATION,US-VA,Wholesale-Farm Product Raw Materials,1,1.389250000000001
+2024,1169770,"BANC OF CALIFORNIA, INC.",US-CA,National Commercial Banks,4,1.26888
+2021,807863,"MITEK SYSTEMS, INC.",US-CA,"Computer Peripheral Equipment, NEC",7,0.08934
+2023,1415744,NORTHERN MINERALS & EXPLORATION LTD.,US-UT,Gold and Silver Ores,1,-0.0017897199999999999
+2023,1552800,"TILE SHOP HOLDINGS, INC.",US-MN,"Retail-Home Furniture, Furnishings & Equipment Stores",6,0.1007100000000001
+2023,1163370,"NORTHRIM BANCORP, INC.",US-AK,"Savings Institution, Federally Chartered",8,0.2539399999999999
+2021,890066,GLEN BURNIE BANCORP,US-MD,State Commercial Banks,4,0.025160000000000002
+2024,858877,"CISCO SYSTEMS, INC.",US-CA,Computer Communications Equipment,7,89.1099999999997
+2024,1628908,"Evolent Health, Inc.",US-VA,Services-Management Services,9,-0.61623
+2022,1348911,"KALVISTA PHARMACEUTICALS, INC.",US-MA,Pharmaceutical Preparations,2,-0.89069
+2023,807863,"MITEK SYSTEMS, INC.",US-CA,"Computer Peripheral Equipment, NEC",7,-0.024960000000000107
+2023,1504461,NGL Energy Partners LP,US-OK,Natural Gas Transmission,0,1.51545
+2023,912603,"RADIUS RECYCLING, INC.",US-OR,Wholesale-Misc Durable Goods,6,0.13309
+2023,1377789,"AVIAT NETWORKS, INC.",US-TX,Radio & Tv Broadcasting & Communications Equipment,7,0.1511899999999998
+2023,1405513,"United States 12 Month Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,-0.13280207999999988
+2023,915779,"Daktronics, Inc.",US-SD,Miscellaneous Manufacturing Industries,1,0.35816
+2023,1589526,BLUE BIRD CORPORATION,US-GA,Truck & Bus Bodies,1,0.5199599999999999
+2022,1396878,"United States Gasoline Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.2737109900000001
+2024,1082733,"VISIUM TECHNOLOGIES, INC.",US-VA,Services-Computer Programming Services,5,-0.010112880000000001
+2021,1341439,Oracle Corporation,US-TX,Services-Prepackaged Software,5,112.51999999999981
+2022,36840,"FIRST REAL ESTATE INVESTMENT TRUST OF NEW JERSEY, INC.",US-NJ,Real Estate Investment Trusts,3,0.006339999999999999
+2022,1117297,"QuinStreet, Inc.",US-CA,"Services-Business Services, NEC",9,-0.08036000000000021
+2021,1549966,Silvercrest Asset Management Group Inc.,US-NY,Investment Advice,3,0.14693000000000012
+2024,100378,TWIN DISC INC,US-WI,General Industrial Machinery & Equipment,1,0.057980000000000004
+2022,1049521,"MERCURY SYSTEMS, INC.",US-MA,Electronic Components & Accessories,7,-0.16977
+2022,1552800,"TILE SHOP HOLDINGS, INC.",US-MN,"Retail-Home Furniture, Furnishings & Equipment Stores",6,0.1570299999999999
+2024,1438943,"RANGE IMPACT, INC.",US-OH,Heavy Construction Other Than Bldg Const - Contractors,1,-0.09798082999999999
+2022,721371,"Cardinal Health, Inc.",US-OH,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,-27.610000000000003
+2024,1359841,Hanesbrands Inc.,US-NC,Retail-Apparel & Accessory Stores,6,-3.2043099999999898
+2021,866706,ESCO TECHNOLOGIES INC.,US-MO,"Communications Equipment, NEC",7,0.5674600000000001
+2024,866787,AUTOZONE INC,US-TN,Retail-Auto & Home Supply Stores,6,25.20110999999993
+2024,1020859,"UNITED NATURAL FOODS, INC.",US-RI,"Wholesale-Groceries, General Line",6,-0.66
+2024,1474903,"BGSF, INC.",US-TX,Services-Help Supply Services,9,0.02015999999999997
+2021,1477246,S&W SEED CO,US-CO,Agricultural Production-Crops,1,-0.3131338199999996
+2021,707605,AMERISERV FINANCIAL INC /PA/,US-PA,National Commercial Banks,4,0.07072
+2024,935703,"DOLLAR TREE, INC.",US-VA,Retail-Variety Stores,6,-30.301000000000023
+2024,1613103,Medtronic plc,IE-,Electromedical & Electrotherapeutic Apparatus,1,49.28
+2021,72331,NORDSON CORPORATION,US-OH,"General Industrial Machinery & Equipment, NEC",1,5.28917
+2024,880117,SANFILIPPO JOHN B & SON INC,US-IL,Sugar & Confectionery Products,2,0.52208
+2023,1423221,QUANEX BUILDING PRODUCTS CORPORATION,US-TX,Rolling Drawing & Extruding of  Nonferrous Metals,1,0.911569999999998
+2021,54187,MAYS J W INC,US-NY,Opeators of  Nonresidential Buildings,1,-0.00670422
+2023,882835,"ROPER TECHNOLOGIES, INC.",US-FL,"Industrial Instruments For Measurement, Display, and Control",1,13.84199999999997
+2023,1169770,"BANC OF CALIFORNIA, INC.",US-CA,National Commercial Banks,4,-18.99137
+2023,34563,FARMER BROTHERS CO,US-TX,Miscellaneous Food Preparations & Kindred Products,2,-0.21449
+2021,1092796,"Smith & Wesson Brands, Inc.",US-TN,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,-2.645839999999996
+2022,1023731,"8x8, INC.",US-CA,Services-Computer Processing & Data Preparation,5,-1.07283
+2021,1116132,"Tapestry, Inc.",US-NY,Leather & Leather Products,1,8.36299999999999
+2021,828530,ADMIRAL FINANCIAL CORP.,US-FL,"Savings Institution, Federally Chartered",8,0.0
+2023,1157647,"Western New England Bancorp, Inc.",US-MA,"Savings Institution, Federally Chartered",8,0.1506800000000001
+2024,1371451,"HIGHWATER ETHANOL, LLC",US-MN,Industrial Organic Chemicals,2,0.0529732700000001
+2022,1434524,CLEARSIGN TECHNOLOGIES CORPORATION,US-OK,"Industrial Instruments For Measurement, Display, and Control",1,-0.05758
+2022,1024478,"Rockwell Automation, Inc.",US-WI,"Measuring & Controlling Devices, NEC",7,10.336999999999989
+2023,1636519,MADISON SQUARE GARDEN SPORTS CORP.,US-NY,Services-Miscellaneous Amusement & Recreation,9,1.00161
+2023,1302215,"Houlihan Lokey, Inc.",US-CA,Investment Advice,3,2.622749999999999
+2022,1490906,"Capitol Federal Financial, Inc.",US-KS,"Savings Institution, Federally Chartered",8,0.8016700000000001
+2021,1314052,ANAVEX LIFE SCIENCES CORP.,US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.3939787100000001
+2024,720875,Dynatronics Corporation,US-MN,Surgical & Medical Instruments & Apparatus,1,-0.02476919
+2022,1082733,"VISIUM TECHNOLOGIES, INC.",US-VA,Services-Computer Programming Services,5,-0.04767734
+2022,939930,"Pyxus International, Inc.",US-NC,Wholesale-Farm Product Raw Materials,1,-0.48633
+2022,891166,"UNIVERSAL INSURANCE HOLDINGS, INC.",US-FL,"Fire, Marine & Casualty Insurance",1,-0.2225700000000001
+2024,37785,FMC CORPORATION,US-PA,Chemicals & Allied Products,2,3.41099999999999
+2022,863894,VERU INC.,US-FL,Pharmaceutical Preparations,2,-0.972779389999999
+2022,896156,Ethan Allen Interiors Inc.,US-CT,"Wood Household Furniture, (No Upholstered)",1,1.07474
+2023,1438133,"Tandem Diabetes Care, Inc.",US-CA,Surgical & Medical Instruments & Apparatus,1,-2.2261100000000003
+2022,1108134,"BERKSHIRE HILLS BANCORP, INC.",US-MA,"Savings Institutions, Not Federally Chartered",8,0.92533
+2021,1396878,"United States Gasoline Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.48257088000000004
+2024,788920,"PRO-DEX, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,0.05816
+2021,1320414,SELECT MEDICAL HOLDINGS CORP,US-PA,Services-Hospitals,9,4.29296
+2023,768408,Cyanotech Corp,US-HI,Medicinal Chemicals & Botanical Products,2,-0.03784000000000001
+2021,833444,JOHNSON CONTROLS INTERNATIONAL PLC,IE-,Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip,1,18.71999999999999
+2021,1302215,"Houlihan Lokey, Inc.",US-CA,Investment Advice,3,4.910929999999991
+2022,1066194,eGain Corporation,US-CA,Services-Prepackaged Software,5,-0.02286
+2021,1265131,Hilltop Holdings Inc.,US-TX,State Commercial Banks,4,3.7449500000000002
+2023,890066,GLEN BURNIE BANCORP,US-MD,State Commercial Banks,4,0.014289999999999999
+2023,10456,Baxter International Inc.,US-IL,Surgical & Medical Instruments & Apparatus,1,26.55999999999999
+2022,810136,"PHOTRONICS, INC.",US-CT,Semiconductors & Related Devices,7,1.03878
+2022,1128361,"HOPE BANCORP, INC.",US-CA,National Commercial Banks,4,2.182770000000002
+2024,1092796,"Smith & Wesson Brands, Inc.",US-TN,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.05835
+2021,48465,HORMEL FOODS CORPORATION,US-MN,Meat Packing Plants,1,8.213059999999981
+2022,800240,The ODP Corporation,US-FL,Retail-Miscellaneous Shopping Goods Stores,6,1.659999999999999
+2023,771497,ABM INDUSTRIES INCORPORATED,US-NY,Services-To Dwellings & Other Buildings,9,2.928000000000002
+2024,1499961,MULLEN AUTOMOTIVE INC.,US-CA,Motor Vehicles & Passenger Car Bodies,1,-5.12184437
+2022,1066656,CERES CLASSIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.35690756
+2023,1078271,"EXTREME NETWORKS, INC.",US-NC,Computer Communications Equipment,7,0.76926
+2024,1308547,"DOLBY LABORATORIES, INC.",US-CA,Patent Owners & Lessors,1,2.425399999999997
+2024,205402,"GRAYBAR ELECTRIC COMPANY, INC.",US-MO,"Wholesale-Electrical Apparatus & Equipment, Wiring Supplies ",1,4.231
+2022,880641,"EAGLE FINANCIAL SERVICES, INC.",US-VA,State Commercial Banks,4,0.14521
+2023,1074871,"MODULAR MEDICAL, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,-0.16547000000000012
+2021,1442492,"Laredo Oil, Inc.",US-TX,Crude Petroleum & Natural Gas,0,0.011660919999999998
+2024,31667,EDUCATIONAL DEVELOPMENT CORPORATION,US-OK,Wholesale-Miscellaneous Nondurable Goods,6,-0.055327
+2022,1441236,CLEARWATER PAPER CORPORATION,US-WA,Paperboard Mills,1,0.7250000000000001
+2024,80172,NATIONAL PRESTO INDUSTRIES INC,US-WI,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.4146000000000002
+2022,1262976,Cimpress plc,IE-,Commercial Printing,6,-3.0907500000000026
+2021,1600033,"e.l.f. Beauty, Inc.",US-CA,"Perfumes, Cosmetics & Other Toilet Preparations",2,0.20189999999999989
+2023,936528,"WAFD, INC.",US-WA,National Commercial Banks,4,2.479370000000003
+2021,57131,LA-Z-BOY INCORPORATED,US-MI,Household Furniture,1,1.2178099999999992
+2021,55242,KENNAMETAL INC.,US-PA,"Machine Tools, Metal Cutting Types",1,1.10861
+2022,8947,AZZ Inc.,US-TX,"Coating, Engraving & Allied Services",1,-0.32950000000000096
+2022,1624794,"CSW INDUSTRIALS, INC.",US-TX,Adhesives & Sealants,1,0.87819
+2023,716314,GRAHAM CORP,US-NY,General Industrial Machinery & Equipment,1,0.03584
+2021,1590976,"MALIBU BOATS, INC.",US-TN,Ship & Boat Building & Repairing,1,1.243579999999999
+2021,40570,GEE GROUP INC.,US-FL,Services-Employment Agencies,9,0.13059
+2023,912728,FORWARD AIR CORPORATION,US-TN,Arrangement of  Transportation of  Freight & Cargo,1,1.6735100000000003
+2021,859070,FIRST COMMUNITY BANKSHARES INC /VA/,US-VA,State Commercial Banks,4,0.51168
+2022,1224608,"CNO Financial Group, Inc.",US-IN,Accident & Health Insurance,9,6.30599999999999
+2022,1549966,Silvercrest Asset Management Group Inc.,US-NY,Investment Advice,3,0.1882799999999999
+2021,46619,HEICO CORPORATION,US-FL,Aircraft Engines & Engine Parts,1,3.113720000000002
+2022,1169770,"BANC OF CALIFORNIA, INC.",US-CA,National Commercial Banks,4,1.209390000000001
+2024,1000230,OPTICAL CABLE CORPORATION,US-VA,Drawing & Insulating of  Nonferrous Wire,1,-0.03892368
+2022,99780,TRINITY INDUSTRIES INC,US-TX,Railroad Equipment,1,0.601
+2024,1636519,MADISON SQUARE GARDEN SPORTS CORP.,US-NY,Services-Miscellaneous Amusement & Recreation,9,0.6932300000000001
+2024,216877,"PISMO COAST VILLAGE, INC.",US-CA,"Hotels, Rooming Houses, Camps & Other Lodging Places",9,0.01274
+2021,1020859,"UNITED NATURAL FOODS, INC.",US-RI,"Wholesale-Groceries, General Line",6,2.38
+2021,216877,"PISMO COAST VILLAGE, INC.",US-CA,"Hotels, Rooming Houses, Camps & Other Lodging Places",9,0.035584450000000004
+2021,896429,"Cantaloupe, Inc.",US-PA,Calculating & Accounting Machines (No Electronic Computers),1,-0.05455
+2022,91767,SONOCO PRODUCTS COMPANY,US-SC,Paperboard Containers & Boxes,1,3.3379600000000003
+2024,849146,LIFEVANTAGE CORP,US-UT,Pharmaceutical Preparations,2,0.07694000000000001
+2021,928465,AMCON DISTRIBUTING CO,US-NE,"Wholesale-Groceries, General Line",6,0.12812383000000002
+2023,849146,LIFEVANTAGE CORP,US-UT,Pharmaceutical Preparations,2,0.02017
+2024,1066194,eGain Corporation,US-CA,Services-Prepackaged Software,5,0.04322
+2023,715446,"ANIXA BIOSCIENCES, INC.",US-CA,Pharmaceutical Preparations,2,-0.10565000000000001
+2022,38777,"FRANKLIN RESOURCES, INC.",US-CA,Investment Advice,3,10.27999999999999
+2022,1436425,"HOME BANCORP, INC.",US-LA,"Savings Institutions, Not Federally Chartered",8,0.3407199999999999
+2023,16058,CACI International Inc,US-VA,Services-Computer Integrated Systems Design,5,3.714010000000001
+2021,1571996,Dell Technologies Inc.,US-TX,Electronic Computers,7,55.62999999999988
+2023,78814,PITNEY BOWES INC.,US-CT,"Office Machines, NEC",1,-3.8562700000000003
+2023,1124140,EXACT SCIENCES CORPORATION,US-WI,Services-Medical Laboratories,9,-2.041490000000001
+2021,12208,"BIO-RAD LABORATORIES, INC.",US-CA,Laboratory Analytical Instruments,1,42.54199999999998
+2023,729986,UNITED BANKSHARES INC/WV,US-WV,State Commercial Banks,4,3.663129999999998
+2022,804328,QUALCOMM INC/DE,US-CA,Radio & Tv Broadcasting & Communications Equipment,7,126.28999999999971
+2021,807882,JACK IN THE BOX INC.,US-CA,Retail-Eating  Places,6,1.552600000000002
+2021,909832,COSTCO WHOLESALE CORP /NEW,US-WA,Retail-Variety Stores,6,49.84
+2021,37472,"FLEXSTEEL INDUSTRIES, INC.",US-IA,Household Furniture,1,0.0752700000000002
+2023,933974,"Azenta, Inc.",US-MA,"Special Industry Machinery, NEC",1,0.031409999999999993
+2021,1057379,"Hackett Group, Inc.",US-FL,Services-Management Consulting Services,9,0.41545
+2024,1034054,SBA COMMUNICATIONS CORPORATION,US-FL,Real Estate Investment Trusts,3,7.49535999999999
+2023,74260,OLD REPUBLIC INTERNATIONAL CORPORATION,US-IL,Surety Insurance,9,5.985000000000001
+2022,78814,PITNEY BOWES INC.,US-CT,"Office Machines, NEC",1,0.05068
+2024,807882,JACK IN THE BOX INC.,US-CA,Retail-Eating  Places,6,-1.8593400000000002
+2023,310764,STRYKER CORP,US-MI,Surgical & Medical Instruments & Apparatus,1,31.65
+2022,866787,AUTOZONE INC,US-TN,Retail-Auto & Home Supply Stores,6,22.54256999999999
+2023,1624794,"CSW INDUSTRIALS, INC.",US-TX,Adhesives & Sealants,1,0.85487
+2021,887343,"COLUMBIA BANKING SYSTEM, INC.",US-WA,State Commercial Banks,4,2.1292600000000004
+2023,65270,"METHODE ELECTRONICS, INC.",US-IL,Electronic Connectors,7,-0.461
+2024,1002047,"NetApp, Inc.",US-CA,Computer Storage Devices,7,11.58999999999998
+2022,1170010,"CARMAX, INC.",US-VA,Retail-Auto Dealers & Gasoline Stations,6,6.85187999999998
+2024,1282648,Battalion Oil Corp,US-TX,Crude Petroleum & Natural Gas,0,-0.31882
+2021,1304492,Anterix Inc.,US-NJ,Telephone Communications (No Radiotelephone),9,-0.37437
+2023,1130144,SIERRA BANCORP,US-CA,State Commercial Banks,4,0.3484399999999998
+2022,1157408,"Stride, Inc.",US-VA,Services-Educational Services,9,1.138709999999998
+2023,320193,Apple Inc.,US-CA,Electronic Computers,7,978.379999999999
+2024,74260,OLD REPUBLIC INTERNATIONAL CORPORATION,US-IL,Surety Insurance,9,8.52499999999998
+2022,310764,STRYKER CORP,US-MI,Surgical & Medical Instruments & Apparatus,1,23.57999999999999
+2023,933034,STRATTEC SECURITY CORP,US-WI,Motor Vehicle Parts & Accessories,1,0.006749999999999999
+2024,1039280,"NETSOL TECHNOLOGIES, INC.",US-CA,Services-Prepackaged Software,5,-0.00421149
+2021,1415744,NORTHERN MINERALS & EXPLORATION LTD.,US-UT,Gold and Silver Ores,1,-0.00159059
+2024,717423,MURPHY OIL CORPORATION,US-TX,Crude Petroleum & Natural Gas,0,4.071350000000001
+2024,14846,BRT APARTMENTS CORP.,US-NY,Real Estate Investment Trusts,3,-0.09791
+2022,1209709,CERES TACTICAL SYSTEMATIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.08743712000000001
+2023,12208,"BIO-RAD LABORATORIES, INC.",US-CA,Laboratory Analytical Instruments,1,-6.373000000000012
+2024,836157,Lindsay Corporation,US-NE,Farm Machinery & Equipment,1,0.7604500000000001
+2022,933974,"Azenta, Inc.",US-MA,"Special Industry Machinery, NEC",1,0.8722
+2024,73309,NUCOR CORPORATION,US-NC,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",1,19.66999999999994
+2022,9092,"BADGER METER, INC.",US-WI,Totalizing Fluid Meters & Counting Devices,1,0.66496
+2024,105132,WD-40 COMPANY,US-CA,Miscellaneous Chemical Products,2,0.74145
+2023,1477246,S&W SEED CO,US-CO,Agricultural Production-Crops,1,0.518202490000002
+2024,866273,MATRIX SERVICE CO,US-OK,Construction - Special Trade Contractors,1,-0.4391799999999999
+2022,1002590,"STAR GROUP, L.P.",US-CT,"Retail-Retail Stores, NEC",6,0.343379999999999
+2022,1069899,Phibro Animal Health Corporation,US-NJ,Pharmaceutical Preparations,2,0.46443999999999996
+2024,1302215,"Houlihan Lokey, Inc.",US-CA,Investment Advice,3,3.485940000000002
+2021,3545,"ALICO, INC.",US-FL,Agricultural Production-Crops,1,0.41145
+2022,1408534,"FIRST GUARANTY BANCSHARES, INC.",US-LA,"Savings Institution, Federally Chartered",8,0.2888399999999997
+2024,1046257,INGREDION INCORPORATED,US-IL,Grain Mill Products,1,6.469999999999999
+2024,1423221,QUANEX BUILDING PRODUCTS CORPORATION,US-TX,Rolling Drawing & Extruding of  Nonferrous Metals,1,0.5119199999999999
+2024,3545,"ALICO, INC.",US-FL,Agricultural Production-Crops,1,-0.29059
+2022,1390777,THE BANK OF NEW YORK MELLON CORPORATION,US-NY,State Commercial Banks,4,25.72999999999992
+2023,1350156,PREAXIA HEALTH CARE PAYMENT SYSTEMS INC.,CA-AB,"Retail-Home Furniture, Furnishings & Equipment Stores",6,-0.00159004
+2021,1262104,"MEI Pharma, Inc.",US-CA,Pharmaceutical Preparations,2,-0.8091
+2024,817720,SYNAPTICS INCORPORATED,US-CA,Semiconductors & Related Devices,7,-0.575
+2022,6281,"Analog Devices, Inc.",US-MA,Semiconductors & Related Devices,7,32.42716999999995
+2024,95029,"STURM, RUGER & COMPANY, INC.",US-CT,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.30563000000000007
+2023,1479681,NUTEX HEALTH INC.,US-TX,"Services-Business Services, NEC",9,-0.45786614000000014
+2024,915358,"SIGMATRON INTERNATIONAL, INC.",US-IL,Printed Circuit Boards,7,-0.12247742000000009
+2022,1171838,"SUNDANCE STRATEGIES, INC.",US-UT,"Insurance Agents, Brokers & Service",3,-0.01454919
+2024,1538495,"EARTH SCIENCE TECH, INC.",US-FL,Pharmaceutical Preparations,2,0.02306476
+2024,73290,"BIOMERICA, INC.",US-CA,In Vitro & In Vivo Diagnostic Substances,2,-0.06102
+2022,1504008,"BankUnited, Inc.",US-FL,"Savings Institution, Federally Chartered",8,2.849709999999999
+2024,874015,"IONIS PHARMACEUTICALS, INC.",US-CA,Pharmaceutical Preparations,2,-4.538970000000001
+2023,1071840,"SOLARWINDOW TECHNOLOGIES, INC.",US-AZ,Industrial Organic Chemicals,2,-0.02137567
+2023,896156,Ethan Allen Interiors Inc.,US-CT,"Wood Household Furniture, (No Upholstered)",1,0.7706200000000001
+2021,750558,QNB Corp.,US-PA,State Commercial Banks,4,0.1649199999999999
+2021,1630113,BIOTRICITY INC.,US-CA,Surgical & Medical Instruments & Apparatus,1,-0.2741888300000001
+2022,711377,Neogen Corporation,US-MI,In Vitro & In Vivo Diagnostic Substances,2,-0.2574600000000003
+2023,1126741,GSI TECHNOLOGY INC,US-CA,Semiconductors & Related Devices,7,-0.2057799999999999
+2022,110621,RPM INTERNATIONAL INC/DE/,US-OH,"Paints, Varnishes, Lacquers, Enamels & Allied Prods",1,3.66395
+2021,1224608,"CNO Financial Group, Inc.",US-IN,Accident & Health Insurance,9,4.410000000000001
+2024,1320414,SELECT MEDICAL HOLDINGS CORP,US-PA,Services-Hospitals,9,2.14038
+2023,836157,Lindsay Corporation,US-NE,Farm Machinery & Equipment,1,0.6683300000000001
+2024,1382230,"ESSA Bancorp, Inc.",US-PA,"Savings Institutions, Not Federally Chartered",8,0.16346
+2024,78814,PITNEY BOWES INC.,US-CT,"Office Machines, NEC",1,-7.0888100000000005
+2024,1381668,TFS FINANCIAL CORPORATION,US-OH,"Savings Institution, Federally Chartered",8,0.83045
+2021,788920,"PRO-DEX, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,0.0543
+2023,1584509,Aramark,US-PA,Retail-Eating  Places,6,7.61545
+2022,1359841,Hanesbrands Inc.,US-NC,Retail-Apparel & Accessory Stores,6,-1.2720399999999898
+2024,939930,"Pyxus International, Inc.",US-NC,Wholesale-Farm Product Raw Materials,1,0.24147999999999992
+2021,1110803,"Illumina, Inc.",US-CA,Laboratory Analytical Instruments,1,7.6199999999999894
+2024,1314052,ANAVEX LIFE SCIENCES CORP.,US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.47085
+2022,1050743,PEAPACK-GLADSTONE FINANCIAL CORPORATION,US-NJ,"Commercial Banks, NEC",4,0.74246
+2022,1005731,IDT CORPORATION,US-NJ,Telephone Communications (No Radiotelephone),9,0.3516699999999998
+2021,1106838,"SONNET BIOTHERAPEUTICS HOLDINGS, INC.",US-NJ,Pharmaceutical Preparations,2,-0.2447116999999999
+2021,25895,"Crown Crafts, Inc.",US-LA,"Broadwoven Fabric Mills, Cotton",1,0.09893
+2021,96793,"SUNLINK HEALTH SYSTEMS, INC.",US-GA,"Services-General Medical & Surgical Hospitals, NEC",9,0.0028399999999999996
+2024,810136,"PHOTRONICS, INC.",US-CT,Semiconductors & Related Devices,7,1.478780000000001
+2021,15357,CHASE GENERAL CORP,US-MO,Sugar & Confectionery Products,2,-0.00019355000000000002
+2022,2969,"AIR PRODUCTS AND CHEMICALS, INC.",US-PA,Industrial Inorganic Chemicals,2,22.66899999999995
+2023,67887,MOOG Inc.,US-NY,Misc Industrial & Commercial Machinery & Equipment,1,1.7559900000000002
+2022,717423,MURPHY OIL CORPORATION,US-TX,Crude Petroleum & Natural Gas,0,9.64999999999997
+2023,102037,UNIVERSAL CORPORATION,US-VA,Wholesale-Farm Product Raw Materials,1,1.209400000000001
+2024,896429,"Cantaloupe, Inc.",US-PA,Calculating & Accounting Machines (No Electronic Computers),1,0.1785799999999998
+2021,66740,3M COMPANY,US-MN,Surgical & Medical Instruments & Apparatus,1,60.160000000000004
+2021,70502,NATIONAL RURAL UTILITIES COOPERATIVE FINANCE CORPORATION,US-VA,Miscellaneous Business Credit Institution,8,8.006719999999978
+2024,807863,"MITEK SYSTEMS, INC.",US-CA,"Computer Peripheral Equipment, NEC",7,-0.038980000000000105
+2024,1327567,"PALO ALTO NETWORKS, INC",US-CA,"Computer Peripheral Equipment, NEC",7,11.75599999999996
+2023,891166,"UNIVERSAL INSURANCE HOLDINGS, INC.",US-FL,"Fire, Marine & Casualty Insurance",1,0.6682300000000001
+2024,80420,"Powell Industries, Inc.",US-TX,Switchgear & Switchboard Apparatus,7,1.60526
+2023,1467373,Accenture plc,IE-,"Services-Business Services, NEC",9,68.80051
+2024,1300514,LAS VEGAS SANDS CORP.,US-NV,Hotels & Motels,9,14.45999999999998
+2023,900075,"COPART, INC.",US-TX,Retail-Auto Dealers & Gasoline Stations,6,13.59023999999996
+2021,1177609,"Five Below, Inc.",US-PA,Retail-Variety Stores,6,2.7881
+2023,1005210,SUBURBAN PROPANE PARTNERS LP,US-NJ,Retail-Miscellaneous Retail,6,1.1840900000000003
+2023,1414382,"Concrete Leveling Systems, Inc.",US-OH,Misc Industrial & Commercial Machinery & Equipment,1,-0.0005739
+2024,723125,"Micron Technology, Inc.",US-ID,Semiconductors & Related Devices,7,33.26999999999995
+2022,946581,"TAKE-TWO INTERACTIVE SOFTWARE, INC.",US-NY,Services-Prepackaged Software,5,-3.6979999999999906
+2024,704172,"PHI GROUP, INC.",US-CA,Services-Management Services,9,-0.05406799
+2023,792966,"FARMERS & MERCHANTS BANCORP, INC.",US-OH,"Savings Institution, Federally Chartered",8,0.2278699999999998
+2022,946673,BANNER CORPORATION,US-WA,State Commercial Banks,4,1.953780000000001
+2023,935419,"RCI HOSPITALITY HOLDINGS, INC.",US-TX,Retail-Eating  Places,6,0.26234
+2024,863894,VERU INC.,US-FL,Pharmaceutical Preparations,2,-0.40909043
+2022,827054,MICROCHIP TECHNOLOGY INCORPORATED,US-AZ,Semiconductors & Related Devices,7,19.864999999999952
+2022,896878,INTUIT INC.,US-CA,Services-Prepackaged Software,5,37.9599999999998
+2024,1262976,Cimpress plc,IE-,Commercial Printing,6,0.40552000000000094
+2021,1126741,GSI TECHNOLOGY INC,US-CA,Semiconductors & Related Devices,7,-0.18339
+2021,69422,THE INTERGROUP CORPORATION,US-CA,Operators of  Apartment Buildings,9,-0.01944
+2024,6845,"APOGEE ENTERPRISES, INC.",US-MN,"Glass Products, Made of  Purchased Glass",1,1.0954
+2021,720762,NON INVASIVE MONITORING SYSTEMS INC /FL/,US-FL,Electromedical & Electrotherapeutic Apparatus,1,-0.00157
+2022,746514,New England Realty Associates Limited Partnership,US-MA,Operators of  Apartment Buildings,9,0.03723272999999999
+2021,771497,ABM INDUSTRIES INCORPORATED,US-NY,Services-To Dwellings & Other Buildings,9,2.352999999999997
+2022,1136893,"Fidelity National Information Services, Inc.",US-FL,"Services-Business Services, NEC",9,-167.19000000000003
+2024,820771,GOLIATH FILM AND MEDIA HOLDINGS,US-NV,Services-Motion Picture & Video Tape Distribution,9,0.00028062
+2022,775057,ALTEX INDUSTRIES INC,US-CO,Crude Petroleum & Natural Gas,0,0.0061200000000000004
+2022,12208,"BIO-RAD LABORATORIES, INC.",US-CA,Laboratory Analytical Instruments,1,-36.27500000000001
+2023,1110803,"Illumina, Inc.",US-CA,Laboratory Analytical Instruments,1,-11.60999999999999
+2023,720875,Dynatronics Corporation,US-MN,Surgical & Medical Instruments & Apparatus,1,-0.03833056
+2023,875582,NORTHERN TECHNOLOGIES INTERNATIONAL CORPORATION,US-MN,"Coating, Engraving & Allied Services",1,0.03426198000000001
+2023,949961,"Income Opportunity Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,0.07001
+2024,1529377,ARES COMMERCIAL REAL ESTATE CORPORATION,US-NY,Real Estate Investment Trusts,3,-0.34993
+2022,1016178,"CARVER BANCORP, INC.",US-NY,"Savings Institution, Federally Chartered",8,-0.02205000000000001
+2021,1130144,SIERRA BANCORP,US-CA,State Commercial Banks,4,0.4301200000000001
+2023,37472,"FLEXSTEEL INDUSTRIES, INC.",US-IA,Household Furniture,1,0.15439
+2024,66756,"ALLETE, Inc.",US-MN,Electric & Other Services Combined,9,1.7930000000000001
+2022,1074871,"MODULAR MEDICAL, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,-0.15148307
+2023,1171155,"RADIANT LOGISTICS, INC.",US-WA,Arrangement of  Transportation of  Freight & Cargo,1,0.11973
+2024,1405528,"United States 12 Month Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.0505674399999999
+2022,1415744,NORTHERN MINERALS & EXPLORATION LTD.,US-UT,Gold and Silver Ores,1,-0.00144341
+2024,920427,"Unity Bancorp, Inc.",US-NJ,State Commercial Banks,4,0.41450000000000004
+2022,16058,CACI International Inc,US-VA,Services-Computer Integrated Systems Design,5,3.6705999999999968
+2023,1371451,"HIGHWATER ETHANOL, LLC",US-MN,Industrial Organic Chemicals,2,0.15233213999999992
+2022,1604028,"ADVANCED DRAINAGE SYSTEMS, INC.",US-OH,Plastics Foam Products,1,4.948710000000001
+2022,318299,"SPARTA COMMERCIAL SERVICES, INC.",US-NY,"Services-Business Services, NEC",9,0.01620793
+2023,1625288,"NEXIEN BIOPHARMA, INC.",US-CO,Pharmaceutical Preparations,2,-0.0025914200000000023
+2023,889971,"LIGHTPATH TECHNOLOGIES, INC.",US-FL,Semiconductors & Related Devices,7,-0.05382579
+2022,55242,KENNAMETAL INC.,US-PA,"Machine Tools, Metal Cutting Types",1,1.20685
+2022,820771,GOLIATH FILM AND MEDIA HOLDINGS,US-NV,Services-Motion Picture & Video Tape Distribution,9,-0.0003932599999999999
+2022,1114925,"LANTRONIX, INC.",US-CA,Computer Communications Equipment,7,-0.10642
+2024,896878,INTUIT INC.,US-CA,Services-Prepackaged Software,5,54.45999999999998
+2023,1606757,"KIMBALL ELECTRONICS, INC.",US-IN,Printed Circuit Boards,7,0.5184399999999999
+2024,1295947,PRESTIGE CONSUMER HEALTHCARE INC.,US-NY,Pharmaceutical Preparations,2,2.1752299999999973
+2024,1175535,Whitestone REIT,US-TX,Real Estate Investment Trusts,3,0.3689300000000001
+2021,723125,"Micron Technology, Inc.",US-ID,Semiconductors & Related Devices,7,63.78999999999989
+2022,1341439,Oracle Corporation,US-TX,Services-Prepackaged Software,5,79.2699999999999
+2021,1618921,"WALGREENS BOOTS ALLIANCE, INC.",US-IL,Retail-Drug Stores and Proprietary Stores,6,64.2999999999999
+2022,730464,Adtalem Global Education Inc.,US-IL,Services-Educational Services,9,3.80998999999999
+2024,1130144,SIERRA BANCORP,US-CA,State Commercial Banks,4,0.4056
+2024,1075736,"Crexendo, Inc.",US-AZ,Telephone Communications (No Radiotelephone),9,0.01677
+2023,1633978,Lumentum Holdings Inc.,US-CA,"Communications Equipment, NEC",7,-2.4559999999999977
+2024,1006028,"PURE Bioscience, Inc.",US-CA,Miscellaneous Chemical Products,2,-0.032009999999999976
+2023,828530,ADMIRAL FINANCIAL CORP.,US-FL,"Savings Institution, Federally Chartered",8,0.0
+2023,1499961,MULLEN AUTOMOTIVE INC.,US-CA,Motor Vehicles & Passenger Car Bodies,1,-7.94024684
+2024,1171838,"SUNDANCE STRATEGIES, INC.",US-UT,"Insurance Agents, Brokers & Service",3,-0.01328888
+2021,1262976,Cimpress plc,IE-,Commercial Printing,6,-0.3000900000000001
+2024,1071840,"SOLARWINDOW TECHNOLOGIES, INC.",US-AZ,Industrial Organic Chemicals,2,-0.04323722
+2023,915358,"SIGMATRON INTERNATIONAL, INC.",US-IL,Printed Circuit Boards,7,-0.22188297
+2021,102037,UNIVERSAL CORPORATION,US-VA,Wholesale-Farm Product Raw Materials,1,0.9408000000000001
+2021,16058,CACI International Inc,US-VA,Services-Computer Integrated Systems Design,5,4.3572900000000025
+2023,911216,"PALATIN TECHNOLOGIES, INC.",US-NJ,Pharmaceutical Preparations,2,-0.3038869700000001
+2023,38264,"Forward Industries, Inc.",US-NY,"Plastics Products, NEC",1,-0.00999826
+2024,712770,"ONE LIBERTY PROPERTIES, INC.",US-NY,Real Estate Investment Trusts,3,0.55418
+2024,1265131,Hilltop Holdings Inc.,US-TX,State Commercial Banks,4,1.13213
+2023,1046257,INGREDION INCORPORATED,US-IL,Grain Mill Products,1,6.430000000000001
+2022,849401,"ADM TRONICS UNLIMITED, INC.",US-NJ,Electromedical & Electrotherapeutic Apparatus,1,0.00082755
+2022,779544,ARK RESTAURANTS CORP.,US-NY,Retail-Eating  Places,6,0.1328999999999998
+2023,868857,AECOM,US-TX,Services-Engineering Services,9,-0.9834900000000021
+2023,789019,MICROSOFT CORPORATION,US-WA,Services-Prepackaged Software,5,807.589999999999
+2024,54187,MAYS J W INC,US-NY,Opeators of  Nonresidential Buildings,1,-0.0030078400000000003
+2023,65312,"EVI Industries, Inc.",US-FL,Services-Personal Services,9,0.08123
+2023,935703,"DOLLAR TREE, INC.",US-VA,Retail-Variety Stores,6,-9.98400000000002
+2023,794619,American Woodmark Corp,US-VA,"Millwood, Veneer, Plywood, & Structural Wood Members",1,1.04146
+2022,1486957,"BWX TECHNOLOGIES, INC.",US-VA,Engines & Turbines,1,2.381909999999999
+2024,912767,"UFP INDUSTRIES, INC.",US-MI,"Sawmills & Planting Mills, General",1,4.145600000000003
+2024,57131,LA-Z-BOY INCORPORATED,US-MI,Household Furniture,1,1.13265
+2023,66004,MIDDLESEX WATER COMPANY,US-NJ,Water Supply,0,0.3152400000000003
+2022,66740,3M COMPANY,US-MN,Surgical & Medical Instruments & Apparatus,1,90.9499999999998
+2021,879526,WABASH NATIONAL CORPORATION,US-IN,Truck Trailers,1,0.011639999999999984
+2022,109563,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",US-OH,"Wholesale-Machinery, Equipment & Supplies",1,2.93949
+2023,1618732,"NUTANIX, INC.",US-CA,Services-Prepackaged Software,5,-1.249960000000002
+2022,1078075,"NETSCOUT SYSTEMS, INC.",US-MA,Services-Computer Integrated Systems Design,5,1.105939999999999
+2023,103595,"VILLAGE SUPER MARKET, INC.",US-NJ,Retail-Grocery Stores,6,0.48099000000000003
+2024,1110803,"Illumina, Inc.",US-CA,Laboratory Analytical Instruments,1,-12.23000000000001
+2024,1506251,"Citius Pharmaceuticals, Inc.",US-NJ,Pharmaceutical Preparations,2,-0.39972072000000003
+2023,721371,"Cardinal Health, Inc.",US-OH,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,10.859999999999989
+2022,54187,MAYS J W INC,US-NY,Opeators of  Nonresidential Buildings,1,-0.00009819000000000012
+2023,1017303,TRANSACT TECHNOLOGIES INC,US-CT,"Computer Peripheral Equipment, NEC",7,0.047479999999999994
+2022,56679,KORN FERRY,US-CA,Services-Employment Agencies,9,2.461360000000001
+2022,1324948,RBC BEARINGS INCORPORATED,US-CT,Ball & Roller Bearings,1,1.180460000000001
+2021,80420,"Powell Industries, Inc.",US-TX,Switchgear & Switchboard Apparatus,7,-0.01851
+2022,857005,PTC Inc.,US-MA,Services-Prepackaged Software,5,3.0566599999999977
+2023,1327567,"PALO ALTO NETWORKS, INC",US-CA,"Computer Peripheral Equipment, NEC",7,21.566999999999993
+2023,720762,NON INVASIVE MONITORING SYSTEMS INC /FL/,US-FL,Electromedical & Electrotherapeutic Apparatus,1,-0.002200000000000001
+2023,863894,VERU INC.,US-FL,Pharmaceutical Preparations,2,-0.6711024699999999
+2024,1262104,"MEI Pharma, Inc.",US-CA,Pharmaceutical Preparations,2,-0.2893800000000001
+2022,14693,Brown-Forman Corporation,US-KY,Beverages,2,8.34999999999998
+2022,1334978,"CLEAR CHANNEL OUTDOOR HOLDINGS, INC.",US-TX,Services-Advertising,9,-0.9660399999999991
+2024,33002,"ENNIS, INC.",US-TX,Manifold Business Forms,9,0.41105
+2024,104894,ELME COMMUNITIES,US-MD,Real Estate Investment Trusts,3,-0.13103
+2021,1499961,MULLEN AUTOMOTIVE INC.,US-CA,Motor Vehicles & Passenger Car Bodies,1,-0.0931828
+2021,67887,MOOG Inc.,US-NY,Misc Industrial & Commercial Machinery & Equipment,1,1.671969999999999
+2024,1570585,Liberty Global Ltd.,BM-,Cable & Other Pay Television Services,9,15.87999999999989
+2022,1636519,MADISON SQUARE GARDEN SPORTS CORP.,US-NY,Services-Miscellaneous Amusement & Recreation,9,0.53677
+2021,939930,"Pyxus International, Inc.",US-NC,Wholesale-Farm Product Raw Materials,1,-0.5945400000000001
+2022,1618921,"WALGREENS BOOTS ALLIANCE, INC.",US-IL,Retail-Drug Stores and Proprietary Stores,6,-29.640000000000008
+2021,863894,VERU INC.,US-FL,Pharmaceutical Preparations,2,-0.14611719000000012
+2022,886128,"FUELCELL ENERGY, INC.",US-CT,Electrical Industrial Apparatus,1,-1.07667
+2022,896429,"Cantaloupe, Inc.",US-PA,Calculating & Accounting Machines (No Electronic Computers),1,-0.048749999999999995
+2023,1613103,Medtronic plc,IE-,Electromedical & Electrotherapeutic Apparatus,1,42.44
+2021,731653,UNITED BANCORP INC /OH/,US-OH,State Commercial Banks,4,0.09451000000000001
+2021,891166,"UNIVERSAL INSURANCE HOLDINGS, INC.",US-FL,"Fire, Marine & Casualty Insurance",1,0.20407000000000092
+2024,12208,"BIO-RAD LABORATORIES, INC.",US-CA,Laboratory Analytical Instruments,1,-18.44199999999999
+2024,936528,"WAFD, INC.",US-WA,National Commercial Banks,4,1.9227500000000002
+2024,887343,"COLUMBIA BANKING SYSTEM, INC.",US-WA,State Commercial Banks,4,5.34
+2022,854775,DIGI INTERNATIONAL INC.,US-MN,Computer Communications Equipment,7,0.16877999999999999
+2024,1032220,"Maximus, Inc.",US-VA,"Services-Business Services, NEC",9,3.0121000000000024
+2024,720154,"INOTIV, INC.",US-IN,Services-Commercial Physical & Biological Research,9,-1.27883
+2024,69422,THE INTERGROUP CORPORATION,US-CA,Operators of  Apartment Buildings,9,-0.09451000000000001
+2022,825324,Good Times Restaurants Inc.,US-CO,Retail-Eating  Places,6,-0.013390000000000003
+2022,1006028,"PURE Bioscience, Inc.",US-CA,Miscellaneous Chemical Products,2,-0.03573
+2024,723254,Cintas Corporation,US-OH,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,16.95685999999995
+2024,40570,GEE GROUP INC.,US-FL,Services-Employment Agencies,9,-0.40272
+2023,746514,New England Realty Associates Limited Partnership,US-MA,Operators of  Apartment Buildings,9,0.0845395
+2021,1493594,"MACOM Technology Solutions Holdings, Inc.",US-MA,Semiconductors & Related Devices,7,1.83644
+2021,1497253,"Organovo Holdings, Inc.",US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.12048
+2021,1438133,"Tandem Diabetes Care, Inc.",US-CA,Surgical & Medical Instruments & Apparatus,1,0.15566
+2023,1295947,PRESTIGE CONSUMER HEALTHCARE INC.,US-NY,Pharmaceutical Preparations,2,2.118319999999998
+2023,1039280,"NETSOL TECHNOLOGIES, INC.",US-CA,Services-Prepackaged Software,5,0.055284520000000004
+2023,14846,BRT APARTMENTS CORP.,US-NY,Real Estate Investment Trusts,3,0.03873000000000001
+2022,915779,"Daktronics, Inc.",US-SD,Miscellaneous Manufacturing Industries,1,-0.18947000000000003
+2023,866787,AUTOZONE INC,US-TN,Retail-Auto & Home Supply Stores,6,24.58198999999999
+2021,1034054,SBA COMMUNICATIONS CORPORATION,US-FL,Real Estate Investment Trusts,3,2.37624
+2021,110621,RPM INTERNATIONAL INC/DE/,US-OH,"Paints, Varnishes, Lacquers, Enamels & Allied Prods",1,3.3594100000000022
+2022,887343,"COLUMBIA BANKING SYSTEM, INC.",US-WA,State Commercial Banks,4,3.3675199999999994
+2024,711377,Neogen Corporation,US-MI,In Vitro & In Vivo Diagnostic Substances,2,-4.7293499999999895
+2024,1504461,NGL Energy Partners LP,US-OK,Natural Gas Transmission,0,-2.11121999999999
+2024,775057,ALTEX INDUSTRIES INC,US-CO,Crude Petroleum & Natural Gas,0,0.00864
+2022,57131,LA-Z-BOY INCORPORATED,US-MI,Household Furniture,1,1.447579999999999
+2021,703351,"BRINKER INTERNATIONAL, INC.",US-TX,Retail-Eating  Places,6,1.086
+2024,715446,"ANIXA BIOSCIENCES, INC.",US-CA,Pharmaceutical Preparations,2,-0.12877
+2024,928465,AMCON DISTRIBUTING CO,US-NE,"Wholesale-Groceries, General Line",6,0.0386676
+2021,72573,"MOVADO GROUP, INC.",US-NJ,"Watches, Clocks, Clockwork Operated Devices/Parts",1,0.9162899999999998
+2022,836157,Lindsay Corporation,US-NE,Farm Machinery & Equipment,1,0.8292900000000001
+2023,100493,"TYSON FOODS, INC.",US-AR,Poultry Slaughtering and Processing,1,-8.23999999999998
+2022,1336917,"UNDER ARMOUR, INC.",US-MD,Apparel & Other Finishd Prods of  Fabrics & Similar Matl,1,1.3695299999999988
+2024,720762,NON INVASIVE MONITORING SYSTEMS INC /FL/,US-FL,Electromedical & Electrotherapeutic Apparatus,1,-0.0020700000000000002
+2023,765207,"FIRST BANCORP, INC",US-ME,National Commercial Banks,4,0.29518
+2023,1583107,"THERAVANCE BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,-0.5519299999999999
+2023,1571996,Dell Technologies Inc.,US-TX,Electronic Computers,7,33.87999999999999
+2024,1376986,TENNESSEE VALLEY AUTHORITY,US-TN,Electric Services,9,7.939999999999991
+2021,39020,"FREQUENCY ELECTRONICS, INC.",US-NY,Instruments For Meas & Testing of  Electricity & Elec Signals,7,-0.02613000000000001
+2023,2969,"AIR PRODUCTS AND CHEMICALS, INC.",US-PA,Industrial Inorganic Chemicals,2,22.402999999999942
+2023,40570,GEE GROUP INC.,US-FL,Services-Employment Agencies,9,0.14855
+2021,889971,"LIGHTPATH TECHNOLOGIES, INC.",US-FL,Semiconductors & Related Devices,7,-0.021325160000000003
+2022,885275,WILSON BANK HOLDING CO,US-TN,National Commercial Banks,4,0.53042
+2024,1633978,Lumentum Holdings Inc.,US-CA,"Communications Equipment, NEC",7,-3.972999999999999
+2021,1617242,KEARNY FINANCIAL CORP.,US-NJ,"Savings Institution, Federally Chartered",8,0.7339
+2023,1579877,OUTFRONT Media Inc.,US-NY,Real Estate Investment Trusts,3,-4.251999999999989
+2023,25895,"Crown Crafts, Inc.",US-LA,"Broadwoven Fabric Mills, Cotton",1,0.057460000000000004
+2023,100378,TWIN DISC INC,US-WI,General Industrial Machinery & Equipment,1,0.06319
+2023,1262104,"MEI Pharma, Inc.",US-CA,Pharmaceutical Preparations,2,0.14435000000000103
+2023,857005,PTC Inc.,US-MA,Services-Prepackaged Software,5,2.5268699999999993
+2021,768408,Cyanotech Corp,US-HI,Medicinal Chemicals & Botanical Products,2,0.01676
+2022,868671,"GLACIER BANCORP, INC.",US-MT,State Commercial Banks,4,3.0320199999999993
+2022,1005210,SUBURBAN PROPANE PARTNERS LP,US-NJ,Retail-Miscellaneous Retail,6,2.154259999999999
+2024,804328,QUALCOMM INC/DE,US-CA,Radio & Tv Broadcasting & Communications Equipment,7,97.6399999999999
+2024,32621,EMERSON RADIO CORP,US-NJ,Household Audio & Video Equipment,7,-0.02791000000000001
+2024,6281,"Analog Devices, Inc.",US-MA,Semiconductors & Related Devices,7,14.78021999999997
+2022,918965,"ScanSource, Inc.",US-SC,Wholesale-Computers & Peripheral Equipment & Software,1,0.96828
+2021,1124140,EXACT SCIENCES CORPORATION,US-WI,Services-Medical Laboratories,9,-5.95624999999999
+2023,804328,QUALCOMM INC/DE,US-CA,Radio & Tv Broadcasting & Communications Equipment,7,80.7699999999998
+2023,1050825,STEELCASE INC,US-MI,Office Furniture (No Wood),1,0.7550000000000001
+2024,67887,MOOG Inc.,US-NY,Misc Industrial & Commercial Machinery & Equipment,1,2.258360000000002
+2024,926282,"ADTRAN Holdings, Inc.",US-AL,Telephone & Telegraph Apparatus,7,-4.598909999999989
+2023,1046050,"TIMBERLAND BANCORP, INC.",US-WA,"Savings Institutions, Not Federally Chartered",8,0.25907000000000013
+2024,746598,BRADY CORP,US-WI,Miscellaneous Manufacturing Industries,1,1.88897
+2023,1504008,"BankUnited, Inc.",US-FL,"Savings Institution, Federally Chartered",8,1.786710000000001
+2022,1017303,TRANSACT TECHNOLOGIES INC,US-CT,"Computer Peripheral Equipment, NEC",7,-0.059359999999999996
+2023,703351,"BRINKER INTERNATIONAL, INC.",US-TX,Retail-Eating  Places,6,1.507000000000001
+2021,1603345,AGENTIX CORP.,US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.012812470000000001
+2021,278166,CAVCO INDUSTRIES INC.,US-AZ,Mobile Homes,9,1.637759999999999
+2021,1002590,"STAR GROUP, L.P.",US-CT,"Retail-Retail Stores, NEC",6,0.643660000000001
+2021,858877,"CISCO SYSTEMS, INC.",US-CA,Computer Communications Equipment,7,116.78999999999971
+2022,1003078,"MSC INDUSTRIAL DIRECT CO., INC.",US-NY,Wholesale-Industrial Machinery & Equipment,1,3.505590000000001
+2023,1070524,"GREENE COUNTY BANCORP, INC.",US-NY,"Savings Institutions, Not Federally Chartered",8,0.28358
+2021,1359841,Hanesbrands Inc.,US-NC,Retail-Apparel & Accessory Stores,6,0.77224
+2024,36840,"FIRST REAL ESTATE INVESTMENT TRUST OF NEW JERSEY, INC.",US-NJ,Real Estate Investment Trusts,3,0.16978000000000001
+2024,108312,"WOODWARD, INC.",US-CO,Electrical Industrial Apparatus,1,3.88797
+2024,1224608,"CNO Financial Group, Inc.",US-IN,Accident & Health Insurance,9,4.04
+2021,6845,"APOGEE ENTERPRISES, INC.",US-MN,"Glass Products, Made of  Purchased Glass",1,0.57031
+2022,1403475,Bank of Marin Bancorp,US-CA,State Commercial Banks,4,0.46586000000000005
+2023,1127475,"DIGITAL BRAND MEDIA & MARKETING GROUP, INC.",US-NY,"Services-Business Services, NEC",9,-0.00723323
+2022,794619,American Woodmark Corp,US-VA,"Millwood, Veneer, Plywood, & Structural Wood Members",1,0.14324999999999902
+2021,99780,TRINITY INDUSTRIES INC,US-TX,Railroad Equipment,1,1.82
+2024,918965,"ScanSource, Inc.",US-SC,Wholesale-Computers & Peripheral Equipment & Software,1,0.59639
+2022,1165002,"WESTWOOD HOLDINGS GROUP, INC.",US-TX,Investment Advice,3,0.09763
+2022,1474903,"BGSF, INC.",US-TX,Services-Help Supply Services,9,0.25361
+2023,827054,MICROCHIP TECHNOLOGY INCORPORATED,US-AZ,Semiconductors & Related Devices,7,23.32499999999995
+2022,723125,"Micron Technology, Inc.",US-ID,Semiconductors & Related Devices,7,73.2
+2024,1625288,"NEXIEN BIOPHARMA, INC.",US-CO,Pharmaceutical Preparations,2,-0.0017780200000000002
+2021,1511737,UBIQUITI INC.,US-NY,Radio & Tv Broadcasting & Communications Equipment,7,5.27949
+2024,732026,TRIO-TECH INTERNATIONAL,SG-,"Special Industry Machinery, NEC",1,0.00411
+2024,912603,"RADIUS RECYCLING, INC.",US-OR,Wholesale-Misc Durable Goods,6,-4.679319999999999
+2021,1387467,Alpha and Omega Semiconductor Limited,BM-,Semiconductors & Related Devices,7,4.38621999999999
+2021,56701,KOSS CORPORATION,US-WI,Household Audio & Video Equipment,7,-0.0046872599999999995
+2022,320193,Apple Inc.,US-CA,Electronic Computers,7,938.919999999999
+2022,1383312,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",US-NY,"Services-Business Services, NEC",9,4.610999999999999
+2023,1694426,"DELEK US HOLDINGS, INC.",US-TN,Petroleum Refining,0,0.19799999999999995
+2021,1040130,"PETMED EXPRESS, INC.",US-FL,Retail-Drug Stores and Proprietary Stores,6,0.1979599999999998
+2023,788920,"PRO-DEX, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,0.031190000000000002
+2024,891166,"UNIVERSAL INSURANCE HOLDINGS, INC.",US-FL,"Fire, Marine & Casualty Insurance",1,0.58928
+2021,56679,KORN FERRY,US-CA,Services-Employment Agencies,9,3.008860000000003
+2022,715446,"ANIXA BIOSCIENCES, INC.",US-CA,Pharmaceutical Preparations,2,-0.11358
+2023,95029,"STURM, RUGER & COMPANY, INC.",US-CT,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.4821500000000001
+2022,779152,"JACK HENRY & ASSOCIATES, INC.",US-MO,Services-Computer Integrated Systems Design,5,3.5673800000000035
+2022,276720,PURE CYCLE CORPORATION,US-CO,Water Supply,0,0.03525999999999998
+2022,1521951,"FIRST BUSINESS FINANCIAL SERVICES, INC.",US-WI,State Commercial Banks,4,0.40857999999999994
+2022,912767,"UFP INDUSTRIES, INC.",US-MI,"Sawmills & Planting Mills, General",1,6.92650999999999
+2023,1040130,"PETMED EXPRESS, INC.",US-FL,Retail-Drug Stores and Proprietary Stores,6,-0.0266
+2024,1436425,"HOME BANCORP, INC.",US-LA,"Savings Institutions, Not Federally Chartered",8,0.3642700000000003
+2024,1227265,CERES ORION L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,-0.08577277999999999
+2023,1116132,"Tapestry, Inc.",US-NY,Leather & Leather Products,1,8.90699999999999
+2024,1096752,EDGEWELL PERSONAL CARE COMPANY,US-CT,"Perfumes, Cosmetics & Other Toilet Preparations",2,1.319000000000002
+2021,1126956,Spire Inc.,US-MO,Natural Gas Distribution,0,0.9699999999999981
+2024,1350156,PREAXIA HEALTH CARE PAYMENT SYSTEMS INC.,CA-AB,"Retail-Home Furniture, Furnishings & Equipment Stores",6,-0.00040096
+2021,1376227,"United States Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.18400201000001104
+2023,1617242,KEARNY FINANCIAL CORP.,US-NJ,"Savings Institution, Federally Chartered",8,0.16638999999999993
+2023,109380,"ZIONS BANCORPORATION, NATIONAL ASSOCIATION",US-UT,National Commercial Banks,4,6.8
+2023,1390777,THE BANK OF NEW YORK MELLON CORPORATION,US-NY,State Commercial Banks,4,33.01999999999997
+2024,1002590,"STAR GROUP, L.P.",US-CT,"Retail-Retail Stores, NEC",6,0.55128
+2023,1397016,"OPTEX SYSTEMS HOLDINGS, INC.",US-TX,Optical Instruments & Lenses,1,0.02062
+2024,310764,STRYKER CORP,US-MI,Surgical & Medical Instruments & Apparatus,1,29.92999999999996
+2021,1022408,ePlus inc.,US-VA,Wholesale-Computers & Peripheral Equipment & Software,1,1.02993
+2021,1334978,"CLEAR CHANNEL OUTDOOR HOLDINGS, INC.",US-TX,Services-Advertising,9,-5.3859499999999905
+2023,829224,Starbucks Corporation,US-WA,Retail-Eating & Drinking Places,6,42.16099999999999
+2022,90168,"SIFCO Industries, Inc.",US-OH,Aircraft Engines & Engine Parts,1,0.041609999999999994
+2021,95029,"STURM, RUGER & COMPANY, INC.",US-CT,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,1.55899
+2022,1083743,"FLUX POWER HOLDINGS, INC.",US-CA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,-0.10787
+2021,1227265,CERES ORION L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.53752215
+2023,866273,MATRIX SERVICE CO,US-OK,Construction - Special Trade Contractors,1,-0.3139
+2023,1171838,"SUNDANCE STRATEGIES, INC.",US-UT,"Insurance Agents, Brokers & Service",3,-0.015740900000000002
+2023,72331,NORDSON CORPORATION,US-OH,"General Industrial Machinery & Equipment, NEC",1,4.92917
+2021,1410738,VoIP-PAL.COM INC.,US-TX,Telephone & Telegraph Apparatus,7,-0.02109926
+2023,24090,"CITIZENS, INC.",US-TX,Life Insurance,9,0.24437
+2023,785786,PLEXUS CORP.,US-WI,Printed Circuit Boards,7,1.01657
+2021,746514,New England Realty Associates Limited Partnership,US-MA,Operators of  Apartment Buildings,9,-0.027001630000000002
+2021,880117,SANFILIPPO JOHN B & SON INC,US-IL,Sugar & Confectionery Products,2,0.5954
+2021,1136893,"Fidelity National Information Services, Inc.",US-FL,"Services-Business Services, NEC",9,2.8400000000000105
+2022,920427,"Unity Bancorp, Inc.",US-NJ,State Commercial Banks,4,0.38456999999999975
+2021,912728,FORWARD AIR CORPORATION,US-TN,Arrangement of  Transportation of  Freight & Cargo,1,0.8893
+2024,1163370,"NORTHRIM BANCORP, INC.",US-AK,"Savings Institution, Federally Chartered",8,0.3697100000000001
+2023,1600033,"e.l.f. Beauty, Inc.",US-CA,"Perfumes, Cosmetics & Other Toilet Preparations",2,1.293820000000001
+2023,316253,"ENZO BIOCHEM, INC.",US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.14987000000000011
+2022,918646,EAGLE MATERIALS INC,US-TX,"Cement, Hydraulic",0,4.925
+2024,1016178,"CARVER BANCORP, INC.",US-NY,"Savings Institution, Federally Chartered",8,-0.09954
+2023,775057,ALTEX INDUSTRIES INC,US-CO,Crude Petroleum & Natural Gas,0,-0.0007300000000000001
+2023,318299,"SPARTA COMMERCIAL SERVICES, INC.",US-NY,"Services-Business Services, NEC",9,-0.00763139
+2022,33002,"ENNIS, INC.",US-TX,Manifold Business Forms,9,0.4267000000000001
+2023,928465,AMCON DISTRIBUTING CO,US-NE,"Wholesale-Groceries, General Line",6,0.11025293
+2022,723254,Cintas Corporation,US-OH,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,13.06878
+2021,1348911,"KALVISTA PHARMACEUTICALS, INC.",US-MA,Pharmaceutical Preparations,2,-0.68274
+2024,1520697,"Acadia Healthcare Company, Inc.",US-TN,"Services-Specialty Outpatient Facilities, NEC",9,2.556119999999999
+2021,1436425,"HOME BANCORP, INC.",US-LA,"Savings Institutions, Not Federally Chartered",8,0.48621000000000003
+2021,78749,"AGILYSYS, INC.",US-GA,Services-Computer Integrated Systems Design,5,0.02426000000000001
+2022,703351,"BRINKER INTERNATIONAL, INC.",US-TX,Retail-Eating  Places,6,0.7090000000000001
+2023,1034054,SBA COMMUNICATIONS CORPORATION,US-FL,Real Estate Investment Trusts,3,5.018120000000001
+2022,56701,KOSS CORPORATION,US-WI,Household Audio & Video Equipment,7,0.0960496099999998
+2023,1609258,PETROGAS COMPANY,US-TX,Crude Petroleum & Natural Gas,0,-0.0008122100000000001
+2021,1350156,PREAXIA HEALTH CARE PAYMENT SYSTEMS INC.,CA-AB,"Retail-Home Furniture, Furnishings & Equipment Stores",6,-0.00167639
+2022,712770,"ONE LIBERTY PROPERTIES, INC.",US-NY,Real Estate Investment Trusts,3,0.4217700000000001
+2021,949961,"Income Opportunity Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,0.03598
+2021,109380,"ZIONS BANCORPORATION, NATIONAL ASSOCIATION",US-UT,National Commercial Banks,4,11.28999999999998
+2021,1017303,TRANSACT TECHNOLOGIES INC,US-CT,"Computer Peripheral Equipment, NEC",7,-0.04040999999999999
+2022,107140,"JOHN WILEY & SONS, INC.",US-NJ,Books: Publishing or  Publishing & Printing,6,-0.15744999999999987
+2023,733590,"Transcontinental Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,0.05937
+2023,1141103,"Cross Country Healthcare, Inc",US-FL,Services-Help Supply Services,9,0.72631
+2024,1467373,Accenture plc,IE-,"Services-Business Services, NEC",9,75.7023699999998
+2023,1327068,"United States Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,-0.46043522000000126
+2022,96885,TEL-INSTRUMENT ELECTRONICS CORP.,US-NJ,Electronic Components & Accessories,7,-0.00122988
+2023,1590976,"MALIBU BOATS, INC.",US-TN,Ship & Boat Building & Repairing,1,0.6460800000000002
+2024,1490906,"Capitol Federal Financial, Inc.",US-KS,"Savings Institution, Federally Chartered",8,0.48489
+2024,1549966,Silvercrest Asset Management Group Inc.,US-NY,Investment Advice,3,0.09535
+2021,1128361,"HOPE BANCORP, INC.",US-CA,National Commercial Banks,4,2.045720000000002
+2024,1304492,Anterix Inc.,US-NJ,Telephone Communications (No Radiotelephone),9,-0.2025200000000001
+2023,874866,CORVEL CORPORATION,US-TX,"Insurance Agents, Brokers & Service",3,0.68545
+2021,1169561,"Commvault Systems, Inc",US-NJ,Services-Prepackaged Software,5,0.3574
+2024,768408,Cyanotech Corp,US-HI,Medicinal Chemicals & Botanical Products,2,-0.03596
+2021,1300514,LAS VEGAS SANDS CORP.,US-NV,Hotels & Motels,9,-9.60999999999998
+2022,875582,NORTHERN TECHNOLOGIES INTERNATIONAL CORPORATION,US-MN,"Coating, Engraving & Allied Services",1,0.026854230000000003
+2021,320187,"NIKE, Inc.",US-OR,Rubber & Plastics Footwear,1,61.09
+2021,912603,"RADIUS RECYCLING, INC.",US-OR,Wholesale-Misc Durable Goods,6,0.15848
+2024,72573,"MOVADO GROUP, INC.",US-NJ,"Watches, Clocks, Clockwork Operated Devices/Parts",1,0.18364
+2021,1319161,Warner Music Group Corp.,US-NY,Services-Amusement & Recreation Services,9,4.26
+2021,900075,"COPART, INC.",US-TX,Retail-Auto Dealers & Gasoline Stations,6,11.21366999999996
+2021,29644,"DONALDSON COMPANY, INC.",US-MN,Industrial & Commercial Fans & Blowers & Air Purifing Equip,1,3.177000000000004
+2023,1629210,PARAMOUNT GOLD NEVADA CORP.,US-NV,Metal Mining,1,-0.06944239
+2024,1604028,"ADVANCED DRAINAGE SYSTEMS, INC.",US-OH,Plastics Foam Products,1,4.786539999999999
+2021,109177,"Spectrum Brands Holdings, Inc.",US-WI,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,1.2570000000000001
+2023,939930,"Pyxus International, Inc.",US-NC,Wholesale-Farm Product Raw Materials,1,0.10400999999999991
+2023,1074828,"KNOW LABS, INC.",US-WA,Finance Services,9,-0.1557668
+2024,1124140,EXACT SCIENCES CORPORATION,US-WI,Services-Medical Laboratories,9,-10.28856999999998
+2021,14693,Brown-Forman Corporation,US-KY,Beverages,2,9.05999999999997
+2021,910521,DECKERS OUTDOOR CORP,US-CA,Rubber & Plastics Footwear,1,4.165879999999991
+2021,57515,Lancaster Colony Corporation,US-OH,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties",6,1.2281900000000001
+2022,1295947,PRESTIGE CONSUMER HEALTHCARE INC.,US-NY,Pharmaceutical Preparations,2,2.084609999999998
+2023,1209709,CERES TACTICAL SYSTEMATIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,-0.0687670999999999
+2021,1157647,"Western New England Bancorp, Inc.",US-MA,"Savings Institution, Federally Chartered",8,0.23699
+2023,69891,National Beverage Corp.,US-FL,Bottled & Canned Soft Drinks & Carbonated Waters,0,1.673719999999999
+2022,1078271,"EXTREME NETWORKS, INC.",US-NC,Computer Communications Equipment,7,0.5616399999999999
+2022,1376986,TENNESSEE VALLEY AUTHORITY,US-TN,Electric Services,9,8.22
+2022,866706,ESCO TECHNOLOGIES INC.,US-MO,"Communications Equipment, NEC",7,0.77656
+2021,1486957,"BWX TECHNOLOGIES, INC.",US-VA,Engines & Turbines,1,3.0587100000000023
+2022,6951,APPLIED MATERIALS INC /DE,US-CA,Semiconductors & Related Devices,7,64.65
+2022,868857,AECOM,US-TX,Services-Engineering Services,9,3.3699000000000003
+2023,1493594,"MACOM Technology Solutions Holdings, Inc.",US-MA,Semiconductors & Related Devices,7,0.61987
+2021,1069899,Phibro Animal Health Corporation,US-NJ,Pharmaceutical Preparations,2,0.48603000000000013
+2024,1126956,Spire Inc.,US-MO,Natural Gas Distribution,0,2.60399999999999
+2023,8947,AZZ Inc.,US-TX,"Coating, Engraving & Allied Services",1,0.63202
+2022,704172,"PHI GROUP, INC.",US-CA,Services-Management Services,9,-0.028636889999999998
+2024,1390777,THE BANK OF NEW YORK MELLON CORPORATION,US-NY,State Commercial Banks,4,45.3
+2021,1538495,"EARTH SCIENCE TECH, INC.",US-FL,Pharmaceutical Preparations,2,0.02987047
+2021,1636519,MADISON SQUARE GARDEN SPORTS CORP.,US-NY,Services-Miscellaneous Amusement & Recreation,9,0.1037599999999998
+2022,1405528,"United States 12 Month Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.38362556000000025
+2021,1567514,"Intra-Cellular Therapies, Inc.",US-NJ,Pharmaceutical Preparations,2,-1.6233140400000001
+2024,1348911,"KALVISTA PHARMACEUTICALS, INC.",US-MA,Pharmaceutical Preparations,2,-1.7103800000000011
+2022,1694426,"DELEK US HOLDINGS, INC.",US-TN,Petroleum Refining,0,2.57099999999999
+2022,1397016,"OPTEX SYSTEMS HOLDINGS, INC.",US-TX,Optical Instruments & Lenses,1,0.00482
+2022,108385,WORLD ACCEPTANCE CORPORATION,US-SC,Personal Credit Institutions,8,0.14985
+2022,933034,STRATTEC SECURITY CORP,US-WI,Motor Vehicle Parts & Accessories,1,0.06536
+2023,110621,RPM INTERNATIONAL INC/DE/,US-OH,"Paints, Varnishes, Lacquers, Enamels & Allied Prods",1,4.00535
+2022,1297341,KENTUCKY FIRST FEDERAL BANCORP,US-KY,"Savings Institution, Federally Chartered",8,0.01484
+2022,1589150,"REGEN BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,1.337929119999997
+2022,915840,"BEAZER HOMES USA, INC.",US-GA,Operative Builders,1,1.77651
+2024,1472494,"United States Brent Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.10597826999999999
+2024,866706,ESCO TECHNOLOGIES INC.,US-MO,"Communications Equipment, NEC",7,1.05152
+2022,1300514,LAS VEGAS SANDS CORP.,US-NV,Hotels & Motels,9,18.3199999999999
+2022,707549,LAM RESEARCH CORPORATION,US-CA,"Special Industry Machinery, NEC",1,49.379419999999996
+2023,80420,"Powell Industries, Inc.",US-TX,Switchgear & Switchboard Apparatus,7,0.7744800000000001
+2024,1567514,"Intra-Cellular Therapies, Inc.",US-NJ,Pharmaceutical Preparations,2,-0.7467600000000001
+2023,1348911,"KALVISTA PHARMACEUTICALS, INC.",US-MA,Pharmaceutical Preparations,2,-1.03298
+2021,1003078,"MSC INDUSTRIAL DIRECT CO., INC.",US-NY,Wholesale-Industrial Machinery & Equipment,1,2.09984
+2022,1040470,AEHR TEST SYSTEMS,US-CA,Instruments For Meas & Testing of  Electricity & Elec Signals,7,0.1235099999999999
+2022,817720,SYNAPTICS INCORPORATED,US-CA,Semiconductors & Related Devices,7,2.164000000000002
+2024,788329,Johnson Outdoors Inc.,US-WI,"Sporting & Athletic Goods, NEC",1,-0.0989
+2024,910521,DECKERS OUTDOOR CORP,US-CA,Rubber & Plastics Footwear,1,9.42224999999998
+2024,276720,PURE CYCLE CORPORATION,US-CO,Water Supply,0,0.09705
+2024,1350593,"MUELLER WATER PRODUCTS, INC.",US-GA,Miscellaneous Fabricated Metal Products,1,1.742000000000002
+2021,89439,"MUELLER INDUSTRIES, INC.",US-TN,Rolling Drawing & Extruding of  Nonferrous Metals,1,4.685199999999999
+2024,1504008,"BankUnited, Inc.",US-FL,"Savings Institution, Federally Chartered",8,2.324669999999999
+2022,1124140,EXACT SCIENCES CORPORATION,US-WI,Services-Medical Laboratories,9,-6.44521999999999
+2024,1116132,"Tapestry, Inc.",US-NY,Leather & Leather Products,1,7.758000000000001
+2021,74260,OLD REPUBLIC INTERNATIONAL CORPORATION,US-IL,Surety Insurance,9,15.341999999999992
+2024,1058811,Immersion Corporation,US-FL,"Computer Peripheral Equipment, NEC",7,0.9022899999999999
+2021,320193,Apple Inc.,US-CA,Electronic Computers,7,1017.479999999999
+2023,859070,FIRST COMMUNITY BANKSHARES INC /VA/,US-VA,State Commercial Banks,4,0.4801999999999999
+2022,900075,"COPART, INC.",US-TX,Retail-Auto Dealers & Gasoline Stations,6,10.96764999999999
+2024,1074828,"KNOW LABS, INC.",US-WA,Finance Services,9,-0.1827009200000001
+2022,1630113,BIOTRICITY INC.,US-CA,Surgical & Medical Instruments & Apparatus,1,-0.2109556400000001
+2022,789019,MICROSOFT CORPORATION,US-WA,Services-Prepackaged Software,5,715.109999999999
+2021,80424,PROCTER & GAMBLE CO,US-OH,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",2,148.7299999999997
+2021,65312,"EVI Industries, Inc.",US-FL,Services-Personal Services,9,0.037970000000000004
+2022,1598665,"Heritage Insurance Holdings, Inc.",US-FL,"Fire, Marine & Casualty Insurance",1,-1.5436399999999981
+2021,1039280,"NETSOL TECHNOLOGIES, INC.",US-CA,Services-Prepackaged Software,5,0.0034829199999999987
+2023,1297341,KENTUCKY FIRST FEDERAL BANCORP,US-KY,"Savings Institution, Federally Chartered",8,-0.0024799999999999996
+2023,1126956,Spire Inc.,US-MO,Natural Gas Distribution,0,2.211000000000001
+2024,72331,NORDSON CORPORATION,US-OH,"General Industrial Machinery & Equipment, NEC",1,4.47523
+2021,785786,PLEXUS CORP.,US-WI,Printed Circuit Boards,7,1.20404
+2022,34563,FARMER BROTHERS CO,US-TX,Miscellaneous Food Preparations & Kindred Products,2,-0.2906200000000001
+2024,1376227,"United States Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.65145775
+2023,858877,"CISCO SYSTEMS, INC.",US-CA,Computer Communications Equipment,7,126.9599999999997
+2024,765207,"FIRST BANCORP, INC",US-ME,National Commercial Banks,4,0.27044999999999997
+2021,100493,"TYSON FOODS, INC.",US-AR,Poultry Slaughtering and Processing,1,30.94999999999994
+2024,65270,"METHODE ELECTRONICS, INC.",US-IL,Electronic Connectors,7,-0.459
+2021,1609258,PETROGAS COMPANY,US-TX,Crude Petroleum & Natural Gas,0,-1.05094729
+2024,862668,Escalon Medical Corp.,US-PA,Electromedical & Electrotherapeutic Apparatus,1,-0.00110494
+2024,1564708,NEWS CORPORATION,US-NY,Newspapers: Publishing or  Publishing & Printing,6,4.139999999999991
+2023,723125,"Micron Technology, Inc.",US-ID,Semiconductors & Related Devices,7,-73.38
+2021,1350593,"MUELLER WATER PRODUCTS, INC.",US-GA,Miscellaneous Fabricated Metal Products,1,0.6910000000000001
+2023,1570132,"ANVI GLOBAL HOLDINGS, INC.",US-NC,Retail-Food Stores,6,-0.00185848
+2021,1564708,NEWS CORPORATION,US-NY,Newspapers: Publishing or  Publishing & Printing,6,5.889999999999998
+2021,849401,"ADM TRONICS UNLIMITED, INC.",US-NJ,Electromedical & Electrotherapeutic Apparatus,1,-0.0020809599999999998
+2021,1078075,"NETSCOUT SYSTEMS, INC.",US-MA,Services-Computer Integrated Systems Design,5,0.733009999999999
+2021,1438943,"RANGE IMPACT, INC.",US-OH,Heavy Construction Other Than Bldg Const - Contractors,1,0.02771800000000004
+2021,771856,"CHAMPIONS ONCOLOGY, INC.",US-NJ,"Biological Products, (No Diagnostic Substances)",2,0.01850999999999999
+2023,936395,Ciena Corp,US-MD,Telephone & Telegraph Apparatus,7,1.666669999999999
+2022,1377789,"AVIAT NETWORKS, INC.",US-TX,Radio & Tv Broadcasting & Communications Equipment,7,0.1535799999999998
+2023,1078075,"NETSCOUT SYSTEMS, INC.",US-MA,Services-Computer Integrated Systems Design,5,-0.6269700000000001
+2021,1046257,INGREDION INCORPORATED,US-IL,Grain Mill Products,1,1.17
+2023,1530721,CAPRI HOLDINGS LTD,GB-,Leather & Leather Products,1,4.6800000000000015
+2024,47217,HP INC.,US-CA,Computer & office Equipment,1,24.51999999999997
+2021,1529377,ARES COMMERCIAL REAL ESTATE CORPORATION,US-NY,Real Estate Investment Trusts,3,0.6046
+2023,1486957,"BWX TECHNOLOGIES, INC.",US-VA,Engines & Turbines,1,2.4584900000000003
+2021,857005,PTC Inc.,US-MA,Services-Prepackaged Software,5,2.577570000000001
+2024,1319161,Warner Music Group Corp.,US-NY,Services-Amusement & Recreation Services,9,6.099999999999992
+2022,1511737,UBIQUITI INC.,US-NY,Radio & Tv Broadcasting & Communications Equipment,7,3.060949999999999
+2023,810136,"PHOTRONICS, INC.",US-CT,Semiconductors & Related Devices,7,1.45967
+2024,80424,PROCTER & GAMBLE CO,US-OH,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",2,160.9699999999998
+2022,1529377,ARES COMMERCIAL REAL ESTATE CORPORATION,US-NY,Real Estate Investment Trusts,3,0.29785
+2021,772406,"CIRRUS LOGIC, INC.",US-TX,Semiconductors & Related Devices,7,2.55222
+2024,66004,MIDDLESEX WATER COMPANY,US-NJ,Water Supply,0,0.44351
+2022,1002047,"NetApp, Inc.",US-CA,Computer Storage Devices,7,12.809999999999981
+2022,1530950,"Post Holdings, Inc.",US-MO,Grain Mill Products,1,9.555999999999989
+2021,817720,SYNAPTICS INCORPORATED,US-CA,Semiconductors & Related Devices,7,1.3730000000000002
+2023,1022408,ePlus inc.,US-VA,Wholesale-Computers & Peripheral Equipment & Software,1,1.29487
+2024,38777,"FRANKLIN RESOURCES, INC.",US-CA,Investment Advice,3,6.3580000000000005
+2024,48465,HORMEL FOODS CORPORATION,US-MN,Meat Packing Plants,1,7.1325499999999895
+2024,868857,AECOM,US-TX,Services-Engineering Services,9,4.36594999999999
+2021,1481504,"XERIANT, INC.",US-FL,Aircraft,1,-0.10643284
+2024,918646,EAGLE MATERIALS INC,US-TX,"Cement, Hydraulic",0,5.0698799999999995
+2022,1413837,FIRST FOUNDATION INC.,US-TX,State Commercial Banks,4,1.10512
+2023,1436425,"HOME BANCORP, INC.",US-LA,"Savings Institutions, Not Federally Chartered",8,0.40240000000000004
+2021,23217,"CONAGRA BRANDS, INC.",US-IL,Food and Kindred Products,6,11.25599999999996
+2022,1116132,"Tapestry, Inc.",US-NY,Leather & Leather Products,1,7.70599999999999
+2023,1175535,Whitestone REIT,US-TX,Real Estate Investment Trusts,3,0.19180000000000003
+2024,1408534,"FIRST GUARANTY BANCSHARES, INC.",US-LA,"Savings Institution, Federally Chartered",8,0.12448
+2023,1000230,OPTICAL CABLE CORPORATION,US-VA,Drawing & Insulating of  Nonferrous Wire,1,-0.0016875999999999992
+2023,730263,"THOR Industries, Inc.",US-IN,Motor Homes,1,3.0221999999999998
+2021,50292,IEH Corporation,US-NY,Electronic Connectors,7,0.029323779999999997
+2022,1350593,"MUELLER WATER PRODUCTS, INC.",US-GA,Miscellaneous Fabricated Metal Products,1,0.991
+2022,927653,McKESSON CORPORATION,US-TX,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,27.66
+2022,1039280,"NETSOL TECHNOLOGIES, INC.",US-CA,Services-Prepackaged Software,5,-0.03270595
+2021,100378,TWIN DISC INC,US-WI,General Industrial Machinery & Equipment,1,-0.017279999999999997
+2021,1633978,Lumentum Holdings Inc.,US-CA,"Communications Equipment, NEC",7,3.852
+2021,862668,Escalon Medical Corp.,US-PA,Electromedical & Electrotherapeutic Apparatus,1,-0.00010864000000000013
+2024,875582,NORTHERN TECHNOLOGIES INTERNATIONAL CORPORATION,US-MN,"Coating, Engraving & Allied Services",1,0.04215468
+2024,1157075,"PHARMACYTE BIOTECH, INC.",US-NV,"Biological Products, (No Diagnostic Substances)",2,0.18286929999999998
+2021,34563,FARMER BROTHERS CO,US-TX,Miscellaneous Food Preparations & Kindred Products,2,-0.3521200000000001
+2021,1627223,The Chemours Company,US-DE,Chemicals & Allied Products,2,5.899999999999981
+2021,1377789,"AVIAT NETWORKS, INC.",US-TX,Radio & Tv Broadcasting & Communications Equipment,7,1.0816
+2021,715446,"ANIXA BIOSCIENCES, INC.",US-CA,Pharmaceutical Preparations,2,-0.11026
+2022,32621,EMERSON RADIO CORP,US-NJ,Household Audio & Video Equipment,7,-0.026350000000000002
+2022,913778,BF GARDEN TAX CREDIT FUND IV L.P.,US-MA,Operators of  Apartment Buildings,9,0.03220055
+2023,711404,"The Cooper Companies, Inc.",US-CA,Ophthalmic Goods,1,2.9160000000000013
+2021,1040470,AEHR TEST SYSTEMS,US-CA,Instruments For Meas & Testing of  Electricity & Elec Signals,7,0.012449999999999989
+2022,807882,JACK IN THE BOX INC.,US-CA,Retail-Eating  Places,6,1.067640000000001
+2022,890066,GLEN BURNIE BANCORP,US-MD,State Commercial Banks,4,0.01745000000000001
+2021,1071840,"SOLARWINDOW TECHNOLOGIES, INC.",US-AZ,Industrial Organic Chemicals,2,-0.07088196000000001
+2021,1169770,"BANC OF CALIFORNIA, INC.",US-CA,National Commercial Banks,4,0.6234600000000001
+2022,833444,JOHNSON CONTROLS INTERNATIONAL PLC,IE-,Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip,1,8.87
+2022,47217,HP INC.,US-CA,Computer & office Equipment,1,43.469999999999985
+2021,935703,"DOLLAR TREE, INC.",US-VA,Retail-Variety Stores,6,10.90499999999997
+2021,1078271,"EXTREME NETWORKS, INC.",US-NC,Computer Communications Equipment,7,0.32981
+2022,1171155,"RADIANT LOGISTICS, INC.",US-WA,Arrangement of  Transportation of  Freight & Cargo,1,0.4040300000000001
+2023,89439,"MUELLER INDUSTRIES, INC.",US-TN,Rolling Drawing & Extruding of  Nonferrous Metals,1,6.02897
+2023,1024478,"Rockwell Automation, Inc.",US-WI,"Measuring & Controlling Devices, NEC",7,13.99399999999996
+2022,80172,NATIONAL PRESTO INDUSTRIES INC,US-WI,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.20699
+2022,73290,"BIOMERICA, INC.",US-CA,In Vitro & In Vivo Diagnostic Substances,2,-0.03906336
+2024,763532,LSI INDUSTRIES INC.,US-OH,Electric Lighting & Wiring Equipment,1,0.22357999999999978
+2024,779152,"JACK HENRY & ASSOCIATES, INC.",US-MO,Services-Computer Integrated Systems Design,5,3.912339999999999
+2021,73309,NUCOR CORPORATION,US-NC,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",1,68.27460999999998
+2022,66756,"ALLETE, Inc.",US-MN,Electric & Other Services Combined,9,1.8930000000000011
+2024,713425,"LOGILITY SUPPLY CHAIN SOLUTIONS, INC.",US-GA,Services-Prepackaged Software,5,0.07156
+2024,857005,PTC Inc.,US-MA,Services-Prepackaged Software,5,3.346329999999997
+2024,886128,"FUELCELL ENERGY, INC.",US-CT,Electrical Industrial Apparatus,1,-1.25786
+2021,1209709,CERES TACTICAL SYSTEMATIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.07117000000000011
+2023,1517681,"PROPANC BIOPHARMA, INC.",AU-,Pharmaceutical Preparations,2,-0.02554868
+2023,1472494,"United States Brent Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,-0.04091719000000013
+2022,1564708,NEWS CORPORATION,US-NY,Newspapers: Publishing or  Publishing & Printing,6,2.710000000000002
+2024,318299,"SPARTA COMMERCIAL SERVICES, INC.",US-NY,"Services-Business Services, NEC",9,-0.018845
+2022,89439,"MUELLER INDUSTRIES, INC.",US-TN,Rolling Drawing & Extruding of  Nonferrous Metals,1,6.58316
+2021,1441236,CLEARWATER PAPER CORPORATION,US-WA,Paperboard Mills,1,-0.35700000000000104
+2022,720005,"RAYMOND JAMES FINANCIAL, INC.",US-FL,"Security Brokers, Dealers & Flotation Companies",3,14.34
+2022,1571996,Dell Technologies Inc.,US-TX,Electronic Computers,7,20.72999999999997
+2023,785956,J&J SNACK FOODS CORP.,US-NJ,Cookies & Crackers,6,0.2703400000000003
+2024,849401,"ADM TRONICS UNLIMITED, INC.",US-NJ,Electromedical & Electrotherapeutic Apparatus,1,-0.0012321099999999998
+2023,100726,"UNIFI, INC.",US-NC,Textile Mill Products,1,-0.5358900000000001
+2024,14693,Brown-Forman Corporation,US-KY,Beverages,2,10.079999999999991
+2021,91767,SONOCO PRODUCTS COMPANY,US-SC,Paperboard Containers & Boxes,1,3.3379600000000003
+2022,1634117,"BARNES & NOBLE EDUCATION, INC.",US-NJ,Retail-Miscellaneous Shopping Goods Stores,6,-0.66568
+2021,1046050,"TIMBERLAND BANCORP, INC.",US-WA,"Savings Institutions, Not Federally Chartered",8,0.25778
+2022,31667,EDUCATIONAL DEVELOPMENT CORPORATION,US-OK,Wholesale-Miscellaneous Nondurable Goods,6,-0.002612999999999989
+2023,1049521,"MERCURY SYSTEMS, INC.",US-MA,Electronic Components & Accessories,7,-0.7197700000000012
+2022,1633978,Lumentum Holdings Inc.,US-CA,"Communications Equipment, NEC",7,0.199
+2022,882835,"ROPER TECHNOLOGIES, INC.",US-FL,"Industrial Instruments For Measurement, Display, and Control",1,45.44699999999999
+2021,712770,"ONE LIBERTY PROPERTIES, INC.",US-NY,Real Estate Investment Trusts,3,0.3885699999999999
+2024,100493,"TYSON FOODS, INC.",US-AR,Poultry Slaughtering and Processing,1,8.85999999999999
+2021,1157408,"Stride, Inc.",US-VA,Services-Educational Services,9,0.8369900000000001
+2021,38777,"FRANKLIN RESOURCES, INC.",US-CA,Investment Advice,3,17.11799999999997
+2023,1117297,"QuinStreet, Inc.",US-CA,"Services-Business Services, NEC",9,-0.23077000000000003
+2023,1497253,"Organovo Holdings, Inc.",US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.1489
+2024,109563,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",US-OH,"Wholesale-Machinery, Equipment & Supplies",1,3.7978700000000023
+2022,1570132,"ANVI GLOBAL HOLDINGS, INC.",US-NC,Retail-Food Stores,6,-0.00229205
+2023,867840,"PRECISION OPTICS CORPORATION, INC.",US-MA,Electromedical & Electrotherapeutic Apparatus,1,-0.02020081
+2021,1634117,"BARNES & NOBLE EDUCATION, INC.",US-NJ,Retail-Miscellaneous Shopping Goods Stores,6,-1.0619000000000018
+2023,1314052,ANAVEX LIFE SCIENCES CORP.,US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.4428899999999999
+2024,1050825,STEELCASE INC,US-MI,Office Furniture (No Wood),1,1.1440000000000001
+2021,66004,MIDDLESEX WATER COMPANY,US-NJ,Water Supply,0,0.36543000000000003
+2022,1409375,"Orion Energy Systems, Inc.",US-WI,Electric Lighting & Wiring Equipment,1,-0.30405
+2022,1230245,PIPER SANDLER COMPANIES,US-MN,"Security Brokers, Dealers & Flotation Companies",3,1.106739999999999
+2022,1327068,"United States Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,7.852402769999979
+2022,25895,"Crown Crafts, Inc.",US-LA,"Broadwoven Fabric Mills, Cotton",1,0.08644
+2024,896156,Ethan Allen Interiors Inc.,US-CT,"Wood Household Furniture, (No Upholstered)",1,0.5562900000000001
+2021,9092,"BADGER METER, INC.",US-WI,Totalizing Fluid Meters & Counting Devices,1,0.60884
+2024,867840,"PRECISION OPTICS CORPORATION, INC.",US-MA,Electromedical & Electrotherapeutic Apparatus,1,-0.02915038000000001
+2021,1381668,TFS FINANCIAL CORPORATION,US-OH,"Savings Institution, Federally Chartered",8,0.71111
+2024,1609258,PETROGAS COMPANY,US-TX,Crude Petroleum & Natural Gas,0,-0.00073881
+2024,800240,The ODP Corporation,US-FL,Retail-Miscellaneous Shopping Goods Stores,6,-0.030000000000000002
+2023,1410738,VoIP-PAL.COM INC.,US-TX,Telephone & Telegraph Apparatus,7,-0.43801801
+2024,57515,Lancaster Colony Corporation,US-OH,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties",6,1.3404300000000011
+2022,1074828,"KNOW LABS, INC.",US-WA,Finance Services,9,-0.1597016899999999
+2022,1604778,"Qorvo, Inc.",US-NC,Semiconductors & Related Devices,7,4.578309999999999
+2022,37785,FMC CORPORATION,US-PA,Chemicals & Allied Products,2,7.3649999999999896
+2022,1032220,"Maximus, Inc.",US-VA,"Services-Business Services, NEC",9,1.5276100000000001
+2023,1040470,AEHR TEST SYSTEMS,US-CA,Instruments For Meas & Testing of  Electricity & Elec Signals,7,0.1902700000000001
+2023,823277,CHS Inc.,US-MN,Wholesale-Farm Product Raw Materials,1,19.10241999999998
+2021,1083743,"FLUX POWER HOLDINGS, INC.",US-CA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,-0.13192
+2021,1530950,"Post Holdings, Inc.",US-MO,Grain Mill Products,1,-0.19500000000000012
+2022,720875,Dynatronics Corporation,US-MN,Surgical & Medical Instruments & Apparatus,1,-0.04381281
+2022,1262104,"MEI Pharma, Inc.",US-CA,Pharmaceutical Preparations,2,-0.23821000000000003
+2021,789019,MICROSOFT CORPORATION,US-WA,Services-Prepackaged Software,5,701.84
+2022,912603,"RADIUS RECYCLING, INC.",US-OR,Wholesale-Misc Durable Goods,6,0.15848
+2022,1628908,"Evolent Health, Inc.",US-VA,Services-Management Services,9,-0.056920000000000005
+2021,785956,J&J SNACK FOODS CORP.,US-NJ,Cookies & Crackers,6,0.2633600000000004
+2023,1308547,"DOLBY LABORATORIES, INC.",US-CA,Patent Owners & Lessors,1,1.954749999999999
+2023,1570585,Liberty Global Ltd.,BM-,Cable & Other Pay Television Services,9,-40.51699999999989
+2022,1141103,"Cross Country Healthcare, Inc",US-FL,Services-Help Supply Services,9,1.88461
+2023,55242,KENNAMETAL INC.,US-PA,"Machine Tools, Metal Cutting Types",1,1.17039
+2023,1544190,"SHEPHERD’S FINANCE, LLC",US-FL,Short-Term Business Credit Institutions,8,0.02578
+2023,36840,"FIRST REAL ESTATE INVESTMENT TRUST OF NEW JERSEY, INC.",US-NJ,Real Estate Investment Trusts,3,-0.001710000000000001
+2021,1403475,Bank of Marin Bancorp,US-CA,State Commercial Banks,4,0.3322800000000002
+2024,1618921,"WALGREENS BOOTS ALLIANCE, INC.",US-IL,Retail-Drug Stores and Proprietary Stores,6,-54.8499999999998
+2022,1613103,Medtronic plc,IE-,Electromedical & Electrotherapeutic Apparatus,1,40.579999999999984
+2022,1227654,"Compass Minerals International, Inc.",US-KS,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),0,-0.282
+2022,763532,LSI INDUSTRIES INC.,US-OH,Electric Lighting & Wiring Equipment,1,0.21473
+2021,1530721,CAPRI HOLDINGS LTD,GB-,Leather & Leather Products,1,9.19999999999998
+2023,23217,"CONAGRA BRANDS, INC.",US-IL,Food and Kindred Products,6,11.686999999999959
+2023,1350593,"MUELLER WATER PRODUCTS, INC.",US-GA,Miscellaneous Fabricated Metal Products,1,0.846
+2023,946673,BANNER CORPORATION,US-WA,State Commercial Banks,4,1.83624
+2021,1050825,STEELCASE INC,US-MI,Office Furniture (No Wood),1,0.12800000000000006
+2021,1048911,FedEx Corporation,US-TN,Air Courier Services,9,39.4
+2022,1472494,"United States Brent Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.8257075899999979
+2023,915840,"BEAZER HOMES USA, INC.",US-GA,Operative Builders,1,1.44069
+2023,825324,Good Times Restaurants Inc.,US-CO,Retail-Eating  Places,6,0.11749
+2024,1141103,"Cross Country Healthcare, Inc",US-FL,Services-Help Supply Services,9,0.16877999999999999
+2021,1074871,"MODULAR MEDICAL, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,-0.159287
+2022,1177609,"Five Below, Inc.",US-PA,Retail-Variety Stores,6,2.6152799999999994
+2022,1096752,EDGEWELL PERSONAL CARE COMPANY,US-CT,"Perfumes, Cosmetics & Other Toilet Preparations",2,1.004000000000001
+2024,1403475,Bank of Marin Bancorp,US-CA,State Commercial Banks,4,-0.08408999999999989
+2021,108385,WORLD ACCEPTANCE CORPORATION,US-SC,Personal Credit Institutions,8,0.80421
+2022,109380,"ZIONS BANCORPORATION, NATIONAL ASSOCIATION",US-UT,National Commercial Banks,4,9.06999999999997
+2023,1383312,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",US-NY,"Services-Business Services, NEC",9,5.581999999999999
+2024,1324948,RBC BEARINGS INCORPORATED,US-CT,Ball & Roller Bearings,1,2.201000000000001
+2023,1050743,PEAPACK-GLADSTONE FINANCIAL CORPORATION,US-NJ,"Commercial Banks, NEC",4,0.4885400000000001
+2022,80424,PROCTER & GAMBLE CO,US-OH,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",2,145.8199999999996
+2022,788329,Johnson Outdoors Inc.,US-WI,"Sporting & Athletic Goods, NEC",1,0.4328799999999995
+2021,1579877,OUTFRONT Media Inc.,US-NY,Real Estate Investment Trusts,3,-0.02400000000000002
+2023,1610250,"Boot Barn Holdings, Inc.",US-CA,Retail-Shoe Stores,6,1.70329
+2022,849146,LIFEVANTAGE CORP,US-UT,Pharmaceutical Preparations,2,-0.007230000000000001
+2024,794619,American Woodmark Corp,US-VA,"Millwood, Veneer, Plywood, & Structural Wood Members",1,0.95117
+2023,1092796,"Smith & Wesson Brands, Inc.",US-TN,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,-1.9055599999999973
+2021,1397016,"OPTEX SYSTEMS HOLDINGS, INC.",US-TX,Optical Instruments & Lenses,1,0.021750000000000002
+2021,100726,"UNIFI, INC.",US-NC,Textile Mill Products,1,0.27786
+2023,723254,Cintas Corporation,US-OH,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,14.11351999999999
+2024,825324,Good Times Restaurants Inc.,US-CO,Retail-Eating  Places,6,0.03424
+2021,63296,MATTHEWS INTERNATIONAL CORP,US-PA,Nonferrous Foundries (Castings),1,-0.08104
+2024,720005,"RAYMOND JAMES FINANCIAL, INC.",US-FL,"Security Brokers, Dealers & Flotation Companies",3,20.59999999999996
+2022,1163370,"NORTHRIM BANCORP, INC.",US-AK,"Savings Institution, Federally Chartered",8,0.30741000000000007
+2023,880641,"EAGLE FINANCIAL SERVICES, INC.",US-VA,State Commercial Banks,4,0.09357
+2023,704172,"PHI GROUP, INC.",US-CA,Services-Management Services,9,-0.08259266
+2023,1396878,"United States Gasoline Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.005390559999999905
+2022,1375348,GOLDEN STAR RESOURCE CORP.,US-NV,Miscellaneous Metal Ores,1,-0.00047409000000000004
+2023,313143,HAEMONETICS CORPORATION,US-MA,Surgical & Medical Instruments & Apparatus,1,1.30135
+2024,1069899,Phibro Animal Health Corporation,US-NJ,Pharmaceutical Preparations,2,0.2697
+2023,6845,"APOGEE ENTERPRISES, INC.",US-MN,"Glass Products, Made of  Purchased Glass",1,1.07642
+2022,720154,"INOTIV, INC.",US-IN,Services-Commercial Physical & Biological Research,9,-1.0086600000000001
+2021,1171155,"RADIANT LOGISTICS, INC.",US-WA,Arrangement of  Transportation of  Freight & Cargo,1,0.22792
+2024,1327068,"United States Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,2.2111819099999988
+2022,313143,HAEMONETICS CORPORATION,US-MA,Surgical & Medical Instruments & Apparatus,1,1.0925
+2022,879407,"Arrowhead Pharmaceuticals, Inc.",US-CA,Pharmaceutical Preparations,2,-0.54444
+2021,37785,FMC CORPORATION,US-PA,Chemicals & Allied Products,2,7.39599999999999
+2023,909832,COSTCO WHOLESALE CORP /NEW,US-WA,Retail-Variety Stores,6,54.95
+2024,1209709,CERES TACTICAL SYSTEMATIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.02620272
+2022,889971,"LIGHTPATH TECHNOLOGIES, INC.",US-FL,Semiconductors & Related Devices,7,-0.030647670000000002
+2021,1141103,"Cross Country Healthcare, Inc",US-FL,Services-Help Supply Services,9,1.32002
+2021,1472494,"United States Brent Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,1.574589699999998
+2024,1336917,"UNDER ARMOUR, INC.",US-MD,Apparel & Other Finishd Prods of  Fabrics & Similar Matl,1,-1.27241999999999
+2022,936395,Ciena Corp,US-MD,Telephone & Telegraph Apparatus,7,1.3618699999999988
+2022,1371451,"HIGHWATER ETHANOL, LLC",US-MN,Industrial Organic Chemicals,2,0.1955589400000001
+2024,829224,Starbucks Corporation,US-WA,Retail-Eating & Drinking Places,6,36.62799999999997
+2024,1405513,"United States 12 Month Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,-0.012194739999999999
+2022,65270,"METHODE ELECTRONICS, INC.",US-IL,Electronic Connectors,7,0.8520000000000001
+2021,1346022,Enertopia Corporation,CA-BC,Metal Mining,1,-0.00593576
+2021,1628908,"Evolent Health, Inc.",US-VA,Services-Management Services,9,-0.4499400000000001
+2024,879526,WABASH NATIONAL CORPORATION,US-IN,Truck Trailers,1,-2.84071
+2021,1598665,"Heritage Insurance Holdings, Inc.",US-FL,"Fire, Marine & Casualty Insurance",1,-0.74726
+2023,50292,IEH Corporation,US-NY,Electronic Connectors,7,-0.04180959
+2022,14846,BRT APARTMENTS CORP.,US-NY,Real Estate Investment Trusts,3,0.49954999999999994
+2024,50292,IEH Corporation,US-NY,Electronic Connectors,7,-0.0034846299999999994
+2022,862668,Escalon Medical Corp.,US-PA,Electromedical & Electrotherapeutic Apparatus,1,-0.00968215
+2023,779544,ARK RESTAURANTS CORP.,US-NY,Retail-Eating  Places,6,0.07275999999999999
+2023,1549966,Silvercrest Asset Management Group Inc.,US-NY,Investment Advice,3,0.09094
+2023,69422,THE INTERGROUP CORPORATION,US-CA,Operators of  Apartment Buildings,9,-0.03485
+2022,1405513,"United States 12 Month Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.03632266000000019
+2022,1538495,"EARTH SCIENCE TECH, INC.",US-FL,Pharmaceutical Preparations,2,-0.00160577
+2024,730464,Adtalem Global Education Inc.,US-IL,Services-Educational Services,9,1.95663
+2023,1128361,"HOPE BANCORP, INC.",US-CA,National Commercial Banks,4,1.336730000000001
+2021,36840,"FIRST REAL ESTATE INVESTMENT TRUST OF NEW JERSEY, INC.",US-NJ,Real Estate Investment Trusts,3,0.33105
+2021,1157075,"PHARMACYTE BIOTECH, INC.",US-NV,"Biological Products, (No Diagnostic Substances)",2,-0.03573550000000001
+2023,1359841,Hanesbrands Inc.,US-NC,Retail-Apparel & Accessory Stores,6,-0.17725999999999897
+2022,1175535,Whitestone REIT,US-TX,Real Estate Investment Trusts,3,0.3526999999999999
+2022,866273,MATRIX SERVICE CO,US-OK,Construction - Special Trade Contractors,1,-0.6499600000000001
+2024,1403161,VISA INC.,US-CA,"Services-Business Services, NEC",9,195.2599999999999
+2024,725363,CEL-SCI CORPORATION,US-VA,"Biological Products, (No Diagnostic Substances)",2,-0.28031069
+2024,100726,"UNIFI, INC.",US-NC,Textile Mill Products,1,-0.33302999999999994
+2024,1165002,"WESTWOOD HOLDINGS GROUP, INC.",US-TX,Investment Advice,3,-0.030129999999999997
+2023,32621,EMERSON RADIO CORP,US-NJ,Household Audio & Video Equipment,7,0.01408
+2021,915840,"BEAZER HOMES USA, INC.",US-GA,Operative Builders,1,1.33683
+2023,1324948,RBC BEARINGS INCORPORATED,US-CT,Ball & Roller Bearings,1,1.846000000000002
+2024,913778,BF GARDEN TAX CREDIT FUND IV L.P.,US-MA,Operators of  Apartment Buildings,9,0.00250212
+2022,867840,"PRECISION OPTICS CORPORATION, INC.",US-MA,Electromedical & Electrotherapeutic Apparatus,1,0.0012214599999999997
+2024,34563,FARMER BROTHERS CO,US-TX,Miscellaneous Food Preparations & Kindred Products,2,-0.061560000000000004
+2024,1511737,UBIQUITI INC.,US-NY,Radio & Tv Broadcasting & Communications Equipment,7,4.173629999999998
+2021,896878,INTUIT INC.,US-CA,Services-Prepackaged Software,5,17.799999999999958
+2024,823277,CHS Inc.,US-MN,Wholesale-Farm Product Raw Materials,1,10.09644999999998
+2022,37472,"FLEXSTEEL INDUSTRIES, INC.",US-IA,Household Furniture,1,0.08187000000000011
+2021,885275,WILSON BANK HOLDING CO,US-TN,National Commercial Banks,4,0.3933200000000004
+2023,109177,"Spectrum Brands Holdings, Inc.",US-WI,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,36.937999999999995
+2022,1282648,Battalion Oil Corp,US-TX,Crude Petroleum & Natural Gas,0,0.18538999999999908
+2023,730464,Adtalem Global Education Inc.,US-IL,Services-Educational Services,9,1.422750000000001
+2021,1000230,OPTICAL CABLE CORPORATION,US-VA,Drawing & Insulating of  Nonferrous Wire,1,-0.05237283
+2021,1082733,"VISIUM TECHNOLOGIES, INC.",US-VA,Services-Computer Programming Services,5,-0.08927391000000001
+2022,23217,"CONAGRA BRANDS, INC.",US-IL,Food and Kindred Products,6,11.25599999999996
+2022,72331,NORDSON CORPORATION,US-OH,"General Industrial Machinery & Equipment, NEC",1,4.97517
+2023,80424,PROCTER & GAMBLE CO,US-OH,"Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",2,147.8299999999995
+2024,1497253,"Organovo Holdings, Inc.",US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.14259
+2021,1289308,EnerSys,US-PA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,1.496550000000001
+2024,63296,MATTHEWS INTERNATIONAL CORP,US-PA,Nonferrous Foundries (Castings),1,0.09109
+2021,316253,"ENZO BIOCHEM, INC.",US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.04376
+2021,1382230,"ESSA Bancorp, Inc.",US-PA,"Savings Institutions, Not Federally Chartered",8,0.1690199999999999
+2022,1050825,STEELCASE INC,US-MI,Office Furniture (No Wood),1,0.174
+2023,1096752,EDGEWELL PERSONAL CARE COMPANY,US-CT,"Perfumes, Cosmetics & Other Toilet Preparations",2,1.0710000000000002
+2022,909832,COSTCO WHOLESALE CORP /NEW,US-WA,Retail-Variety Stores,6,54.230000000000004
+2023,1066656,CERES CLASSIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.002888189999999985
+2022,355019,FONAR CORPORATION,US-NY,Electromedical & Electrotherapeutic Apparatus,1,0.08861
+2023,1320414,SELECT MEDICAL HOLDINGS CORP,US-PA,Services-Hospitals,9,2.4349100000000004
+2021,1383312,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",US-NY,"Services-Business Services, NEC",9,5.39799999999999
+2021,1114925,"LANTRONIX, INC.",US-CA,Computer Communications Equipment,7,-0.07052
+2022,1493594,"MACOM Technology Solutions Holdings, Inc.",US-MA,Semiconductors & Related Devices,7,1.2354500000000002
+2023,707605,AMERISERV FINANCIAL INC /PA/,US-PA,National Commercial Banks,4,-0.033460000000000004
+2023,1603345,AGENTIX CORP.,US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.00935794
+2024,1022408,ePlus inc.,US-VA,Wholesale-Computers & Peripheral Equipment & Software,1,1.10064
+2021,1006028,"PURE Bioscience, Inc.",US-CA,Miscellaneous Chemical Products,2,-0.031200000000000002
+2021,706863,"UNION BANKSHARES, INC.",US-VT,State Commercial Banks,4,0.13169999999999998
+2023,763532,LSI INDUSTRIES INC.,US-OH,Electric Lighting & Wiring Equipment,1,0.2701699999999998
+2024,1106838,"SONNET BIOTHERAPEUTICS HOLDINGS, INC.",US-NJ,Pharmaceutical Preparations,2,-0.09806391
+2023,31667,EDUCATIONAL DEVELOPMENT CORPORATION,US-OK,Wholesale-Miscellaneous Nondurable Goods,6,0.0024130000000000124
+2024,1297341,KENTUCKY FIRST FEDERAL BANCORP,US-KY,"Savings Institution, Federally Chartered",8,-0.00216
+2021,716314,GRAHAM CORP,US-NY,General Industrial Machinery & Equipment,1,-0.0696
+2024,8858,"AVNET, INC.",US-AZ,"Wholesale-Electronic Parts & Equipment, NEC",1,3.238769999999999
+2024,1230245,PIPER SANDLER COMPANIES,US-MN,"Security Brokers, Dealers & Flotation Companies",3,1.811139999999998
+2021,1190370,"INNOVATIVE DESIGNS, INC.",US-PA,Miscellaneous Fabricated Textile Products,1,-0.00229219
+2021,712515,ELECTRONIC ARTS INC.,US-CA,Services-Prepackaged Software,5,7.749999999999989
+2021,1050743,PEAPACK-GLADSTONE FINANCIAL CORPORATION,US-NJ,"Commercial Banks, NEC",4,0.5662200000000001
+2023,1367859,"CITIZENS COMMUNITY BANCORP, INC.",US-WI,"Savings Institution, Federally Chartered",8,0.13058999999999998
+2021,880641,"EAGLE FINANCIAL SERVICES, INC.",US-VA,State Commercial Banks,4,0.11021
+2022,100493,"TYSON FOODS, INC.",US-AR,Poultry Slaughtering and Processing,1,26.44999999999996
+2023,1346022,Enertopia Corporation,CA-BC,Metal Mining,1,-0.02393474
+2024,900075,"COPART, INC.",US-TX,Retail-Auto Dealers & Gasoline Stations,6,15.14067999999996
+2024,9092,"BADGER METER, INC.",US-WI,Totalizing Fluid Meters & Counting Devices,1,1.24942
+2024,746514,New England Realty Associates Limited Partnership,US-MA,Operators of  Apartment Buildings,9,0.15661587
+2024,1023731,"8x8, INC.",US-CA,Services-Computer Processing & Data Preparation,5,-0.43033
+2024,1624794,"CSW INDUSTRIALS, INC.",US-TX,Adhesives & Sealants,1,1.10812
+2023,912767,"UFP INDUSTRIES, INC.",US-MI,"Sawmills & Planting Mills, General",1,5.14312
+2021,730464,Adtalem Global Education Inc.,US-IL,Services-Educational Services,9,-0.06486999999999896
+2021,1405528,"United States 12 Month Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.933364389999999
+2024,729986,UNITED BANKSHARES INC/WV,US-WV,State Commercial Banks,4,3.729959999999998
+2023,1082733,"VISIUM TECHNOLOGIES, INC.",US-VA,Services-Computer Programming Services,5,-0.03261177
+2024,935419,"RCI HOSPITALITY HOLDINGS, INC.",US-TX,Retail-Eating  Places,6,0.04808999999999999
+2023,746598,BRADY CORP,US-WI,Miscellaneous Manufacturing Industries,1,1.8697299999999981
+2022,1130144,SIERRA BANCORP,US-CA,State Commercial Banks,4,0.33658999999999994
+2024,1048911,FedEx Corporation,US-TN,Air Courier Services,9,32.92999999999994
+2023,1525306,First America Resources Corporation,US-IL,"Wholesale-Electronic Parts & Equipment, NEC",1,-0.00030776
+2023,96885,TEL-INSTRUMENT ELECTRONICS CORP.,US-NJ,Electronic Components & Accessories,7,0.0038657499999999994
+2024,1530950,"Post Holdings, Inc.",US-MO,Grain Mill Products,1,4.101000000000001
+2022,46619,HEICO CORPORATION,US-FL,Aircraft Engines & Engine Parts,1,3.4311700000000043
+2024,313143,HAEMONETICS CORPORATION,US-MA,Surgical & Medical Instruments & Apparatus,1,1.409390000000001
+2023,1336917,"UNDER ARMOUR, INC.",US-MD,Apparel & Other Finishd Prods of  Fabrics & Similar Matl,1,3.9983400000000002
+2021,107140,"JOHN WILEY & SONS, INC.",US-NJ,Books: Publishing or  Publishing & Printing,6,1.465629999999999
+2023,1058811,Immersion Corporation,US-FL,"Computer Peripheral Equipment, NEC",7,0.2066600000000001
+2023,73290,"BIOMERICA, INC.",US-CA,In Vitro & In Vivo Diagnostic Substances,2,-0.05939
+2023,887343,"COLUMBIA BANKING SYSTEM, INC.",US-WA,State Commercial Banks,4,3.48715
+2022,1106838,"SONNET BIOTHERAPEUTICS HOLDINGS, INC.",US-NJ,Pharmaceutical Preparations,2,-0.2950468099999999
+2023,1289308,EnerSys,US-PA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,2.5259400000000003
+2023,91767,SONOCO PRODUCTS COMPANY,US-SC,Paperboard Containers & Boxes,1,4.74959
+2023,891024,"PATTERSON COMPANIES, INC.",US-MN,"Wholesale-Medical, Dental & Hospital Equipment & Supplies",1,1.72824
+2024,1165320,GB SCIENCES INC,US-NV,Crude Petroleum & Natural Gas,0,-0.00763175
+2024,909832,COSTCO WHOLESALE CORP /NEW,US-WA,Retail-Variety Stores,6,68.41
+2023,834071,TOYOTA MOTOR CREDIT CORPORATION,US-TX,Personal Credit Institutions,8,14.94999999999997
+2021,109563,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",US-OH,"Wholesale-Machinery, Equipment & Supplies",1,2.2212099999999984
+2022,1567514,"Intra-Cellular Therapies, Inc.",US-NJ,Pharmaceutical Preparations,2,-1.6233140400000001
+2021,1403161,VISA INC.,US-CA,"Services-Business Services, NEC",9,121.34999999999991
+2022,713425,"LOGILITY SUPPLY CHAIN SOLUTIONS, INC.",US-GA,Services-Prepackaged Software,5,0.0218
+2022,785956,J&J SNACK FOODS CORP.,US-NJ,Cookies & Crackers,6,0.2633600000000004
+2023,896429,"Cantaloupe, Inc.",US-PA,Calculating & Accounting Machines (No Electronic Computers),1,0.19027
+2024,29644,"DONALDSON COMPANY, INC.",US-MN,Industrial & Commercial Fans & Blowers & Air Purifing Equip,1,4.219
+2024,890066,GLEN BURNIE BANCORP,US-MD,State Commercial Banks,4,-0.0011184200000000002
+2022,1075736,"Crexendo, Inc.",US-AZ,Telephone Communications (No Radiotelephone),9,-0.35413
+2021,1016178,"CARVER BANCORP, INC.",US-NY,"Savings Institution, Federally Chartered",8,-0.019410000000000024
+2021,1023731,"8x8, INC.",US-CA,Services-Computer Processing & Data Preparation,5,-1.5793199999999992
+2021,1376986,TENNESSEE VALLEY AUTHORITY,US-TN,Electric Services,9,10.05
+2022,1438943,"RANGE IMPACT, INC.",US-OH,Heavy Construction Other Than Bldg Const - Contractors,1,-0.01072176
+2023,1165320,GB SCIENCES INC,US-NV,Crude Petroleum & Natural Gas,0,-0.01343402
+2023,1538495,"EARTH SCIENCE TECH, INC.",US-FL,Pharmaceutical Preparations,2,0.007328919999999999
+2023,927653,McKESSON CORPORATION,US-TX,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,32.89999999999998
+2021,933974,"Azenta, Inc.",US-MA,"Special Industry Machinery, NEC",1,1.01556
+2021,1066656,CERES CLASSIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.0808893600000001
+2022,1520697,"Acadia Healthcare Company, Inc.",US-TN,"Services-Specialty Outpatient Facilities, NEC",9,2.731390000000002
+2021,8947,AZZ Inc.,US-TX,"Coating, Engraving & Allied Services",1,0.7856000000000001
+2023,706863,"UNION BANKSHARES, INC.",US-VT,State Commercial Banks,4,0.11257
+2024,833444,JOHNSON CONTROLS INTERNATIONAL PLC,IE-,Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip,1,20.91999999999993
+2023,1341439,Oracle Corporation,US-TX,Services-Prepackaged Software,5,87.1499999999998
+2023,1405528,"United States 12 Month Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,-0.0005652000000000018
+2022,1165320,GB SCIENCES INC,US-NV,Crude Petroleum & Natural Gas,0,0.03065619
+2022,1020859,"UNITED NATURAL FOODS, INC.",US-RI,"Wholesale-Groceries, General Line",6,2.19
+2022,733590,"Transcontinental Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,4.682619999999989
+2023,66756,"ALLETE, Inc.",US-MN,Electric & Other Services Combined,9,2.471000000000001
+2023,1521951,"FIRST BUSINESS FINANCIAL SERVICES, INC.",US-WI,State Commercial Banks,4,0.37026999999999993
+2021,24090,"CITIZENS, INC.",US-TX,Life Insurance,9,0.3678700000000001
+2024,1486957,"BWX TECHNOLOGIES, INC.",US-VA,Engines & Turbines,1,2.8194100000000013
+2022,874015,"IONIS PHARMACEUTICALS, INC.",US-CA,Pharmaceutical Preparations,2,-3.27865
+2022,100378,TWIN DISC INC,US-WI,General Industrial Machinery & Equipment,1,0.04786
+2021,90168,"SIFCO Industries, Inc.",US-OH,Aircraft Engines & Engine Parts,1,0.09
+2024,733590,"Transcontinental Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,-0.07575
+2023,1106838,"SONNET BIOTHERAPEUTICS HOLDINGS, INC.",US-NJ,Pharmaceutical Preparations,2,-0.1472906400000001
+2023,1227654,"Compass Minerals International, Inc.",US-KS,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),0,-0.644999999999998
+2022,812011,"Vail Resorts, Inc.",US-CO,Services-Miscellaneous Amusement & Recreation,9,8.16807999999998
+2024,1057379,"Hackett Group, Inc.",US-FL,Services-Management Consulting Services,9,0.29630000000000023
+2024,103595,"VILLAGE SUPER MARKET, INC.",US-NJ,Retail-Grocery Stores,6,0.47631
+2022,730263,"THOR Industries, Inc.",US-IN,Motor Homes,1,8.59366999999998
+2024,789019,MICROSOFT CORPORATION,US-WA,Services-Prepackaged Software,5,926.5299999999991
+2021,31667,EDUCATIONAL DEVELOPMENT CORPORATION,US-OK,Wholesale-Miscellaneous Nondurable Goods,6,0.101512
+2021,1610250,"Boot Barn Holdings, Inc.",US-CA,Retail-Shoe Stores,6,1.77303
+2023,1441236,CLEARWATER PAPER CORPORATION,US-WA,Paperboard Mills,1,1.077
+2023,1265131,Hilltop Holdings Inc.,US-TX,State Commercial Banks,4,1.09646
+2021,1074828,"KNOW LABS, INC.",US-WA,Finance Services,9,-0.2491196299999999
+2022,103595,"VILLAGE SUPER MARKET, INC.",US-NJ,Retail-Grocery Stores,6,0.16941
+2021,1324948,RBC BEARINGS INCORPORATED,US-CT,Ball & Roller Bearings,1,0.44801
+2021,1005286,"LIFECORE BIOMEDICAL, INC.",US-MN,Pharmaceutical Preparations,2,-0.6181399999999997
+2021,713425,"LOGILITY SUPPLY CHAIN SOLUTIONS, INC.",US-GA,Services-Prepackaged Software,5,0.0218
+2024,1579877,OUTFRONT Media Inc.,US-NY,Real Estate Investment Trusts,3,2.582000000000001
+2022,771497,ABM INDUSTRIES INCORPORATED,US-NY,Services-To Dwellings & Other Buildings,9,2.281000000000002
+2024,1479681,NUTEX HEALTH INC.,US-TX,"Services-Business Services, NEC",9,0.521792430000001
+2022,1481504,"XERIANT, INC.",US-FL,Aircraft,1,-0.1172115899999999
+2021,1336917,"UNDER ARMOUR, INC.",US-MD,Apparel & Other Finishd Prods of  Fabrics & Similar Matl,1,3.6005999999999982
+2021,276720,PURE CYCLE CORPORATION,US-CO,Water Supply,0,0.20114
+2022,109177,"Spectrum Brands Holdings, Inc.",US-WI,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,0.6040000000000001
+2023,1230245,PIPER SANDLER COMPANIES,US-MN,"Security Brokers, Dealers & Flotation Companies",3,0.854909999999999
+2024,1500217,"AMERICAN ASSETS TRUST, INC.",US-CA,Real Estate Investment Trusts,3,0.5679800000000002
+2021,867840,"PRECISION OPTICS CORPORATION, INC.",US-MA,Electromedical & Electrotherapeutic Apparatus,1,0.00020741999999999896
+2021,866787,AUTOZONE INC,US-TN,Retail-Auto & Home Supply Stores,6,23.43726999999993
+2021,1604778,"Qorvo, Inc.",US-NC,Semiconductors & Related Devices,7,10.22112999999999
+2024,1003078,"MSC INDUSTRIAL DIRECT CO., INC.",US-NY,Wholesale-Industrial Machinery & Equipment,1,2.518799999999997
+2023,868671,"GLACIER BANCORP, INC.",US-MT,State Commercial Banks,4,2.22927
+2023,315189,DEERE & CO,US-IL,Farm Machinery & Equipment,1,105.67
+2021,313143,HAEMONETICS CORPORATION,US-MA,Surgical & Medical Instruments & Apparatus,1,0.5446900000000001
+2024,10456,Baxter International Inc.,US-IL,Surgical & Medical Instruments & Apparatus,1,2.2299999999999898
+2021,38264,"Forward Industries, Inc.",US-NY,"Plastics Products, NEC",1,-0.00860808
+2024,1361538,Primoris Services Corporation,US-TX,"Water, Sewer, Pipeline, Comm & Power Line Construction",1,1.8088799999999972
+2022,29644,"DONALDSON COMPANY, INC.",US-MN,Industrial & Commercial Fans & Blowers & Air Purifing Equip,1,3.391999999999999
+2022,1127475,"DIGITAL BRAND MEDIA & MARKETING GROUP, INC.",US-NY,"Services-Business Services, NEC",9,-0.009068090000000001
+2023,713425,"LOGILITY SUPPLY CHAIN SOLUTIONS, INC.",US-GA,Services-Prepackaged Software,5,0.07541
+2021,804328,QUALCOMM INC/DE,US-CA,Radio & Tv Broadcasting & Communications Equipment,7,92.1499999999999
+2024,1005210,SUBURBAN PROPANE PARTNERS LP,US-NJ,Retail-Miscellaneous Retail,6,0.96538
+2023,99780,TRINITY INDUSTRIES INC,US-TX,Railroad Equipment,1,1.06
+2022,98362,TIMKEN CO,US-OH,Ball & Roller Bearings,1,4.073999999999999
+2022,73309,NUCOR CORPORATION,US-NC,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",1,76.07337
+2024,23217,"CONAGRA BRANDS, INC.",US-IL,Food and Kindred Products,6,13.68499999999999
+2021,2969,"AIR PRODUCTS AND CHEMICALS, INC.",US-PA,Industrial Inorganic Chemicals,2,21.00699999999999
+2022,1583107,"THERAVANCE BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,8.72131999999998
+2022,1442492,"Laredo Oil, Inc.",US-TX,Crude Petroleum & Natural Gas,0,-0.02527623
+2022,910521,DECKERS OUTDOOR CORP,US-CA,Rubber & Plastics Footwear,1,4.938539999999998
+2023,78749,"AGILYSYS, INC.",US-GA,Services-Computer Integrated Systems Design,5,0.8712600000000011
+2024,109177,"Spectrum Brands Holdings, Inc.",US-WI,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,0.968
+2022,1589526,BLUE BIRD CORPORATION,US-GA,Truck & Bus Bodies,1,-0.3631099999999998
+2022,95029,"STURM, RUGER & COMPANY, INC.",US-CT,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.8833200000000001
+2024,1610250,"Boot Barn Holdings, Inc.",US-CA,Retail-Shoe Stores,6,1.99027
+2023,1170010,"CARMAX, INC.",US-VA,Retail-Auto Dealers & Gasoline Stations,6,4.665159999999989
+2022,100726,"UNIFI, INC.",US-NC,Textile Mill Products,1,-0.20309000000000002
+2021,711377,Neogen Corporation,US-MI,In Vitro & In Vivo Diagnostic Substances,2,0.52305
+2022,1410738,VoIP-PAL.COM INC.,US-TX,Telephone & Telegraph Apparatus,7,-0.04006459000000001
+2021,849146,LIFEVANTAGE CORP,US-UT,Pharmaceutical Preparations,2,0.10026000000000002
+2023,772406,"CIRRUS LOGIC, INC.",US-TX,Semiconductors & Related Devices,7,3.332069999999999
+2024,355019,FONAR CORPORATION,US-NY,Electromedical & Electrotherapeutic Apparatus,1,0.08843000000000001
+2021,721371,"Cardinal Health, Inc.",US-OH,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,5.580000000000001
+2023,6281,"Analog Devices, Inc.",US-MA,Semiconductors & Related Devices,7,31.944209999999952
+2021,800240,The ODP Corporation,US-FL,Retail-Miscellaneous Shopping Goods Stores,6,-2.0799999999999983
+2021,783412,DAILY JOURNAL CORPORATION,US-CA,Newspapers: Publishing or  Publishing & Printing,6,1.0449999999999982
+2022,1625288,"NEXIEN BIOPHARMA, INC.",US-CO,Pharmaceutical Preparations,2,-0.005633679999999999
+2024,1289308,EnerSys,US-PA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,3.433469999999999
+2024,912728,FORWARD AIR CORPORATION,US-TN,Arrangement of  Transportation of  Freight & Cargo,1,-13.88994
+2021,108312,"WOODWARD, INC.",US-CO,Electrical Industrial Apparatus,1,1.963400000000003
+2023,4127,"Skyworks Solutions, Inc.",US-CA,Semiconductors & Related Devices,7,8.557
+2022,24090,"CITIZENS, INC.",US-TX,Life Insurance,9,0.26007
+2024,96793,"SUNLINK HEALTH SYSTEMS, INC.",US-GA,"Services-General Medical & Surgical Hospitals, NEC",9,-0.04684
+2023,1382230,"ESSA Bancorp, Inc.",US-PA,"Savings Institutions, Not Federally Chartered",8,0.17814
+2022,834071,TOYOTA MOTOR CREDIT CORPORATION,US-TX,Personal Credit Institutions,8,14.009999999999991
+2023,1564708,NEWS CORPORATION,US-NY,Newspapers: Publishing or  Publishing & Printing,6,2.860000000000002
+2024,1260221,TransDigm Group Incorporated,US-OH,"Aircraft Parts & Auxiliary Equipment, NEC",1,18.17999999999997
+2023,276720,PURE CYCLE CORPORATION,US-CO,Water Supply,0,0.08844
+2023,1165002,"WESTWOOD HOLDINGS GROUP, INC.",US-TX,Investment Advice,3,0.09763
+2021,355019,FONAR CORPORATION,US-NY,Electromedical & Electrotherapeutic Apparatus,1,0.15643
+2022,1070524,"GREENE COUNTY BANCORP, INC.",US-NY,"Savings Institutions, Not Federally Chartered",8,0.3060999999999997
+2021,1165320,GB SCIENCES INC,US-NV,Crude Petroleum & Natural Gas,0,0.025432800000000002
+2021,1375348,GOLDEN STAR RESOURCE CORP.,US-NV,Miscellaneous Metal Ores,1,-0.00047156
+2023,732026,TRIO-TECH INTERNATIONAL,SG-,"Special Industry Machinery, NEC",1,0.00723
+2022,1617242,KEARNY FINANCIAL CORP.,US-NJ,"Savings Institution, Federally Chartered",8,0.53872
+2021,1409375,"Orion Energy Systems, Inc.",US-WI,Electric Lighting & Wiring Equipment,1,0.29395
+2022,78749,"AGILYSYS, INC.",US-GA,Services-Computer Integrated Systems Design,5,0.12049000000000001
+2024,771856,"CHAMPIONS ONCOLOGY, INC.",US-NJ,"Biological Products, (No Diagnostic Substances)",2,0.0400599999999999
+2022,1412665,"MIDWESTONE FINANCIAL GROUP, INC.",US-IA,State Commercial Banks,4,0.60835
+2023,6951,APPLIED MATERIALS INC /DE,US-CA,Semiconductors & Related Devices,7,67.14
+2023,771856,"CHAMPIONS ONCOLOGY, INC.",US-NJ,"Biological Products, (No Diagnostic Substances)",2,-0.09606
+2023,1304492,Anterix Inc.,US-NJ,Telephone Communications (No Radiotelephone),9,-0.0773700000000001
+2024,8947,AZZ Inc.,US-TX,"Coating, Engraving & Allied Services",1,1.35514
+2023,1227265,CERES ORION L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,-0.27765213000000005
+2022,1387467,Alpha and Omega Semiconductor Limited,BM-,Semiconductors & Related Devices,7,0.95675
+2022,1610250,"Boot Barn Holdings, Inc.",US-CA,Retail-Shoe Stores,6,1.9337499999999999
+2024,109380,"ZIONS BANCORPORATION, NATIONAL ASSOCIATION",US-UT,National Commercial Banks,4,7.839999999999991
+2021,66756,"ALLETE, Inc.",US-MN,Electric & Other Services Combined,9,1.692000000000002
+2021,1413837,FIRST FOUNDATION INC.,US-TX,State Commercial Banks,4,1.09511
+2021,915779,"Daktronics, Inc.",US-SD,Miscellaneous Manufacturing Industries,1,0.0063
+2024,1066656,CERES CLASSIC L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.08714551999999999
+2021,725363,CEL-SCI CORPORATION,US-VA,"Biological Products, (No Diagnostic Substances)",2,-0.3794026200000001
+2022,1376227,"United States Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.7502948899999993
+2022,1126741,GSI TECHNOLOGY INC,US-CA,Semiconductors & Related Devices,7,-0.16597
+2021,1075736,"Crexendo, Inc.",US-AZ,Telephone Communications (No Radiotelephone),9,-0.02445
+2024,792966,"FARMERS & MERCHANTS BANCORP, INC.",US-OH,"Savings Institution, Federally Chartered",8,0.25938
+2023,920427,"Unity Bancorp, Inc.",US-NJ,State Commercial Banks,4,0.3970700000000001
+2024,880641,"EAGLE FINANCIAL SERVICES, INC.",US-VA,State Commercial Banks,4,0.15343
+2022,1423221,QUANEX BUILDING PRODUCTS CORPORATION,US-TX,Rolling Drawing & Extruding of  Nonferrous Metals,1,0.8024700000000001
+2024,1126741,GSI TECHNOLOGY INC,US-CA,Semiconductors & Related Devices,7,-0.1500999999999999
+2023,1474903,"BGSF, INC.",US-TX,Services-Help Supply Services,9,-0.10223000000000002
+2023,1319161,Warner Music Group Corp.,US-NY,Services-Amusement & Recreation Services,9,4.37
+2023,1500217,"AMERICAN ASSETS TRUST, INC.",US-CA,Real Estate Investment Trusts,3,0.50378
+2022,1057379,"Hackett Group, Inc.",US-FL,Services-Management Consulting Services,9,0.40802
+2021,874866,CORVEL CORPORATION,US-TX,"Insurance Agents, Brokers & Service",3,0.46988
+2024,915840,"BEAZER HOMES USA, INC.",US-GA,Operative Builders,1,0.9672099999999991
+2023,39020,"FREQUENCY ELECTRONICS, INC.",US-NY,Instruments For Meas & Testing of  Electricity & Elec Signals,7,0.026530000000000012
+2022,1467373,Accenture plc,IE-,"Services-Business Services, NEC",9,70.51095000000001
+2024,1170010,"CARMAX, INC.",US-VA,Retail-Auto Dealers & Gasoline Stations,6,4.926929999999999
+2021,915358,"SIGMATRON INTERNATIONAL, INC.",US-IL,Printed Circuit Boards,7,0.10788183
+2023,946581,"TAKE-TWO INTERACTIVE SOFTWARE, INC.",US-NY,Services-Prepackaged Software,5,-9.94599999999998
+2022,720762,NON INVASIVE MONITORING SYSTEMS INC /FL/,US-FL,Electromedical & Electrotherapeutic Apparatus,1,-0.00189
+2021,1500217,"AMERICAN ASSETS TRUST, INC.",US-CA,Real Estate Investment Trusts,3,0.2837599999999998
+2022,1346022,Enertopia Corporation,CA-BC,Metal Mining,1,0.06085918
+2024,1005731,IDT CORPORATION,US-NJ,Telephone Communications (No Radiotelephone),9,0.4862000000000002
+2022,1000230,OPTICAL CABLE CORPORATION,US-VA,Drawing & Insulating of  Nonferrous Wire,1,-0.0016174899999999992
+2023,278166,CAVCO INDUSTRIES INC.,US-AZ,Mobile Homes,9,1.834069999999999
+2024,891024,"PATTERSON COMPANIES, INC.",US-MN,"Wholesale-Medical, Dental & Hospital Equipment & Supplies",1,1.19442
+2024,911216,"PALATIN TECHNOLOGIES, INC.",US-NJ,Pharmaceutical Preparations,2,-0.2713743099999999
+2021,1171838,"SUNDANCE STRATEGIES, INC.",US-UT,"Insurance Agents, Brokers & Service",3,-0.01065951
+2023,1412665,"MIDWESTONE FINANCIAL GROUP, INC.",US-IA,State Commercial Banks,4,0.20859
+2024,1083743,"FLUX POWER HOLDINGS, INC.",US-CA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,-0.08805
+2022,1500217,"AMERICAN ASSETS TRUST, INC.",US-CA,Real Estate Investment Trusts,3,0.4350599999999999
+2024,1190370,"INNOVATIVE DESIGNS, INC.",US-PA,Miscellaneous Fabricated Textile Products,1,-0.0005973500000000002
+2021,834071,TOYOTA MOTOR CREDIT CORPORATION,US-TX,Personal Credit Institutions,8,26.109999999999964
+2022,1190370,"INNOVATIVE DESIGNS, INC.",US-PA,Miscellaneous Fabricated Textile Products,1,0.00104168
+2022,1157075,"PHARMACYTE BIOTECH, INC.",US-NV,"Biological Products, (No Diagnostic Substances)",2,-0.05000945000000001
+2022,1342423,LIMONEIRA COMPANY,US-CA,Agricultural Production-Crops,1,0.31946
+2022,1040130,"PETMED EXPRESS, INC.",US-FL,Retail-Drug Stores and Proprietary Stores,6,0.10896000000000011
+2022,8858,"AVNET, INC.",US-AZ,"Wholesale-Electronic Parts & Equipment, NEC",1,7.9498099999999905
+2021,792966,"FARMERS & MERCHANTS BANCORP, INC.",US-OH,"Savings Institution, Federally Chartered",8,0.23495
+2022,1479681,NUTEX HEALTH INC.,US-TX,"Services-Business Services, NEC",9,-4.247804459999999
+2024,1477246,S&W SEED CO,US-CO,Agricultural Production-Crops,1,-0.28891657
+2021,1058811,Immersion Corporation,US-FL,"Computer Peripheral Equipment, NEC",7,0.095
+2023,1628908,"Evolent Health, Inc.",US-VA,Services-Management Services,9,-1.130400000000001
+2021,1506251,"Citius Pharmaceuticals, Inc.",US-NJ,Pharmaceutical Preparations,2,-0.2499566800000001
+2021,1552800,"TILE SHOP HOLDINGS, INC.",US-MN,"Retail-Home Furniture, Furnishings & Equipment Stores",6,0.1477399999999998
+2022,1048911,FedEx Corporation,US-TN,Air Courier Services,9,38.86999999999996
+2024,1409375,"Orion Energy Systems, Inc.",US-WI,Electric Lighting & Wiring Equipment,1,-0.07281
+2024,933974,"Azenta, Inc.",US-MA,"Special Industry Machinery, NEC",1,-1.6338399999999997
+2024,356309,NEW JERSEY RESOURCES CORPORATION,US-NJ,Natural Gas Distribution,0,2.2898300000000003
+2023,880117,SANFILIPPO JOHN B & SON INC,US-IL,Sugar & Confectionery Products,2,0.68223
+2024,1024478,"Rockwell Automation, Inc.",US-WI,"Measuring & Controlling Devices, NEC",7,9.139999999999981
+2023,1490906,"Capitol Federal Financial, Inc.",US-KS,"Savings Institution, Federally Chartered",8,0.3333599999999998
+2021,1490906,"Capitol Federal Financial, Inc.",US-KS,"Savings Institution, Federally Chartered",8,0.7900400000000001
+2021,891024,"PATTERSON COMPANIES, INC.",US-MN,"Wholesale-Medical, Dental & Hospital Equipment & Supplies",1,1.68087
+2024,91767,SONOCO PRODUCTS COMPANY,US-SC,Paperboard Containers & Boxes,1,2.007660000000001
+2024,711404,"The Cooper Companies, Inc.",US-CA,Ophthalmic Goods,1,4.026
+2022,38264,"Forward Industries, Inc.",US-NY,"Plastics Products, NEC",1,-0.00860808
+2024,1346022,Enertopia Corporation,CA-BC,Metal Mining,1,-0.008062999999999999
+2024,946647,PREMIER FINANCIAL CORP.,US-OH,State Commercial Banks,4,0.71404
+2024,39020,"FREQUENCY ELECTRONICS, INC.",US-NY,Instruments For Meas & Testing of  Electricity & Elec Signals,7,0.20618999999999998
+2022,1497253,"Organovo Holdings, Inc.",US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.133
+2024,1074871,"MODULAR MEDICAL, INC.",US-CA,Surgical & Medical Instruments & Apparatus,1,-0.19166000000000022
+2022,746598,BRADY CORP,US-WI,Miscellaneous Manufacturing Industries,1,1.57535
+2023,1169561,"Commvault Systems, Inc",US-NJ,Services-Prepackaged Software,5,0.51721
+2024,1606757,"KIMBALL ELECTRONICS, INC.",US-IN,Printed Circuit Boards,7,-0.05566000000000021
+2024,99780,TRINITY INDUSTRIES INC,US-TX,Railroad Equipment,1,1.3840000000000008
+2023,820771,GOLIATH FILM AND MEDIA HOLDINGS,US-NV,Services-Motion Picture & Video Tape Distribution,9,0.00009234
+2022,765207,"FIRST BANCORP, INC",US-ME,National Commercial Banks,4,0.3898999999999999
+2022,102037,UNIVERSAL CORPORATION,US-VA,Wholesale-Farm Product Raw Materials,1,1.05285
+2021,1584509,Aramark,US-PA,Retail-Eating  Places,6,0.30149000000000203
+2021,1024478,"Rockwell Automation, Inc.",US-WI,"Measuring & Controlling Devices, NEC",7,11.99099999999998
+2021,946647,PREMIER FINANCIAL CORP.,US-OH,State Commercial Banks,4,1.26051
+2021,1108134,"BERKSHIRE HILLS BANCORP, INC.",US-MA,"Savings Institutions, Not Federally Chartered",8,1.186639999999999
+2022,65312,"EVI Industries, Inc.",US-FL,Services-Personal Services,9,0.061270000000000005
+2022,1530721,CAPRI HOLDINGS LTD,GB-,Leather & Leather Products,1,9.71999999999999
+2024,56679,KORN FERRY,US-CA,Services-Employment Agencies,9,2.40889
+2024,1552800,"TILE SHOP HOLDINGS, INC.",US-MN,"Retail-Home Furniture, Furnishings & Equipment Stores",6,0.0128
+2023,1589150,"REGEN BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,-0.003983470000000003
+2022,70502,NATIONAL RURAL UTILITIES COOPERATIVE FINANCE CORPORATION,US-VA,Miscellaneous Business Credit Institution,8,8.73572
+2023,750558,QNB Corp.,US-PA,State Commercial Banks,4,0.09483
+2022,1350156,PREAXIA HEALTH CARE PAYMENT SYSTEMS INC.,CA-AB,"Retail-Home Furniture, Furnishings & Equipment Stores",6,-0.00176031
+2023,1376227,"United States Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,-6.712508439999999
+2021,918646,EAGLE MATERIALS INC,US-TX,"Cement, Hydraulic",0,3.7235999999999994
+2022,1414382,"Concrete Leveling Systems, Inc.",US-OH,Misc Industrial & Commercial Machinery & Equipment,1,-0.00046596
+2023,66740,3M COMPANY,US-MN,Surgical & Medical Instruments & Apparatus,1,-69.95000000000003
+2023,1342423,LIMONEIRA COMPANY,US-CA,Agricultural Production-Crops,1,-0.07524
+2021,78814,PITNEY BOWES INC.,US-CT,"Office Machines, NEC",1,0.62065
+2024,783412,DAILY JOURNAL CORPORATION,US-CA,Newspapers: Publishing or  Publishing & Printing,6,0.7302000000000001
+2024,1481504,"XERIANT, INC.",US-FL,Aircraft,1,-0.01534926
+2021,1423221,QUANEX BUILDING PRODUCTS CORPORATION,US-TX,Rolling Drawing & Extruding of  Nonferrous Metals,1,0.53148
+2023,1002590,"STAR GROUP, L.P.",US-CT,"Retail-Retail Stores, NEC",6,0.3138500000000001
+2021,836157,Lindsay Corporation,US-NE,Farm Machinery & Equipment,1,0.5537099999999999
+2022,936528,"WAFD, INC.",US-WA,National Commercial Banks,4,1.82538
+2023,1567514,"Intra-Cellular Therapies, Inc.",US-NJ,Pharmaceutical Preparations,2,-1.39674
+2022,1289308,EnerSys,US-PA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,1.4612399999999992
+2021,1390777,THE BANK OF NEW YORK MELLON CORPORATION,US-NY,State Commercial Banks,4,37.58999999999995
+2021,315189,DEERE & CO,US-IL,Farm Machinery & Equipment,1,60.269999999999975
+2023,1157075,"PHARMACYTE BIOTECH, INC.",US-NV,"Biological Products, (No Diagnostic Substances)",2,-0.01777074
+2023,1520697,"Acadia Healthcare Company, Inc.",US-TN,"Services-Specialty Outpatient Facilities, NEC",9,-0.21667000000000114
+2021,1625288,"NEXIEN BIOPHARMA, INC.",US-CO,Pharmaceutical Preparations,2,0.0008049099999999998
+2022,356309,NEW JERSEY RESOURCES CORPORATION,US-NJ,Natural Gas Distribution,0,2.3806200000000013
+2023,1334978,"CLEAR CHANNEL OUTDOOR HOLDINGS, INC.",US-TX,Services-Advertising,9,-3.10921999999999
+2022,1034054,SBA COMMUNICATIONS CORPORATION,US-FL,Real Estate Investment Trusts,3,4.614290000000001
+2023,109563,"APPLIED INDUSTRIAL TECHNOLOGIES, INC.",US-OH,"Wholesale-Machinery, Equipment & Supplies",1,3.79428
+2024,1171155,"RADIANT LOGISTICS, INC.",US-WA,Arrangement of  Transportation of  Freight & Cargo,1,0.0843700000000001
+2021,711404,"The Cooper Companies, Inc.",US-CA,Ophthalmic Goods,1,14.44399999999998
+2022,712515,ELECTRONIC ARTS INC.,US-CA,Services-Prepackaged Software,5,8.79999999999998
+2024,1600033,"e.l.f. Beauty, Inc.",US-CA,"Perfumes, Cosmetics & Other Toilet Preparations",2,0.98363
+2023,1604028,"ADVANCED DRAINAGE SYSTEMS, INC.",US-OH,Plastics Foam Products,1,4.971330000000001
+2023,910521,DECKERS OUTDOOR CORP,US-CA,Rubber & Plastics Footwear,1,7.238050000000001
+2024,1396878,"United States Gasoline Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.056362310000000096
+2022,1361538,Primoris Services Corporation,US-TX,"Water, Sewer, Pipeline, Comm & Power Line Construction",1,1.3302100000000001
+2022,880117,SANFILIPPO JOHN B & SON INC,US-IL,Sugar & Confectionery Products,2,0.56206
+2023,54187,MAYS J W INC,US-NY,Opeators of  Nonresidential Buildings,1,-0.003689230000000001
+2022,1627223,The Chemours Company,US-DE,Chemicals & Allied Products,2,5.779999999999999
+2023,105132,WD-40 COMPANY,US-CA,Miscellaneous Chemical Products,2,0.7179800000000001
+2021,1096752,EDGEWELL PERSONAL CARE COMPANY,US-CT,"Perfumes, Cosmetics & Other Toilet Preparations",2,1.108
+2023,8858,"AVNET, INC.",US-AZ,"Wholesale-Electronic Parts & Equipment, NEC",1,7.02050999999999
+2021,205402,"GRAYBAR ELECTRIC COMPANY, INC.",US-MO,"Wholesale-Electrical Apparatus & Equipment, Wiring Supplies ",1,2.624000000000002
+2021,69891,National Beverage Corp.,US-FL,Bottled & Canned Soft Drinks & Carbonated Waters,0,1.632989999999999
+2024,874866,CORVEL CORPORATION,US-TX,"Insurance Agents, Brokers & Service",3,0.85841
+2023,854775,DIGI INTERNATIONAL INC.,US-MN,Computer Communications Equipment,7,0.16299
+2022,1304492,Anterix Inc.,US-NJ,Telephone Communications (No Radiotelephone),9,-0.44574000000000014
+2024,703351,"BRINKER INTERNATIONAL, INC.",US-TX,Retail-Eating  Places,6,2.544
+2022,1437517,"CYBERLOQ TECHNOLOGIES, INC.",US-FL,Services-Prepackaged Software,5,-0.00979048
+2022,1320414,SELECT MEDICAL HOLDINGS CORP,US-PA,Services-Hospitals,9,1.5865599999999982
+2024,1367859,"CITIZENS COMMUNITY BANCORP, INC.",US-WI,"Savings Institution, Federally Chartered",8,0.13751
+2023,779152,"JACK HENRY & ASSOCIATES, INC.",US-MO,Services-Computer Integrated Systems Design,5,3.5674200000000003
+2022,4127,"Skyworks Solutions, Inc.",US-CA,Semiconductors & Related Devices,7,11.49799999999998
+2023,98362,TIMKEN CO,US-OH,Ball & Roller Bearings,1,3.9410000000000003
+2023,1157408,"Stride, Inc.",US-VA,Services-Educational Services,9,1.8263800000000001
+2023,1282648,Battalion Oil Corp,US-TX,Crude Petroleum & Natural Gas,0,-0.03047999999999984
+2021,1408534,"FIRST GUARANTY BANCSHARES, INC.",US-LA,"Savings Institution, Federally Chartered",8,0.2703900000000003
+2022,1260221,TransDigm Group Incorporated,US-OH,"Aircraft Parts & Auxiliary Equipment, NEC",1,9.029999999999971
+2021,1504008,"BankUnited, Inc.",US-FL,"Savings Institution, Federally Chartered",8,4.14984
+2022,1265131,Hilltop Holdings Inc.,US-TX,State Commercial Banks,4,1.13134
+2021,1613103,Medtronic plc,IE-,Electromedical & Electrotherapeutic Apparatus,1,48.23999999999998
+2024,1694426,"DELEK US HOLDINGS, INC.",US-TN,Petroleum Refining,0,-5.603999999999999
+2021,732026,TRIO-TECH INTERNATIONAL,SG-,"Special Industry Machinery, NEC",1,0.021280000000000014
+2022,1570585,Liberty Global Ltd.,BM-,Cable & Other Pay Television Services,9,-55.46
+2024,1442492,"Laredo Oil, Inc.",US-TX,Crude Petroleum & Natural Gas,0,-0.01818694
+2021,1165002,"WESTWOOD HOLDINGS GROUP, INC.",US-TX,Investment Advice,3,0.09763
+2023,788329,Johnson Outdoors Inc.,US-WI,"Sporting & Athletic Goods, NEC",1,0.3291399999999994
+2021,1260221,TransDigm Group Incorporated,US-OH,"Aircraft Parts & Auxiliary Equipment, NEC",1,9.00999999999998
+2021,723254,Cintas Corporation,US-OH,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,11.42615999999998
+2021,1367859,"CITIZENS COMMUNITY BANCORP, INC.",US-WI,"Savings Institution, Federally Chartered",8,0.21266000000000002
+2024,46619,HEICO CORPORATION,US-FL,Aircraft Engines & Engine Parts,1,5.64255
+2022,1530425,"ARTISAN CONSUMER GOODS, INC.",US-WA,Metal Mining,1,-0.00034296
+2024,730263,"THOR Industries, Inc.",US-IN,Motor Homes,1,2.2663900000000003
+2024,66740,3M COMPANY,US-MN,Surgical & Medical Instruments & Apparatus,1,41.729999999999954
+2022,1504461,NGL Energy Partners LP,US-OK,Natural Gas Transmission,0,0.65986
+2023,946647,PREMIER FINANCIAL CORP.,US-OH,State Commercial Banks,4,1.11295
+2023,807882,JACK IN THE BOX INC.,US-CA,Retail-Eating  Places,6,1.23526
+2024,1412665,"MIDWESTONE FINANCIAL GROUP, INC.",US-IA,State Commercial Banks,4,-0.602889999999999
+2021,733590,"Transcontinental Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,0.09397999999999994
+2023,1069899,Phibro Animal Health Corporation,US-NJ,Pharmaceutical Preparations,2,0.13343
+2021,1570132,"ANVI GLOBAL HOLDINGS, INC.",US-NC,Retail-Food Stores,6,-0.00230378
+2023,1190370,"INNOVATIVE DESIGNS, INC.",US-PA,Miscellaneous Fabricated Textile Products,1,-0.003439120000000002
+2024,889971,"LIGHTPATH TECHNOLOGIES, INC.",US-FL,Semiconductors & Related Devices,7,-0.0942981
+2022,731653,UNITED BANCORP INC /OH/,US-OH,State Commercial Banks,4,0.08657000000000001
+2023,874015,"IONIS PHARMACEUTICALS, INC.",US-CA,Pharmaceutical Preparations,2,-3.6628600000000002
+2021,946581,"TAKE-TWO INTERACTIVE SOFTWARE, INC.",US-NY,Services-Prepackaged Software,5,4.89348
+2021,1227654,"Compass Minerals International, Inc.",US-KS,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),0,-2.1139999999999994
+2024,38264,"Forward Industries, Inc.",US-NY,"Plastics Products, NEC",1,-0.01770725
+2024,915779,"Daktronics, Inc.",US-SD,Miscellaneous Manufacturing Industries,1,0.1004600000000001
+2022,1603345,AGENTIX CORP.,US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.029599709999999998
+2024,278166,CAVCO INDUSTRIES INC.,US-AZ,Mobile Homes,9,1.6442300000000012
+2021,1479681,NUTEX HEALTH INC.,US-TX,"Services-Business Services, NEC",9,1.7418240900000022
+2023,1002047,"NetApp, Inc.",US-CA,Computer Storage Devices,7,7.6
+2024,320187,"NIKE, Inc.",US-OR,Rubber & Plastics Footwear,1,45.58
+2023,56679,KORN FERRY,US-CA,Services-Employment Agencies,9,1.152120000000001
+2024,1377789,"AVIAT NETWORKS, INC.",US-TX,Radio & Tv Broadcasting & Communications Equipment,7,0.0035599999999998896
+2021,1694426,"DELEK US HOLDINGS, INC.",US-TN,Petroleum Refining,0,-1.2830000000000013
+2021,1666138,Atkore Inc.,US-IL,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,6.80369999999999
+2021,1361538,Primoris Services Corporation,US-TX,"Water, Sewer, Pipeline, Comm & Power Line Construction",1,1.15617
+2021,356309,NEW JERSEY RESOURCES CORPORATION,US-NJ,Natural Gas Distribution,0,0.3745900000000002
+2021,1589150,"REGEN BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,-0.09127303000000021
+2022,96793,"SUNLINK HEALTH SYSTEMS, INC.",US-GA,"Services-General Medical & Surgical Hospitals, NEC",9,-0.015870000000000023
+2022,72573,"MOVADO GROUP, INC.",US-NJ,"Watches, Clocks, Clockwork Operated Devices/Parts",1,1.01088
+2024,731653,UNITED BANCORP INC /OH/,US-OH,State Commercial Banks,4,0.07400999999999999
+2024,1414382,"Concrete Leveling Systems, Inc.",US-OH,Misc Industrial & Commercial Machinery & Equipment,1,-0.0005877899999999999
+2021,827054,MICROCHIP TECHNOLOGY INCORPORATED,US-AZ,Semiconductors & Related Devices,7,8.83799999999999
+2024,1342423,LIMONEIRA COMPANY,US-CA,Agricultural Production-Crops,1,0.16679000000000002
+2021,47217,HP INC.,US-CA,Computer & office Equipment,1,47.36
+2022,10456,Baxter International Inc.,US-IL,Surgical & Medical Instruments & Apparatus,1,-24.330000000000002
+2021,794619,American Woodmark Corp,US-VA,"Millwood, Veneer, Plywood, & Structural Wood Members",1,-0.25801000000000096
+2021,1117297,"QuinStreet, Inc.",US-CA,"Services-Business Services, NEC",9,0.0753900000000002
+2023,1300514,LAS VEGAS SANDS CORP.,US-NV,Hotels & Motels,9,12.20999999999998
+2023,711377,Neogen Corporation,US-MI,In Vitro & In Vivo Diagnostic Substances,2,0.14396
+2022,928465,AMCON DISTRIBUTING CO,US-NE,"Wholesale-Groceries, General Line",6,0.1772479899999998
+2021,933034,STRATTEC SECURITY CORP,US-WI,Motor Vehicle Parts & Accessories,1,0.12462000000000001
+2024,885275,WILSON BANK HOLDING CO,US-TN,National Commercial Banks,4,0.5653
+2021,8858,"AVNET, INC.",US-AZ,"Wholesale-Electronic Parts & Equipment, NEC",1,4.77107
+2024,25895,"Crown Crafts, Inc.",US-LA,"Broadwoven Fabric Mills, Cotton",1,0.05999
+2022,912728,FORWARD AIR CORPORATION,US-TN,Arrangement of  Transportation of  Freight & Cargo,1,1.931910000000003
+2024,1078271,"EXTREME NETWORKS, INC.",US-NC,Computer Communications Equipment,7,-1.319720000000002
+2024,1530425,"ARTISAN CONSUMER GOODS, INC.",US-WA,Metal Mining,1,-0.00026174
+2022,50292,IEH Corporation,US-NY,Electronic Connectors,7,-0.05392501
+2024,1584509,Aramark,US-PA,Retail-Eating  Places,6,2.753200000000002
+2023,33002,"ENNIS, INC.",US-TX,Manifold Business Forms,9,0.43737000000000004
+2021,318299,"SPARTA COMMERCIAL SERVICES, INC.",US-NY,"Services-Business Services, NEC",9,-0.06243362999999991
+2022,879526,WABASH NATIONAL CORPORATION,US-IN,Truck Trailers,1,1.122580000000001
+2021,1297341,KENTUCKY FIRST FEDERAL BANCORP,US-KY,"Savings Institution, Federally Chartered",8,0.0148
+2021,935419,"RCI HOSPITALITY HOLDINGS, INC.",US-TX,Retail-Eating  Places,6,0.3126799999999999
+2023,783412,DAILY JOURNAL CORPORATION,US-CA,Newspapers: Publishing or  Publishing & Printing,6,0.23402000000000012
+2022,1382230,"ESSA Bancorp, Inc.",US-PA,"Savings Institutions, Not Federally Chartered",8,0.19535999999999992
+2021,1467373,Accenture plc,IE-,"Services-Business Services, NEC",9,61.975570000000005
+2021,823277,CHS Inc.,US-MN,Wholesale-Farm Product Raw Materials,1,9.60913999999997
+2024,1618732,"NUTANIX, INC.",US-CA,Services-Prepackaged Software,5,0.551210000000001
+2024,1128361,"HOPE BANCORP, INC.",US-CA,National Commercial Banks,4,0.9963
+2022,66004,MIDDLESEX WATER COMPANY,US-NJ,Water Supply,0,0.4955000000000001
+2023,1630113,BIOTRICITY INC.,US-CA,Surgical & Medical Instruments & Apparatus,1,-0.14428928000000002
+2024,90168,"SIFCO Industries, Inc.",US-OH,Aircraft Engines & Engine Parts,1,-0.04277
+2024,110621,RPM INTERNATIONAL INC/DE/,US-OH,"Paints, Varnishes, Lacquers, Enamels & Allied Prods",1,3.66801
+2024,1415744,NORTHERN MINERALS & EXPLORATION LTD.,US-UT,Gold and Silver Ores,1,-0.0019510500000000002
+2022,1319161,Warner Music Group Corp.,US-NY,Services-Amusement & Recreation Services,9,4.620000000000001
+2021,103595,"VILLAGE SUPER MARKET, INC.",US-NJ,Retail-Grocery Stores,6,0.22605
+2022,216877,"PISMO COAST VILLAGE, INC.",US-CA,"Hotels, Rooming Houses, Camps & Other Lodging Places",9,0.013771849999999999
+2024,69891,National Beverage Corp.,US-FL,Bottled & Canned Soft Drinks & Carbonated Waters,0,1.816520000000001
+2024,4127,"Skyworks Solutions, Inc.",US-CA,Semiconductors & Related Devices,7,5.871
+2021,1412665,"MIDWESTONE FINANCIAL GROUP, INC.",US-IA,State Commercial Banks,4,0.69486
+2021,927653,McKESSON CORPORATION,US-TX,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,14.11999999999998
+2024,772406,"CIRRUS LOGIC, INC.",US-TX,Semiconductors & Related Devices,7,3.98963
+2023,1442492,"Laredo Oil, Inc.",US-TX,Crude Petroleum & Natural Gas,0,-0.032712640000000015
+2024,859070,FIRST COMMUNITY BANKSHARES INC /VA/,US-VA,State Commercial Banks,4,0.51604
+2021,729986,UNITED BANKSHARES INC/WV,US-WV,State Commercial Banks,4,3.677379999999999
+2023,1413837,FIRST FOUNDATION INC.,US-TX,State Commercial Banks,4,-1.9906399999999997
+2022,1367859,"CITIZENS COMMUNITY BANCORP, INC.",US-WI,"Savings Institution, Federally Chartered",8,0.1776100000000001
+2021,1624794,"CSW INDUSTRIALS, INC.",US-TX,Adhesives & Sealants,1,0.5829399999999999
+2024,1570132,"ANVI GLOBAL HOLDINGS, INC.",US-NC,Retail-Food Stores,6,-0.00198302
+2024,1127475,"DIGITAL BRAND MEDIA & MARKETING GROUP, INC.",US-NY,"Services-Business Services, NEC",9,-0.00776606
+2024,707605,AMERISERV FINANCIAL INC /PA/,US-PA,National Commercial Banks,4,0.03601
+2022,1590976,"MALIBU BOATS, INC.",US-TN,Ship & Boat Building & Repairing,1,1.708419999999999
+2022,278166,CAVCO INDUSTRIES INC.,US-AZ,Mobile Homes,9,2.726609999999999
+2022,1058811,Immersion Corporation,US-FL,"Computer Peripheral Equipment, NEC",7,0.18666999999999978
+2024,1591698,PAYLOCITY HOLDING CORPORATION,US-IL,Services-Prepackaged Software,5,2.57666
+2022,1005286,"LIFECORE BIOMEDICAL, INC.",US-MN,Pharmaceutical Preparations,2,-0.50944
+2023,1530425,"ARTISAN CONSUMER GOODS, INC.",US-WA,Metal Mining,1,-0.00044476
+2021,717423,MURPHY OIL CORPORATION,US-TX,Crude Petroleum & Natural Gas,0,-0.7370000000000001
+2021,779544,ARK RESTAURANTS CORP.,US-NY,Retail-Eating  Places,6,0.11710000000000001
+2021,1570585,Liberty Global Ltd.,BM-,Cable & Other Pay Television Services,9,-55.46
+2024,56701,KOSS CORPORATION,US-WI,Household Audio & Video Equipment,7,-0.009529530000000001
+2023,817720,SYNAPTICS INCORPORATED,US-CA,Semiconductors & Related Devices,7,-0.43799999999999906
+2023,1075736,"Crexendo, Inc.",US-AZ,Telephone Communications (No Radiotelephone),9,-0.0036200000000000013
+2023,1634117,"BARNES & NOBLE EDUCATION, INC.",US-NJ,Retail-Miscellaneous Shopping Goods Stores,6,-0.8209700000000011
+2024,927653,McKESSON CORPORATION,US-TX,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,26.23999999999996
+2024,1078075,"NETSCOUT SYSTEMS, INC.",US-MA,Services-Computer Integrated Systems Design,5,-5.1811599999999896
+2022,716314,GRAHAM CORP,US-NY,General Industrial Machinery & Equipment,1,-0.02882000000000001
+2022,1046050,"TIMBERLAND BANCORP, INC.",US-WA,"Savings Institutions, Not Federally Chartered",8,0.2562199999999999
+2023,812011,"Vail Resorts, Inc.",US-CO,Services-Miscellaneous Amusement & Recreation,9,6.93798999999998
+2023,80172,NATIONAL PRESTO INDUSTRIES INC,US-WI,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.34558999999999984
+2021,746598,BRADY CORP,US-WI,Miscellaneous Manufacturing Industries,1,1.43443
+2022,1525306,First America Resources Corporation,US-IL,"Wholesale-Electronic Parts & Equipment, NEC",1,-0.0001464600000000001
+2024,1070524,"GREENE COUNTY BANCORP, INC.",US-NY,"Savings Institutions, Not Federally Chartered",8,0.2547299999999999
+2024,1334978,"CLEAR CHANNEL OUTDOOR HOLDINGS, INC.",US-TX,Services-Advertising,9,-1.79254
+2024,16058,CACI International Inc,US-VA,Services-Computer Integrated Systems Design,5,4.60815
+2023,1409375,"Orion Energy Systems, Inc.",US-WI,Electric Lighting & Wiring Equipment,1,-0.18397
+2023,725363,CEL-SCI CORPORATION,US-VA,"Biological Products, (No Diagnostic Substances)",2,-0.3178689500000002
+2024,98362,TIMKEN CO,US-OH,Ball & Roller Bearings,1,3.526999999999999
+2024,24090,"CITIZENS, INC.",US-TX,Life Insurance,9,0.1491200000000001
+2023,56701,KOSS CORPORATION,US-WI,Household Audio & Video Equipment,7,-0.00975722
+2022,750558,QNB Corp.,US-PA,State Commercial Banks,4,0.15921000000000002
+2021,96885,TEL-INSTRUMENT ELECTRONICS CORP.,US-NJ,Electronic Components & Accessories,7,0.02269431999999999
+2021,4127,"Skyworks Solutions, Inc.",US-CA,Semiconductors & Related Devices,7,14.00499999999997
+2021,868857,AECOM,US-TX,Services-Engineering Services,9,2.08648
+2021,1327068,"United States Oil Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,16.02274243999998
+2022,104894,ELME COMMUNITIES,US-MD,Real Estate Investment Trusts,3,-0.3086799999999998
+2021,775057,ALTEX INDUSTRIES INC,US-CO,Crude Petroleum & Natural Gas,0,-0.0017599999999999998
+2023,355019,FONAR CORPORATION,US-NY,Electromedical & Electrotherapeutic Apparatus,1,0.15585
+2023,886128,"FUELCELL ENERGY, INC.",US-CT,Electrical Industrial Apparatus,1,-1.02654
+2024,1617242,KEARNY FINANCIAL CORP.,US-NJ,"Savings Institution, Federally Chartered",8,0.2745200000000001
+2021,829224,Starbucks Corporation,US-WA,Retail-Eating & Drinking Places,6,37.82099999999999
+2021,854775,DIGI INTERNATIONAL INC.,US-MN,Computer Communications Equipment,7,0.10429000000000001
+2024,854775,DIGI INTERNATIONAL INC.,US-MN,Computer Communications Equipment,7,0.3348099999999996
+2022,1438133,"Tandem Diabetes Care, Inc.",US-CA,Surgical & Medical Instruments & Apparatus,1,-0.94593
+2023,1591698,PAYLOCITY HOLDING CORPORATION,US-IL,Services-Prepackaged Software,5,1.8786499999999982
+2024,949961,"Income Opportunity Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,0.08535000000000001
+2024,1441236,CLEARWATER PAPER CORPORATION,US-WA,Paperboard Mills,1,1.963
+2024,65312,"EVI Industries, Inc.",US-FL,Services-Personal Services,9,0.06272
+2024,706863,"UNION BANKSHARES, INC.",US-VT,State Commercial Banks,4,0.08761
+2023,712515,ELECTRONIC ARTS INC.,US-CA,Services-Prepackaged Software,5,12.950000000000001
+2023,108312,"WOODWARD, INC.",US-CO,Electrical Industrial Apparatus,1,2.947529999999998
+2022,706863,"UNION BANKSHARES, INC.",US-VT,State Commercial Banks,4,0.12614999999999998
+2023,720154,"INOTIV, INC.",US-IN,Services-Commercial Physical & Biological Research,9,-0.21701999999999982
+2023,1408534,"FIRST GUARANTY BANCSHARES, INC.",US-LA,"Savings Institution, Federally Chartered",8,0.09219
+2024,716314,GRAHAM CORP,US-NY,General Industrial Machinery & Equipment,1,0.07685
+2024,316253,"ENZO BIOCHEM, INC.",US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.10951
+2022,3545,"ALICO, INC.",US-FL,Agricultural Production-Crops,1,-0.008220000000000005
+2024,1583107,"THERAVANCE BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,-0.56418
+2021,1504461,NGL Energy Partners LP,US-OK,Natural Gas Transmission,0,-5.3589199999999995
+2022,1022408,ePlus inc.,US-VA,Wholesale-Computers & Peripheral Equipment & Software,1,1.12926
+2024,1017303,TRANSACT TECHNOLOGIES INC,US-CT,"Computer Peripheral Equipment, NEC",7,-0.0986300000000001
+2022,1517681,"PROPANC BIOPHARMA, INC.",AU-,Pharmaceutical Preparations,2,-0.02028087
+2024,1375348,GOLDEN STAR RESOURCE CORP.,US-NV,Miscellaneous Metal Ores,1,-0.00060633
+2023,205402,"GRAYBAR ELECTRIC COMPANY, INC.",US-MO,"Wholesale-Electrical Apparatus & Equipment, Wiring Supplies ",1,4.633999999999999
+2021,874015,"IONIS PHARMACEUTICALS, INC.",US-CA,Pharmaceutical Preparations,2,-3.356759999999997
+2022,725363,CEL-SCI CORPORATION,US-VA,"Biological Products, (No Diagnostic Substances)",2,-0.3694216900000003
+2021,105132,WD-40 COMPANY,US-CA,Miscellaneous Chemical Products,2,0.7775799999999999
+2021,720875,Dynatronics Corporation,US-MN,Surgical & Medical Instruments & Apparatus,1,0.020931579999999998
+2024,1590976,"MALIBU BOATS, INC.",US-TN,Ship & Boat Building & Repairing,1,-1.3634699999999982
+2021,1521951,"FIRST BUSINESS FINANCIAL SERVICES, INC.",US-WI,State Commercial Banks,4,0.35755000000000015
+2023,1083743,"FLUX POWER HOLDINGS, INC.",US-CA,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,-0.06771
+2024,1114925,"LANTRONIX, INC.",US-CA,Computer Communications Equipment,7,-0.0572
+2021,98362,TIMKEN CO,US-OH,Ball & Roller Bearings,1,3.690999999999999
+2021,1474903,"BGSF, INC.",US-TX,Services-Help Supply Services,9,0.1410947800000002
+2024,1589150,"REGEN BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,-0.01055337
+2022,768408,Cyanotech Corp,US-HI,Medicinal Chemicals & Botanical Products,2,-0.01624
+2024,1117297,"QuinStreet, Inc.",US-CA,"Services-Business Services, NEC",9,-0.17011
+2022,1314052,ANAVEX LIFE SCIENCES CORP.,US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.48144493
+2023,879526,WABASH NATIONAL CORPORATION,US-IN,Truck Trailers,1,2.31252
+2021,1371451,"HIGHWATER ETHANOL, LLC",US-MN,Industrial Organic Chemicals,2,0.29678778
+2024,89439,"MUELLER INDUSTRIES, INC.",US-TN,Rolling Drawing & Extruding of  Nonferrous Metals,1,4.95366
+2021,812011,"Vail Resorts, Inc.",US-CO,Services-Miscellaneous Amusement & Recreation,9,2.17877
+2024,946673,BANNER CORPORATION,US-WA,State Commercial Banks,4,1.6889799999999981
+2021,896156,Ethan Allen Interiors Inc.,US-CT,"Wood Household Furniture, (No Upholstered)",1,0.22909000000000002
+2022,858877,"CISCO SYSTEMS, INC.",US-CA,Computer Communications Equipment,7,115.3099999999999
+2021,1037038,Ralph Lauren Corporation,US-NY,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,6.954999999999989
+2023,1506251,"Citius Pharmaceuticals, Inc.",US-NJ,Pharmaceutical Preparations,2,-0.1825350400000001
+2021,779152,"JACK HENRY & ASSOCIATES, INC.",US-MO,Services-Computer Integrated Systems Design,5,2.453799999999996
+2022,772406,"CIRRUS LOGIC, INC.",US-TX,Semiconductors & Related Devices,7,3.580080000000002
+2021,1520697,"Acadia Healthcare Company, Inc.",US-TN,"Services-Specialty Outpatient Facilities, NEC",9,1.9063499999999998
+2021,763532,LSI INDUSTRIES INC.,US-OH,Electric Lighting & Wiring Equipment,1,0.07962000000000001
+2022,69891,National Beverage Corp.,US-FL,Bottled & Canned Soft Drinks & Carbonated Waters,0,1.369289999999999
+2022,891024,"PATTERSON COMPANIES, INC.",US-MN,"Wholesale-Medical, Dental & Hospital Equipment & Supplies",1,1.895980000000001
+2021,65270,"METHODE ELECTRONICS, INC.",US-IL,Electronic Connectors,7,1.171
+2024,721371,"Cardinal Health, Inc.",US-OH,"Wholesale-Drugs, Proprietaries & Druggists' Sundries",6,13.37999999999997
+2023,1387467,Alpha and Omega Semiconductor Limited,BM-,Semiconductors & Related Devices,7,-0.34951000000000004
+2024,1530721,CAPRI HOLDINGS LTD,GB-,Leather & Leather Products,1,-4.31999999999998
+2021,1591698,PAYLOCITY HOLDING CORPORATION,US-IL,Services-Prepackaged Software,5,1.14453
+2023,29644,"DONALDSON COMPANY, INC.",US-MN,Industrial & Commercial Fans & Blowers & Air Purifing Equip,1,3.7820000000000022
+2022,946647,PREMIER FINANCIAL CORP.,US-OH,State Commercial Banks,4,1.02187
+2023,46619,HEICO CORPORATION,US-FL,Aircraft Engines & Engine Parts,1,4.23864
+2023,72573,"MOVADO GROUP, INC.",US-NJ,"Watches, Clocks, Clockwork Operated Devices/Parts",1,0.4134500000000002
+2023,885275,WILSON BANK HOLDING CO,US-TN,National Commercial Banks,4,0.48938000000000004
+2021,6951,APPLIED MATERIALS INC /DE,US-CA,Semiconductors & Related Devices,7,65.5399999999999
+2021,14846,BRT APARTMENTS CORP.,US-NY,Real Estate Investment Trusts,3,0.29114
+2022,48465,HORMEL FOODS CORPORATION,US-MN,Meat Packing Plants,1,9.17165999999998
+2022,1126956,Spire Inc.,US-MO,Natural Gas Distribution,0,3.541999999999998
+2021,1163370,"NORTHRIM BANCORP, INC.",US-AK,"Savings Institution, Federally Chartered",8,0.3751699999999999
+2021,1544190,"SHEPHERD’S FINANCE, LLC",US-FL,Short-Term Business Credit Institutions,8,0.01159
+2022,859070,FIRST COMMUNITY BANKSHARES INC /VA/,US-VA,State Commercial Banks,4,0.4666200000000001
+2023,1530950,"Post Holdings, Inc.",US-MO,Grain Mill Products,1,3.2140000000000013
+2022,1609258,PETROGAS COMPANY,US-TX,Crude Petroleum & Natural Gas,0,-0.0008893799999999999
+2024,828530,ADMIRAL FINANCIAL CORP.,US-FL,"Savings Institution, Federally Chartered",8,0.0
+2023,849401,"ADM TRONICS UNLIMITED, INC.",US-NJ,Electromedical & Electrotherapeutic Apparatus,1,-0.0037161000000000004
+2021,879407,"Arrowhead Pharmaceuticals, Inc.",US-CA,Pharmaceutical Preparations,2,-0.54444
+2021,866273,MATRIX SERVICE CO,US-OK,Construction - Special Trade Contractors,1,-0.45042000000000004
+2021,912767,"UFP INDUSTRIES, INC.",US-MI,"Sawmills & Planting Mills, General",1,5.3564
+2021,936528,"WAFD, INC.",US-WA,National Commercial Banks,4,1.37372
+2021,1175535,Whitestone REIT,US-TX,Real Estate Investment Trusts,3,0.12048
+2024,812011,"Vail Resorts, Inc.",US-CO,Services-Miscellaneous Amusement & Recreation,9,7.96701999999997
+2023,104894,ELME COMMUNITIES,US-MD,Real Estate Investment Trusts,3,-0.5297699999999991
+2022,74260,OLD REPUBLIC INTERNATIONAL CORPORATION,US-IL,Surety Insurance,9,6.86599999999999
+2024,1604778,"Qorvo, Inc.",US-NC,Semiconductors & Related Devices,7,-1.0268799999999998
+2022,6845,"APOGEE ENTERPRISES, INC.",US-MN,"Glass Products, Made of  Purchased Glass",1,0.94942
+2023,73309,NUCOR CORPORATION,US-NC,"Steel Works, Blast Furnaces & Rolling Mills (Coke Ovens)",1,45.24999999999997
+2023,1438943,"RANGE IMPACT, INC.",US-OH,Heavy Construction Other Than Bldg Const - Contractors,1,0.031310550000000006
+2021,80172,NATIONAL PRESTO INDUSTRIES INC,US-WI,"Ordnance & Accessories, (No Vehicles/Guided Missiles)",1,0.2565399999999999
+2023,216877,"PISMO COAST VILLAGE, INC.",US-CA,"Hotels, Rooming Houses, Camps & Other Lodging Places",9,0.011885699999999999
+2021,1049521,"MERCURY SYSTEMS, INC.",US-MA,Electronic Components & Accessories,7,0.21491000000000013
+2021,1517681,"PROPANC BIOPHARMA, INC.",AU-,Pharmaceutical Preparations,2,-0.02126111000000001
+2023,1598665,"Heritage Insurance Holdings, Inc.",US-FL,"Fire, Marine & Casualty Insurance",1,0.4530700000000001
+2023,1375348,GOLDEN STAR RESOURCE CORP.,US-NV,Miscellaneous Metal Ores,1,-0.00049543
+2023,1177609,"Five Below, Inc.",US-PA,Retail-Variety Stores,6,3.011059999999989
+2021,104894,ELME COMMUNITIES,US-MD,Real Estate Investment Trusts,3,2.16792
+2021,810136,"PHOTRONICS, INC.",US-CT,Semiconductors & Related Devices,7,0.67742
+2024,1050743,PEAPACK-GLADSTONE FINANCIAL CORPORATION,US-NJ,"Commercial Banks, NEC",4,0.3298800000000003
+2021,310764,STRYKER CORP,US-MI,Surgical & Medical Instruments & Apparatus,1,19.93999999999999
+2022,316253,"ENZO BIOCHEM, INC.",US-NY,"Biological Products, (No Diagnostic Substances)",2,-0.1062
+2022,949961,"Income Opportunity Realty Investors, Inc.",US-TX,Real Estate Investment Trusts,3,0.03931
+2024,2969,"AIR PRODUCTS AND CHEMICALS, INC.",US-PA,Industrial Inorganic Chemicals,2,25.830000000000002
+2024,946581,"TAKE-TWO INTERACTIVE SOFTWARE, INC.",US-NY,Services-Prepackaged Software,5,-8.442999999999982
+2022,1579877,OUTFRONT Media Inc.,US-NY,Real Estate Investment Trusts,3,1.2950000000000002
+2021,911216,"PALATIN TECHNOLOGIES, INC.",US-NJ,Pharmaceutical Preparations,2,-0.2725841499999999
+2023,96793,"SUNLINK HEALTH SYSTEMS, INC.",US-GA,"Services-General Medical & Surgical Hospitals, NEC",9,-0.05943
+2024,55242,KENNAMETAL INC.,US-PA,"Machine Tools, Metal Cutting Types",1,0.78003
+2024,96885,TEL-INSTRUMENT ELECTRONICS CORP.,US-NJ,Electronic Components & Accessories,7,-0.0109502
+2023,90168,"SIFCO Industries, Inc.",US-OH,Aircraft Engines & Engine Parts,1,-0.09525
+2022,1046257,INGREDION INCORPORATED,US-IL,Grain Mill Products,1,4.92
+2024,868671,"GLACIER BANCORP, INC.",US-MT,State Commercial Banks,4,1.90144
+2023,800240,The ODP Corporation,US-FL,Retail-Miscellaneous Shopping Goods Stores,6,1.3900000000000001
+2024,78749,"AGILYSYS, INC.",US-GA,Services-Computer Integrated Systems Design,5,0.964410000000001
+2024,1493594,"MACOM Technology Solutions Holdings, Inc.",US-MA,Semiconductors & Related Devices,7,-1.12672
+2023,108385,WORLD ACCEPTANCE CORPORATION,US-SC,Personal Credit Institutions,8,0.6691899999999998
+2022,1499961,MULLEN AUTOMOTIVE INC.,US-CA,Motor Vehicles & Passenger Car Bodies,1,-0.0931828
+2023,866706,ESCO TECHNOLOGIES INC.,US-MO,"Communications Equipment, NEC",7,0.88933
+2021,1405513,"United States 12 Month Natural Gas Fund, LP",US-CA,Commodity Contracts Brokers & Dealers,3,0.031596650000000004
+2023,1006028,"PURE Bioscience, Inc.",US-CA,Miscellaneous Chemical Products,2,-0.034890000000000004
+2021,720005,"RAYMOND JAMES FINANCIAL, INC.",US-FL,"Security Brokers, Dealers & Flotation Companies",3,14.14999999999997
+2022,1600033,"e.l.f. Beauty, Inc.",US-CA,"Perfumes, Cosmetics & Other Toilet Preparations",2,0.4684
+2023,1108134,"BERKSHIRE HILLS BANCORP, INC.",US-MA,"Savings Institutions, Not Federally Chartered",8,0.69598
+2024,315189,DEERE & CO,US-IL,Farm Machinery & Equipment,1,67.06999999999987
+2021,720154,"INOTIV, INC.",US-IN,Services-Commercial Physical & Biological Research,9,-0.84811
+2021,1437517,"CYBERLOQ TECHNOLOGIES, INC.",US-FL,Services-Prepackaged Software,5,-0.01087711
+2021,32621,EMERSON RADIO CORP,US-NJ,Household Audio & Video Equipment,7,-0.036559999999999995
+2023,1262976,Cimpress plc,IE-,Commercial Printing,6,-0.3599299999999991
+2023,1381668,TFS FINANCIAL CORPORATION,US-OH,"Savings Institution, Federally Chartered",8,0.71821
+2022,1477246,S&W SEED CO,US-CO,Agricultural Production-Crops,1,-0.2510479200000001
+2021,886128,"FUELCELL ENERGY, INC.",US-CT,Electrical Industrial Apparatus,1,-0.83535
+2024,936395,Ciena Corp,US-MD,Telephone & Telegraph Apparatus,7,0.56183
+2023,712770,"ONE LIBERTY PROPERTIES, INC.",US-NY,Real Estate Investment Trusts,3,0.29613999999999996
+2023,918965,"ScanSource, Inc.",US-SC,Wholesale-Computers & Peripheral Equipment & Software,1,0.906
+2024,1227654,"Compass Minerals International, Inc.",US-KS,Mining & Quarrying of  Nonmetallic Minerals (No Fuels),0,-1.496999999999998
+2022,1308547,"DOLBY LABORATORIES, INC.",US-CA,Patent Owners & Lessors,1,1.95289
+2022,807863,"MITEK SYSTEMS, INC.",US-CA,"Computer Peripheral Equipment, NEC",7,0.05297
+2023,1361538,Primoris Services Corporation,US-TX,"Water, Sewer, Pipeline, Comm & Power Line Construction",1,1.26145
+2024,750558,QNB Corp.,US-PA,State Commercial Banks,4,0.11448
+2024,771497,ABM INDUSTRIES INCORPORATED,US-NY,Services-To Dwellings & Other Buildings,9,1.7499999999999991
+2022,1606757,"KIMBALL ELECTRONICS, INC.",US-IN,Printed Circuit Boards,7,0.47505000000000003
+2023,1048911,FedEx Corporation,US-TN,Air Courier Services,9,35.199999999999974
+2022,315189,DEERE & CO,US-IL,Farm Machinery & Equipment,1,78.2499999999999
+2023,720005,"RAYMOND JAMES FINANCIAL, INC.",US-FL,"Security Brokers, Dealers & Flotation Companies",3,16.62999999999998
+2022,915358,"SIGMATRON INTERNATIONAL, INC.",US-IL,Printed Circuit Boards,7,-0.20187573
+2023,1260221,TransDigm Group Incorporated,US-OH,"Aircraft Parts & Auxiliary Equipment, NEC",1,13.87999999999997
+2021,868671,"GLACIER BANCORP, INC.",US-MT,State Commercial Banks,4,2.8475699999999993
+2024,1157408,"Stride, Inc.",US-VA,Services-Educational Services,9,2.7664899999999992
+2023,1016178,"CARVER BANCORP, INC.",US-NY,"Savings Institution, Federally Chartered",8,-0.04077
+2023,1604778,"Qorvo, Inc.",US-NC,Semiconductors & Related Devices,7,-0.88988
+2021,788329,Johnson Outdoors Inc.,US-WI,"Sporting & Athletic Goods, NEC",1,0.7439
+2021,882835,"ROPER TECHNOLOGIES, INC.",US-FL,"Industrial Instruments For Measurement, Display, and Control",1,11.526
+2022,829224,Starbucks Corporation,US-WA,Retail-Eating & Drinking Places,6,33.554999999999914
+2022,707605,AMERISERV FINANCIAL INC /PA/,US-PA,National Commercial Banks,4,0.07448000000000002
+2023,833444,JOHNSON CONTROLS INTERNATIONAL PLC,IE-,Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip,1,26.04999999999999
+2022,205402,"GRAYBAR ELECTRIC COMPANY, INC.",US-MO,"Wholesale-Electrical Apparatus & Equipment, Wiring Supplies ",1,4.529000000000002
+2022,1584509,Aramark,US-PA,Retail-Eating  Places,6,1.905570000000002
+2022,1618732,"NUTANIX, INC.",US-CA,Services-Prepackaged Software,5,-3.9427800000000017
+2021,1618732,"NUTANIX, INC.",US-CA,Services-Prepackaged Software,5,-7.829019999999989
+2024,785956,J&J SNACK FOODS CORP.,US-NJ,Cookies & Crackers,6,0.9107000000000018
+2023,896878,INTUIT INC.,US-CA,Services-Prepackaged Software,5,47.679999999999794
+2022,1227265,CERES ORION L.P.,US-NY,Commodity Contracts Brokers & Dealers,3,0.45600496
+2024,1603345,AGENTIX CORP.,US-CA,"Biological Products, (No Diagnostic Substances)",2,-0.00378906
+2024,1666138,Atkore Inc.,US-IL,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,4.31125
+2021,1434524,CLEARSIGN TECHNOLOGIES CORPORATION,US-OK,"Industrial Instruments For Measurement, Display, and Control",1,-0.07891
+2021,1589526,BLUE BIRD CORPORATION,US-GA,Truck & Bus Bodies,1,0.039630000000000006
+2021,1583107,"THERAVANCE BIOPHARMA, INC.",US-CA,Pharmaceutical Preparations,2,-2.62424
+2023,879407,"Arrowhead Pharmaceuticals, Inc.",US-CA,Pharmaceutical Preparations,2,0.13161
+2022,1403161,VISA INC.,US-CA,"Services-Business Services, NEC",9,146.4799999999998
+2024,933034,STRATTEC SECURITY CORP,US-WI,Motor Vehicle Parts & Accessories,1,0.08034
+2024,1598665,"Heritage Insurance Holdings, Inc.",US-FL,"Fire, Marine & Casualty Insurance",1,0.6153899999999999
+2022,792966,"FARMERS & MERCHANTS BANCORP, INC.",US-OH,"Savings Institution, Federally Chartered",8,0.32514999999999983
+2022,1302215,"Houlihan Lokey, Inc.",US-CA,Investment Advice,3,3.68297999999999
+2024,1037038,Ralph Lauren Corporation,US-NY,"Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",1,8.90499999999998
+2023,1618921,"WALGREENS BOOTS ALLIANCE, INC.",US-IL,Retail-Drug Stores and Proprietary Stores,6,5.73999999999998
+2024,107140,"JOHN WILEY & SONS, INC.",US-NJ,Books: Publishing or  Publishing & Printing,6,-0.9780699999999999
+2022,1629210,PARAMOUNT GOLD NEVADA CORP.,US-NV,Metal Mining,1,-0.05966773
+2024,6951,APPLIED MATERIALS INC /DE,US-CA,Semiconductors & Related Devices,7,63.1699999999999
+2024,1544190,"SHEPHERD’S FINANCE, LLC",US-FL,Short-Term Business Credit Institutions,8,0.01737
+2023,1114925,"LANTRONIX, INC.",US-CA,Computer Communications Equipment,7,-0.10609
+2022,785786,PLEXUS CORP.,US-WI,Printed Circuit Boards,7,1.440470000000001
+2021,1342423,LIMONEIRA COMPANY,US-CA,Agricultural Production-Crops,1,0.028249999999999997
+2023,14693,Brown-Forman Corporation,US-KY,Beverages,2,8.58
+2021,936395,Ciena Corp,US-MD,Telephone & Telegraph Apparatus,7,6.25404
+2022,57515,Lancaster Colony Corporation,US-OH,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties",6,0.6859900000000001
+2022,935419,"RCI HOSPITALITY HOLDINGS, INC.",US-TX,Retail-Eating  Places,6,0.45704
+2024,1108134,"BERKSHIRE HILLS BANCORP, INC.",US-MA,"Savings Institutions, Not Federally Chartered",8,0.47519
+2024,1136893,"Fidelity National Information Services, Inc.",US-FL,"Services-Business Services, NEC",9,14.489999999999991
+2022,732026,TRIO-TECH INTERNATIONAL,SG-,"Special Industry Machinery, NEC",1,0.01054999999999999
+2023,57131,LA-Z-BOY INCORPORATED,US-MI,Household Furniture,1,1.15044
+2021,730263,"THOR Industries, Inc.",US-IN,Motor Homes,1,8.75431999999999
+2022,711404,"The Cooper Companies, Inc.",US-CA,Ophthalmic Goods,1,4.080000000000004
+2024,1049521,"MERCURY SYSTEMS, INC.",US-MA,Electronic Components & Accessories,7,-1.242520000000002
+2024,1413837,FIRST FOUNDATION INC.,US-TX,State Commercial Banks,4,-0.9240699999999991
+2023,1666138,Atkore Inc.,US-IL,"Miscellaneous Electrical Machinery, Equipment & Supplies",1,7.151509999999989
+2021,1308547,"DOLBY LABORATORIES, INC.",US-CA,Patent Owners & Lessors,1,2.6547299999999963
+2022,1071840,"SOLARWINDOW TECHNOLOGIES, INC.",US-AZ,Industrial Organic Chemicals,2,-0.05376961
+2022,771856,"CHAMPIONS ONCOLOGY, INC.",US-NJ,"Biological Products, (No Diagnostic Substances)",2,-0.019870000000000002
+2023,1057379,"Hackett Group, Inc.",US-FL,Services-Management Consulting Services,9,0.3415099999999999
+2022,1327567,"PALO ALTO NETWORKS, INC",US-CA,"Computer Peripheral Equipment, NEC",7,-0.42200000000000215
+2022,80420,"Powell Industries, Inc.",US-TX,Switchgear & Switchboard Apparatus,7,0.1774499999999999
+2021,1066194,eGain Corporation,US-CA,Services-Prepackaged Software,5,0.030339999999999992
+2023,57515,Lancaster Colony Corporation,US-OH,"Canned, Frozen & Preservd Fruit, Veg & Food Specialties",6,1.4454499999999992
+2024,70502,NATIONAL RURAL UTILITIES COOPERATIVE FINANCE CORPORATION,US-VA,Miscellaneous Business Credit Institution,8,0.43538999999999994
+2024,37472,"FLEXSTEEL INDUSTRIES, INC.",US-IA,Household Furniture,1,0.19919
+2023,1529377,ARES COMMERCIAL REAL ESTATE CORPORATION,US-NY,Real Estate Investment Trusts,3,-0.38866999999999907
+2022,1591698,PAYLOCITY HOLDING CORPORATION,US-IL,Services-Prepackaged Software,5,1.15644
+2021,1230245,PIPER SANDLER COMPANIES,US-MN,"Security Brokers, Dealers & Flotation Companies",3,2.78514
+2024,1005286,"LIFECORE BIOMEDICAL, INC.",US-MN,Pharmaceutical Preparations,2,0.08463000000000002
+2024,827054,MICROCHIP TECHNOLOGY INCORPORATED,US-AZ,Semiconductors & Related Devices,7,5.732999999999991
+2021,707549,LAM RESEARCH CORPORATION,US-CA,"Special Industry Machinery, NEC",1,45.16816
+2022,67887,MOOG Inc.,US-NY,Misc Industrial & Commercial Machinery & Equipment,1,1.75921
+2023,731653,UNITED BANCORP INC /OH/,US-OH,State Commercial Banks,4,0.0895
+2023,1005731,IDT CORPORATION,US-NJ,Telephone Communications (No Radiotelephone),9,0.35864000000000007
+2024,1169561,"Commvault Systems, Inc",US-NJ,Services-Prepackaged Software,5,0.62253
+2022,823277,CHS Inc.,US-MN,Wholesale-Farm Product Raw Materials,1,21.54745999999994
+2021,1032220,"Maximus, Inc.",US-VA,"Services-Business Services, NEC",9,3.229339999999998
+2024,882835,"ROPER TECHNOLOGIES, INC.",US-FL,"Industrial Instruments For Measurement, Display, and Control",1,15.492999999999949
+2024,1437517,"CYBERLOQ TECHNOLOGIES, INC.",US-FL,Services-Prepackaged Software,5,-0.00989452
+2021,1070524,"GREENE COUNTY BANCORP, INC.",US-NY,"Savings Institutions, Not Federally Chartered",8,0.2450699999999998
+2023,913778,BF GARDEN TAX CREDIT FUND IV L.P.,US-MA,Operators of  Apartment Buildings,9,0.01073117
+2023,1023731,"8x8, INC.",US-CA,Services-Computer Processing & Data Preparation,5,-0.70031
+2021,10456,Baxter International Inc.,US-IL,Surgical & Medical Instruments & Apparatus,1,6.72
+2023,38777,"FRANKLIN RESOURCES, INC.",US-CA,Investment Advice,3,9.00499999999996
+2024,879407,"Arrowhead Pharmaceuticals, Inc.",US-CA,Pharmaceutical Preparations,2,-5.71677
+2024,712515,ELECTRONIC ARTS INC.,US-CA,Services-Prepackaged Software,5,11.56999999999997
+2021,1606757,"KIMBALL ELECTRONICS, INC.",US-IN,Printed Circuit Boards,7,0.28621
+2024,1571996,Dell Technologies Inc.,US-TX,Electronic Computers,7,45.91999999999998
+2024,1410738,VoIP-PAL.COM INC.,US-TX,Telephone & Telegraph Apparatus,7,-0.10381101999999999
+2022,69422,THE INTERGROUP CORPORATION,US-CA,Operators of  Apartment Buildings,9,0.0075899999999999995
+2022,1381668,TFS FINANCIAL CORPORATION,US-OH,"Savings Institution, Federally Chartered",8,0.7233200000000001
+2024,1046050,"TIMBERLAND BANCORP, INC.",US-WA,"Savings Institutions, Not Federally Chartered",8,0.2484699999999999
+2024,1341439,Oracle Corporation,US-TX,Services-Prepackaged Software,5,108.81999999999981
+2024,1630113,BIOTRICITY INC.,US-CA,Surgical & Medical Instruments & Apparatus,1,-0.09293533
+2023,1627223,The Chemours Company,US-DE,Chemicals & Allied Products,2,-2.36999999999999
+2022,911216,"PALATIN TECHNOLOGIES, INC.",US-NJ,Pharmaceutical Preparations,2,-0.20811134000000012
+2023,3545,"ALICO, INC.",US-FL,Agricultural Production-Crops,1,0.5882200000000009
