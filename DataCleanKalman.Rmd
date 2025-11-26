@@ -1,0 +1,325 @@
+---
+title: "DataCleanKalman"
+output: html_document
+---
+
+#Setup and Library Loading Chunk
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+```
+
+# Import dataset with missing
+
+```{r}
+
+read_clean_quarters <- function(path) {
+  df <- read.csv(path, check.names = FALSE)  # keep original names if possible
+
+  # 1) Strip the leading 'X' only for quarter-like names (YYYYQ#)
+  names(df) <- sub("^X(?=\\d{4}Q[1-4]$)", "", names(df), perl = TRUE)
+
+  # 2) Ensure quarter columns are numeric (not logical/character)
+  qcols <- grep("^\\d{4}Q[1-4]$", names(df), value = TRUE)
+  df[ qcols ] <- lapply(df[ qcols ], function(x) as.numeric(as.character(x)))
+
+  df
+}
+
+cleaned_data <- read_clean_quarters("./data/cleaned_data_with_missing.csv")
+cleaned_data <- cleaned_data[, -1]
+head(cleaned_data)
+```
+
+# EM Algorithm with Kalman Filter Implementation
+
+```{r}
+# Quarter column finder
+quarter_cols <- function(df, regex = "^\\d{4}Q[1-4]$") {
+  qs <- grep(regex, names(df), value = TRUE)
+  qs[order(as.integer(substr(qs, 1, 4)),
+           as.integer(sub(".*Q", "", qs)))]
+}
+
+# Fallbacks (always return length(y))
+fallback_impute <- function(y) {
+  # 1) LOCF/ NOCB
+  y_l <- na.locf(y, na.rm = FALSE)
+  y_ln <- na.locf(y_l, fromLast = TRUE, na.rm = FALSE)
+  # 2) If still NA (all-missing series), use 0
+  y_ln[is.na(y_ln)] <- 0
+  y_ln
+}
+
+# EM + Kalman for ONE series on asinh scale, with hard fallbacks
+em_impute_series_asinh <- function(y, maxit = 200, asinh_scale = 1) {
+  n <- length(y)
+  z <- asinh(y / asinh_scale)
+
+  # If <2 non-missing, return flat mean (or zeros if all NA)
+  if (sum(is.finite(z)) < 2) {
+    mu <- if (any(is.finite(z))) mean(z[is.finite(z)]) else 0
+    return(list(z_hat = rep(mu, n)))
+  }
+
+  yt <- matrix(z, nrow = 1)
+  mod <- list(
+    Z = matrix(1), A = "zero",
+    R = matrix("r"),
+    B = matrix(1), U = "zero",
+    Q = matrix("q"),
+    x0 = "unequal"
+  )
+
+  fit <- tryCatch(
+    MARSS(yt, model = mod,
+          control = list(maxit = maxit, conv.test.slope.tol = 1e-4),
+          silent = TRUE),
+    error = function(e) NULL
+  )
+
+  if (is.null(fit) || !is.list(fit) || is.null(fit$par) ) {
+    # MARSS failed → fallback to smooth LOCF on original scale
+    y_imp <- fallback_impute(y)
+    z_hat <- asinh(y_imp / asinh_scale)
+    return(list(z_hat = z_hat))
+  }
+
+  z_hat <- tryCatch(
+    as.numeric(fitted(fit, type = "ytT")$ytT),
+    error = function(e) NULL
+  )
+
+  # Final safety: always return length n
+  if (is.null(z_hat) || length(z_hat) != n) {
+    y_imp <- fallback_impute(y)
+    z_hat <- asinh(y_imp / asinh_scale)
+  }
+  list(z_hat = z_hat)
+}
+
+# Main: impute all companies in cleaned_data (wide quarters)
+kalman_em_impute_marss <- function(cleaned_data,
+                                   q_regex = "^\\d{4}Q[1-4]$",
+                                   maxit = 200,
+                                   asinh_scale = 1) {
+  qs <- quarter_cols(cleaned_data, q_regex)
+  stopifnot(length(qs) > 0)
+
+  X <- as.matrix(cleaned_data[, qs, drop = FALSE])
+  storage.mode(X) <- "double"
+
+  Zhat <- matrix(NA_real_, nrow = nrow(X), ncol = ncol(X))
+
+  for (i in seq_len(nrow(X))) {
+    res <- em_impute_series_asinh(X[i, ], maxit = maxit, asinh_scale = asinh_scale)
+    # guarantee correct length before assignment
+    if (length(res$z_hat) != ncol(X)) {
+      # last-resort guard (should not happen)
+      res$z_hat <- rep(mean(asinh(X[i, ]/asinh_scale), na.rm = TRUE) %||% 0, ncol(X))
+    }
+    Zhat[i, ] <- res$z_hat
+  }
+
+  # Back-transform to original scale
+  Yimp <- asinh_scale * sinh(Zhat)
+
+  out <- cleaned_data
+  out[, qs] <- Yimp
+  out
+}
+```
+
+
+# Train/Test Split for EM Imputation Performance Evaluation
+
+
+```{r}
+library(dplyr)
+library(stringr)
+
+# Split: last `years_test` full years → test; others → train
+split_train_test_by_years <- function(df, years_test = 3, q_regex = "^\\d{4}Q[1-4]$") {
+  qcols <- quarter_cols(df, q_regex)
+  if (!length(qcols)) stop("No quarter columns found (pattern ", q_regex, ").")
+
+  # Extract years present
+  years <- sort(unique(as.integer(substr(qcols, 1, 4))))
+  max_year <- max(years, na.rm = TRUE)
+  test_years <- seq.int(max_year - years_test + 1, max_year)
+
+  # Quarter columns by split
+  test_q  <- qcols[as.integer(substr(qcols, 1, 4)) %in% test_years]
+  train_q <- setdiff(qcols, test_q)
+
+  id_cols <- setdiff(names(df), qcols)
+
+  # Keep the rest of info (id/meta) in BOTH datasets
+  train_df <- df %>% select(all_of(id_cols), all_of(train_q))
+  test_df  <- df %>% select(all_of(id_cols), all_of(test_q))
+
+  attr(train_df, "years_train") <- setdiff(years, test_years)
+  attr(test_df,  "years_test")  <- test_years
+  list(train = train_df, test = test_df)
+}
+
+
+res <- split_train_test_by_years(cleaned_data, years_test = 3)
+train_df <- res$train
+test_df  <- res$test
+```
+
+```{r}
+head(train_df)
+head(test_df)
+```
+
+# EM Imputation for missingness in Train dataset
+
+```{r}
+train_full <- kalman_em_impute_marss(train_df, maxit = 200, asinh_scale = 1)
+head(train_full)
+```
+
+
+```{r}
+order_quarters <- function(qnames) {
+  qnames[order(as.integer(substr(qnames, 1, 4)),
+               as.integer(sub(".*Q", "", qnames)))]
+}
+
+sic_to_division <- function(sic) {
+  s <- suppressWarnings(as.integer(sic))
+  dplyr::case_when(
+    is.na(s) ~ "Unknown",
+    s >= 100  & s <= 999   ~ "Agriculture/Forestry/Fishing",
+    s >= 1000 & s <= 1499  ~ "Mining",
+    s >= 1500 & s <= 1799  ~ "Construction",
+    s >= 2000 & s <= 3999  ~ "Manufacturing",
+    s >= 4000 & s <= 4999  ~ "Transportation/Public Utilities",
+    s >= 5000 & s <= 5199  ~ "Wholesale Trade",
+    s >= 5200 & s <= 5999  ~ "Retail Trade",
+    s >= 6000 & s <= 6799  ~ "Finance/Insurance/Real Estate",
+    s >= 7000 & s <= 8999  ~ "Services",
+    s >= 9100 & s <= 9729  ~ "Public Administration",
+    s >= 9900 & s <= 9999  ~ "Nonclassifiable",
+    TRUE ~ "Other"
+  )
+}
+
+make_temporal_df <- function(cleaned_data,
+                             quarter_regex = "^\\d{4}Q[1-4]$",
+                             noise_sd = 1,
+                             seed = NULL,
+                             id_cols = c("cik","entityName","sic")) {
+
+  qcols <- grep(quarter_regex, names(cleaned_data), value = TRUE)
+  stopifnot(length(qcols) > 0)
+  qcols <- order_quarters(qcols)
+
+  long <- cleaned_data %>%
+    select(any_of(c(id_cols, qcols))) %>%
+    pivot_longer(all_of(qcols), names_to = "quarter", values_to = "y") %>%
+    mutate(
+      year = as.integer(substr(.data$quarter, 1, 4)),
+      qtr  = as.integer(sub(".*Q", "", .data$quarter))
+    ) %>%
+    arrange(.data$year, .data$qtr)
+
+  uniq_q <- long %>%
+    distinct(.data$quarter, .data$year, .data$qtr) %>%
+    arrange(.data$year, .data$qtr) %>%
+    mutate(t_index = row_number())
+
+  long <- long %>% left_join(uniq_q, by = c("quarter","year","qtr"))
+
+  if (!is.null(seed)) set.seed(seed)
+  long <- long %>%
+    group_by(.data$quarter) %>%
+    mutate(x_latent = rnorm(n(), mean = first(.data$t_index), sd = noise_sd)) %>%
+    ungroup() %>%
+    mutate(
+      sic_division = sic_to_division(.data$sic)
+    )
+
+  # one-hot SIC division indicators
+  dummies <- model.matrix(~ factor(long$sic_division) - 1)
+  colnames(dummies) <- sub("^factor\\(long\\$sic_division\\)", "ind_", colnames(dummies))
+  dummies <- as.data.frame(dummies)
+
+  bind_cols(long, dummies) %>%
+    select(any_of(id_cols),
+           sic_division, quarter, year, qtr, t_index, x_latent, y,
+           starts_with("ind_")) %>%
+    arrange(.data$cik, .data$year, .data$qtr)
+}
+
+sic_to_division <- function(s) {
+  s <- suppressWarnings(as.integer(s))
+  dplyr::case_when(
+    is.na(s) ~ "Unknown",
+    s>=100  & s<=999   ~ "Agriculture/Forestry/Fishing",
+    s>=1000 & s<=1499  ~ "Mining",
+    s>=1500 & s<=1799  ~ "Construction",
+    s>=2000 & s<=3999  ~ "Manufacturing",
+    s>=4000 & s<=4999  ~ "Transportation/Public Utilities",
+    s>=5000 & s<=5199  ~ "Wholesale Trade",
+    s>=5200 & s<=5999  ~ "Retail Trade",
+    s>=6000 & s<=6799  ~ "Finance/Insurance/Real Estate",
+    s>=7000 & s<=8999  ~ "Services",
+    s>=9100 & s<=9729  ~ "Public Administration",
+    s>=9900 & s<=9999  ~ "Nonclassifiable",
+    TRUE ~ "Other"
+  )
+}
+
+# --- Build per-company CI; x = SIC + Normal noise ---
+make_company_ci_df <- function(cleaned_data,
+                               quarter_regex = "^\\d{4}Q[1-4]$",
+                               noise_sd = 1,
+                               seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  qcols <- grep(quarter_regex, names(cleaned_data), value = TRUE)
+  stopifnot(length(qcols) > 0)
+
+  long <- cleaned_data %>%
+    select(cik, entityName, sic, all_of(qcols)) %>%
+    pivot_longer(all_of(qcols), names_to = "quarter", values_to = "gross_income") %>%
+    filter(!is.na(gross_income))
+
+  ci <- long %>%
+    group_by(cik, entityName, sic) %>%
+    summarise(
+      n      = n(),
+      mean_y = mean(gross_income),
+      sd_y   = sd(gross_income),
+      se_y   = sd_y / sqrt(n),
+      y_lo   = mean_y - 1.96*se_y,
+      y_hi   = mean_y + 1.96*se_y,
+      .groups = "drop"
+    ) %>%
+    mutate(
+      sic_num      = suppressWarnings(as.integer(sic)),
+      sic_num      = ifelse(is.na(sic_num), as.numeric(factor(sic)), sic_num),
+      x            = sic_num + rnorm(n(), 0, noise_sd),
+      sic_division = sic_to_division(sic)
+    )
+
+  ci
+}
+```
+
+```{r}
+temporal_df_train <- make_temporal_df(train_full, noise_sd = 1, seed = 4210)
+temporal_df_test <- make_temporal_df(test_df, noise_sd = 1, seed = 4210)
+```
+
+
+```{r}
+company_ci_train <- make_company_ci_df(train_full, noise_sd = 1, seed = 4210)
+company_ci_test <- make_company_ci_df(test_df, noise_sd = 1, seed = 4210)
+```
+
+
