@@ -1,0 +1,152 @@
+---
+title: "Plotting"
+output: html_document
+---
+
+#Setup and Library Loading Chunk
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(dplyr)
+```
+
+
+```{r}
+temporal_data <- read.csv("./data/temporal_df_with_missing.csv", header = TRUE)
+temporal_data <- temporal_data[, -1]
+head(temporal_data)
+```
+
+```{r}
+plot_temporal_facets_log <- function(
+  df,
+  industry_cols = c("sic_division","industry","industry_type"),
+  x_col = "x_latent",
+  y_col = "y",
+  n_industries = NULL,        # set to an integer to keep only top n industries
+  point_alpha = 0.6,
+  point_size  = 1.8,
+  legend_bottom = TRUE
+) {
+  # choose the first industry column that exists
+  ind_col <- industry_cols[industry_cols %in% names(df)][1]
+  if (is.na(ind_col)) stop("No industry column found. Looked for: ", paste(industry_cols, collapse=", "))
+
+  # filter & factor
+  plot_df <- df %>%
+    dplyr::filter(
+      !is.na(.data[[x_col]]),
+      !is.na(.data[[y_col]]),
+      !is.na(.data[[ind_col]])
+    ) %>%
+    dplyr::mutate(!!ind_col := factor(.data[[ind_col]]))
+
+  # ensure domain for log1p
+  plot_df_log <- dplyr::filter(plot_df, .data[[y_col]] > -1)
+
+  # optionally restrict to top n industries by observation count
+  if (!is.null(n_industries)) {
+    top_inds <- plot_df_log %>%
+      dplyr::count(.data[[ind_col]], sort = TRUE) %>%
+      dplyr::slice_head(n = n_industries) %>%
+      dplyr::pull(1)
+
+    plot_df_log <- dplyr::filter(plot_df_log, .data[[ind_col]] %in% top_inds)
+  }
+
+  # theme
+  base_theme <- theme_minimal(base_size = 12) +
+    theme(
+      legend.position = if (legend_bottom) "bottom" else "right"
+    )
+
+  # build faceted log-scale plot
+  p_facets <- ggplot(
+      plot_df_log,
+      aes(x = .data[[x_col]], y = .data[[y_col]], color = .data[[ind_col]])
+    ) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    scale_y_continuous(
+      trans = "log1p",
+      labels = scales::label_number(scale_cut = scales::cut_short_scale())
+    ) +
+    labs(
+      x = "Latent time index (noisy)",
+      y = "Gross income (log1p)",
+      color = "Industry"
+    ) +
+    facet_wrap(stats::as.formula(paste("~", ind_col))) +
+    base_theme
+
+  p_facets
+}
+
+```
+
+```{r}
+plot_temporal_facets_log(temporal_data)
+
+```
+
+```{r}
+class_data <- read.csv("./data/classification_df_with_missing.csv", header = TRUE)
+class_data <- class_data[, -1]
+head(class_data)
+```
+
+
+```{r}
+plot_company_ci <- function(
+  df,
+  x_col   = "x",
+  mean_col= "mean_y",
+  lo_col  = "y_lo",
+  hi_col  = "y_hi",
+  color_cols = c("sic_division","industry","industry_type"),
+  point_alpha = 0.7,
+  point_size  = 1.8,
+  legend_bottom = TRUE
+){
+  # choose color column
+  color_col <- color_cols[color_cols %in% names(df)][1]
+  if (is.na(color_col)) stop("No industry column found. Looked for: ", paste(color_cols, collapse=", "))
+
+  # base filtered data
+  plot_df <- df %>%
+    filter(!is.na(.data[[mean_col]]),
+           !is.na(.data[[x_col]]),
+           !is.na(.data[[color_col]])) %>%
+    mutate(!!color_col := factor(.data[[color_col]]))
+
+  base_theme <- theme_minimal(base_size = 12) +
+    theme(legend.position = if (legend_bottom) "bottom" else "right")
+
+  # Linear y
+  p_linear <- ggplot(plot_df, aes(x = .data[[x_col]], y = .data[[mean_col]], color = .data[[color_col]])) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    geom_errorbar(aes(ymin = .data[[lo_col]], ymax = .data[[hi_col]]), width = 0) +
+    scale_y_continuous(labels = label_number(scale_cut = cut_short_scale())) +
+    labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI)", color = "Industry division") +
+    base_theme
+
+  # Log1p y (keep valid domain)
+  plot_df_log <- plot_df %>% filter(.data[[hi_col]] > -1)
+  p_log <- ggplot(plot_df_log, aes(x = .data[[x_col]], y = .data[[mean_col]], color = .data[[color_col]])) +
+    geom_point(alpha = point_alpha, size = point_size) +
+    geom_errorbar(aes(ymin = .data[[lo_col]], ymax = .data[[hi_col]]), width = 0) +
+    scale_y_continuous(trans = "log1p", labels = label_number(scale_cut = cut_short_scale())) +
+    labs(x = "SIC (with Normal noise)", y = "Gross income (mean, 95% CI) — log1p", color = "Industry division") +
+    base_theme
+
+  list(linear = p_linear, log = p_log)
+}
+```
+
+```{r}
+options(warn = -1)
+plots_ci <- plot_company_ci(class_data)
+plots_ci$log
+options(warn = 0)
+```
+

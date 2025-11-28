@@ -322,4 +322,190 @@ company_ci_train <- make_company_ci_df(train_full, noise_sd = 1, seed = 4210)
 company_ci_test <- make_company_ci_df(test_df, noise_sd = 1, seed = 4210)
 ```
 
+# Get all companies with full quarterly data.
+
+```{r}
+filter_by_missingness <- function(wide,
+                                  quarter_regex = "^\\d{4}Q[1-4]$",
+                                  max_na = 17,            # ≤25% of 68
+                                  require_recent = 4) {   # last 4 quarters must be non-NA
+  qcols <- grep(quarter_regex, names(wide), value = TRUE)
+  stopifnot(length(qcols) > 0)
+
+  summ <- wide %>%
+    mutate(
+      n_quarters  = length(qcols),
+      n_na        = rowSums(is.na(pick(all_of(qcols)))),
+      n_non_na    = n_quarters - n_na,
+      pct_missing = n_na / n_quarters
+    )
+
+  recent_ok <- summ %>%
+    transmute(recent_na = rowSums(is.na(pick(all_of(tail(qcols, require_recent)))))) %>%
+    pull(recent_na) == 0
+
+  cleaned <- summ %>%
+    filter(n_na <= max_na & recent_ok) %>%
+    select(-n_quarters, -n_na, -n_non_na, -pct_missing)  # drop helper cols if you like
+
+  list(
+    data    = cleaned,
+    summary = summ %>% select(any_of(c("cik","entityName")), n_non_na, n_na, pct_missing),
+    kept    = nrow(cleaned),
+    dropped = nrow(wide) - nrow(cleaned)
+  )
+}
+
+filter_full <- filter_by_missingness(cleaned_data, max_na = 6, require_recent = 1)
+
+filter_full_data  <- filter_full$data
+head(filter_full_data)
+head(filter_full$summary)          # NA counts per firm
+filter_full$kept; filter_full$dropped      # how many kept/dropped
+```
+
+```{r}
+introduce_mar_missing <- function(df, prop = 0.25, id_cols = NULL) {
+  # df: data.frame / tibble
+  # prop: proportion of NON-missing entries (in non-ID cols) to turn into NA
+  # id_cols: vector of column names you DON'T want to touch (e.g. IDs)
+  
+  df2 <- df
+  
+  # Columns we allow to become NA
+  all_cols_idx <- seq_along(df2)
+  if (!is.null(id_cols)) {
+    id_idx <- which(names(df2) %in% id_cols)
+    cand_cols_idx <- setdiff(all_cols_idx, id_idx)
+  } else {
+    cand_cols_idx <- all_cols_idx
+  }
+  
+  # Work on candidate columns only
+  mat <- as.matrix(df2[, cand_cols_idx])
+  
+  # Coordinates of currently non-missing cells
+  non_na_idx <- which(!is.na(mat), arr.ind = TRUE)
+  n_cells <- nrow(non_na_idx)
+  
+  if (n_cells == 0L) return(df2)  # nothing to do
+  
+  # How many to turn into NA
+  n_to_mask <- floor(prop * n_cells)
+  if (n_to_mask < 1L) return(df2)
+  
+  # Sample cells to mask
+  set.seed(123)  # remove or change for non-reproducible behavior
+  pick <- non_na_idx[sample(seq_len(n_cells), n_to_mask), , drop = FALSE]
+  
+  # Apply the NAs back to df2
+  for (k in seq_len(nrow(pick))) {
+    row_i <- pick[k, "row"]
+    col_local <- pick[k, "col"]       # index within candidate columns
+    col_global <- cand_cols_idx[col_local]  # index in df2
+    df2[row_i, col_global] <- NA
+  }
+  
+  df2
+}
+
+filtered_out_mar <- introduce_mar_missing(
+  filter_full_data,
+  prop    = 0.25,
+  id_cols = c("cik", "entityName")
+)
+```
+
+```{r}
+filtered_out_mar_kalman <- kalman_em_impute_marss(filtered_out_mar, maxit = 200, asinh_scale = 1)
+```
+
+```{r}
+compute_imputation_error <- function(df_original, df_mar, df_imputed, id_cols = NULL) {
+  # df_original: full data before adding MAR missingness
+  # df_mar: data after masking (MAR)
+  # df_imputed: result of EM imputation applied to df_mar
+  # id_cols: vector of ID column names to exclude from numeric comparison
+  
+  # 1. figure out which columns to compare
+  compare_cols <- setdiff(names(df_original), id_cols)
+  numeric_cols <- compare_cols[sapply(df_original[compare_cols], is.numeric)]
+  
+  if (length(numeric_cols) == 0L) {
+    stop("No numeric columns to compare after excluding id_cols.")
+  }
+  
+  orig_num <- as.matrix(df_original[, numeric_cols, drop = FALSE])
+  mar_num  <- as.matrix(df_mar[, numeric_cols, drop = FALSE])
+  imp_num  <- as.matrix(df_imputed[, numeric_cols, drop = FALSE])
+  
+  # 2. locations that were truly imputed:
+  # originally non-NA -> became NA in MAR -> then filled by EM
+  mask_idx <- which(!is.na(orig_num) & is.na(mar_num), arr.ind = TRUE)
+  
+  if (nrow(mask_idx) == 0L) {
+    return(list(message = "No imputed entries to evaluate (no masked cells)."))
+  }
+  
+  orig_vals <- orig_num[mask_idx]
+  imp_vals  <- imp_num[mask_idx]
+  
+  # safety: drop any leftover NA (shouldn't happen, but just in case)
+  ok <- !is.na(orig_vals) & !is.na(imp_vals)
+  orig_vals <- orig_vals[ok]
+  imp_vals  <- imp_vals[ok]
+  mask_idx  <- mask_idx[ok, , drop = FALSE]
+  
+  # 3. overall error metrics
+  abs_err <- abs(orig_vals - imp_vals)
+  mae  <- mean(abs_err)
+  rmse <- sqrt(mean((orig_vals - imp_vals)^2))
+  
+  # relative MAE: average error relative to typical magnitude of true values
+  rel_mae <- mae / mean(abs(orig_vals))
+  
+  # 4. column-wise error (optional but handy)
+  col_names_for_each_cell <- numeric_cols[mask_idx[, "col"]]
+  
+  col_mae <- tapply(abs_err, col_names_for_each_cell, mean)
+  col_rmse <- tapply(
+    (orig_vals - imp_vals)^2,
+    col_names_for_each_cell,
+    function(v) sqrt(mean(v))
+  )
+  
+  list(
+    n_imputed      = length(orig_vals),
+    overall_mae    = mae,
+    overall_rmse   = rmse,
+    overall_rel_mae = rel_mae,
+    column_mae     = col_mae,
+    column_rmse    = col_rmse,
+    # expose these so you can do further analysis/plots
+    orig_values    = orig_vals,
+    imputed_values = imp_vals
+  )
+}
+
+
+error_result <- compute_imputation_error(
+  df_original = filter_full_data,
+  df_mar      = filtered_out_mar,
+  df_imputed  = filtered_out_mar_kalman,   # your EM result
+  id_cols     = c("cik", "entityName", "sic")
+)
+
+error_result
+
+```
+```{r}
+masked_orig_values <- error_result$orig_values
+
+relative_mae <- error_result$overall_mae / mean(abs(masked_orig_values))
+relative_rmse <- error_result$overall_rmse / sd(masked_orig_values)
+
+relative_mae
+relative_rmse
+
+```
 
