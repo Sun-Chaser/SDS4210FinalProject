@@ -481,7 +481,7 @@ filtered_out_mar <- introduce_mar_missing(
 ```
 
 ```{r}
-filtered_out_mar_gaussian <- gmm_impute_panel_safe(filtered_out_mar, K = 12, maxit = 200, asinh_scale = 1e6)
+filtered_out_mar_gaussian <- gmm_impute_panel_safe(filtered_out_mar, K = 9, maxit = 200, asinh_scale = 1e6)
 ```
 
 ```{r}
@@ -550,20 +550,27 @@ compute_imputation_error <- function(df_original, df_mar, df_imputed, id_cols = 
     imputed_values = imp_vals
   )
 }
-
-
-
-error_result <- compute_imputation_error(
-  df_original = filter_full_data,
-  df_mar      = filtered_out_mar,
-  df_imputed  = filtered_out_mar_gaussian,   # your EM result
-  id_cols     = c("cik", "entityName", "sic")
-)
-
-error_result
-
 ```
 
+```{r}
+for (i in seq(1, 15)){
+  
+  filtered_out_mar_gaussian <- gmm_impute_panel_safe(filtered_out_mar, K = i, maxit = 200, asinh_scale = 1e6)
+  
+  error_result <- compute_imputation_error(
+    df_original = filter_full_data,
+    df_mar      = filtered_out_mar,
+    df_imputed  = filtered_out_mar_gaussian,   # your EM result
+    id_cols     = c("cik", "entityName", "sic")
+  )
+  
+  masked_orig_values <- error_result$orig_values
+
+  relative_mae <- error_result$overall_mae / mean(abs(masked_orig_values))
+  relative_rmse <- error_result$overall_rmse / sd(masked_orig_values)
+  print(sprintf("%dth result is mae:%.4f, and rmse:%.4f", i, relative_mae, relative_rmse))
+}
+```
 
 ```{r}
 masked_orig_values <- error_result$orig_values

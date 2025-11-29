@@ -150,3 +150,54 @@ plots_ci$log
 options(warn = 0)
 ```
 
+```{r}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+read_clean_quarters <- function(path) {
+  df <- read.csv(path, check.names = FALSE)  # keep original names if possible
+
+  # 1) Strip the leading 'X' only for quarter-like names (YYYYQ#)
+  names(df) <- sub("^X(?=\\d{4}Q[1-4]$)", "", names(df), perl = TRUE)
+
+  # 2) Ensure quarter columns are numeric (not logical/character)
+  qcols <- grep("^\\d{4}Q[1-4]$", names(df), value = TRUE)
+  df[ qcols ] <- lapply(df[ qcols ], function(x) as.numeric(as.character(x)))
+
+  df
+}
+
+cleaned_data <- read_clean_quarters("./data/cleaned_data_with_missing.csv")
+# cleaned_data <- cleaned_data[, -1]
+head(cleaned_data)
+
+# 1. Identify quarter columns (e.g., "2008Q1", "2009Q2", ...)
+quarter_cols <- names(cleaned_data)[grepl("^\\d{4}Q[1-4]$", names(cleaned_data))]
+
+# 2. Pivot to long and count submissions
+submissions_per_quarter <- cleaned_data %>%
+  pivot_longer(
+    cols = all_of(quarter_cols),
+    names_to = "quarter",
+    values_to = "value"
+  ) %>%
+  filter(!is.na(value)) %>%          # only keep actual submissions
+  count(quarter, name = "n_submissions") %>%
+  mutate(
+    quarter = factor(quarter, levels = sort(unique(quarter)))  # keep chronological order
+  )
+
+# 3. Plot histogram / bar plot of number of submissions per quarter
+ggplot(submissions_per_quarter, aes(x = quarter, y = n_submissions)) +
+  geom_col() +
+  labs(
+    title = "Number of Submissions per Quarter",
+    x = "Quarter",
+    y = "Number of Submissions"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
