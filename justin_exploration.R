@@ -1,6 +1,7 @@
 library(tidyverse)
 library(brms) 
 library(cmdstanr) 
+library(broom) 
 options(brms.backend = "cmdstanr") 
 
 df = read_csv("yearly_gross_with_cluster.csv") 
@@ -46,6 +47,8 @@ region_lm = lm(
 )
 summary(region_lm) 
 
+broom::tidy(summary(region_lm)) 
+
 region_cluster_lm = lm(
   yearly_gross ~ region + pred_cluster, data = df 
 ) 
@@ -58,7 +61,7 @@ test = df %>% filter(year == 2024)
 
 priors = get_prior(
   yearly_gross ~ region + pred_cluster + arma(time = year, gr = cik, p = 1, q = 1), 
-  data = df, family = student()
+  data = train, family = student()
 )
 
 priors = priors %>% 
@@ -73,7 +76,7 @@ priors = priors %>%
 
 fit = brm(
   yearly_gross ~ region + pred_cluster + arma(time = year, gr = cik, p = 1, q = 1), 
-  data = df, family = student(), 
+  data = train, family = student(), 
   chains = 4, cores = 4, 
   warmup = 1000, iter = 2500, seed = 76
 )
@@ -81,10 +84,11 @@ fit = brm(
 # model summary 
 # nu = 1 lol 
 summary(fit)
+plot(fit) 
 
 # posterior predictive check 
 # changing to student's t did wonders 
-pp_check(fit) + xlim(-200, 200) 
+pp_check(fit, ndraws = 200) + xlim(-200, 200) 
 
 # how good is the model? 
 test_actual = test$yearly_gross 
@@ -93,12 +97,14 @@ test$yearly_gross = NA
 pred_data = bind_rows(train, test) 
 epreds = posterior_epred(
   fit, newdata = pred_data, ndraws = 2000
-)
+) 
 test_rows = which(is.na(pred_data$yearly_gross)) 
 test_preds = colMeans(epreds[, test_rows]) 
 
 mae = mean(abs(test_actual - test_preds))
+rmse = sqrt(mean((test_actual - test_preds)^2))
 cat("Test MAE:", mae)  
+cat("Test RMSE:", rmse) 
 # MAE is around 3.1 billion - not too bad 
 
 # let's also plot the results 
@@ -107,12 +113,13 @@ results = tibble(
   preds = test_preds
 )
 
-ggplot(results, aes(x=actual, y=preds)) + 
-  geom_point() + 
-  geom_abline(slope = 1, linetype = "dashed", color = "red") + 
-  coord_fixed() + 
-  theme_bw() + 
-  labs(
+results %>%
+  ggplot(aes(x=actual, y=preds)) + 
+    geom_point() + 
+    geom_abline(slope = 1, linetype = "dashed", color = "red") + 
+    coord_fixed() + 
+    theme_bw() + 
+    labs(
     x = "Actual Gross Income", 
     y = "Predicted Gross Income", 
     title = "Model Results on 2024", 
@@ -121,3 +128,4 @@ ggplot(results, aes(x=actual, y=preds)) +
 
 # save the model for later 
 saveRDS(fit, "test_arma_bayesian_model.rds") 
+
