@@ -176,6 +176,24 @@ head(cleaned_data)
 head(clean_data_result$summary)          # NA counts per firm
 clean_data_result$kept; clean_data_result$dropped      # how many kept/dropped
 ```
+```{r}
+plot_missing_hist <- function(df, binwidth = 0.05) {
+  library(ggplot2)
+  library(scales)
+
+  ggplot(df, aes(x = pct_missing)) +
+    geom_histogram(binwidth = binwidth, color = "white") +
+    scale_x_continuous(labels = percent_format(accuracy = 1)) +
+    labs(
+      title = "Distribution of Missingness by Firm",
+      x = "Percent of variables missing",
+      y = "Number of firms"
+    ) +
+    theme_minimal()
+}
+
+plot_missing_hist(clean_data_result$summary)
+```
 
 
 # Fetch corresponding Standard Industrial Classification for each company

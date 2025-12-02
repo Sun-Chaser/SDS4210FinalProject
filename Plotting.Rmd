@@ -169,6 +169,10 @@ read_clean_quarters <- function(path) {
 }
 
 cleaned_data <- read_clean_quarters("./data/cleaned_data_with_missing.csv")
+```
+
+
+```{r}
 # cleaned_data <- cleaned_data[, -1]
 head(cleaned_data)
 
