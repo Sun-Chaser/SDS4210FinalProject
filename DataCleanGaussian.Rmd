@@ -1,0 +1,584 @@
+---
+title: "DataCleanGaussian"
+output: html_document
+---
+
+#Setup and Library Loading Chunk
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Import dataset with missing
+
+```{r}
+read_clean_quarters <- function(path) {
+  df <- read.csv(path, check.names = FALSE)  # keep original names if possible
+
+  # 1) Strip the leading 'X' only for quarter-like names (YYYYQ#)
+  names(df) <- sub("^X(?=\\d{4}Q[1-4]$)", "", names(df), perl = TRUE)
+
+  # 2) Ensure quarter columns are numeric (not logical/character)
+  qcols <- grep("^\\d{4}Q[1-4]$", names(df), value = TRUE)
+  df[ qcols ] <- lapply(df[ qcols ], function(x) as.numeric(as.character(x)))
+
+  df
+}
+
+cleaned_data <- read_clean_quarters("./data/cleaned_data_with_missing.csv")
+cleaned_data <- cleaned_data[, -1]
+head(cleaned_data)
+```
+
+# EM Algorithm with Finite Gaussian Mixture Implementation
+
+```{r}
+library(dplyr); library(stringr)
+
+quarter_cols <- function(df, regex="^\\d{4}Q[1-4]$"){
+  qs <- grep(regex, names(df), value=TRUE)
+  qs[order(as.integer(substr(qs,1,4)), as.integer(sub(".*Q","", qs)))]
+}
+logsumexp <- function(v){ m <- max(v); m + log(sum(exp(v - m))) }
+
+gmm_impute_panel_safe <- function(cleaned_data,
+                                  K = 8,
+                                  q_regex = "^\\d{4}Q[1-4]$",
+                                  maxit = 200,
+                                  tol = 1e-5,
+                                  asinh_scale = 1,
+                                  min_var = 1e-6,
+                                  seed = 1){
+  set.seed(seed)
+
+  # 1) Quarter columns and drop all-NA quarters to avoid NaN means/var
+  qs_all <- quarter_cols(cleaned_data, q_regex)
+  stopifnot(length(qs_all) > 0)
+  keep_mask <- colSums(!is.na(cleaned_data[qs_all])) > 0
+  qs_keep <- qs_all[keep_mask]
+  qs_drop <- qs_all[!keep_mask]
+
+  Xorig <- as.matrix(cleaned_data[, qs_keep, drop=FALSE])
+  storage.mode(Xorig) <- "double"
+
+  n <- nrow(Xorig); p <- ncol(Xorig)
+  if (p == 0L) stop("All quarter columns are entirely NA.")
+
+  # 2) Transform (handles negatives)
+  Z <- asinh(Xorig / asinh_scale)
+  Obs <- is.finite(Z)
+
+  # 3) Seed: finite column means; zeros if undefined
+  col_means <- suppressWarnings(colMeans(Z, na.rm=TRUE))
+  col_means[!is.finite(col_means)] <- 0
+  Z0 <- Z
+  for (j in seq_len(p)) {
+    miss <- !Obs[, j]
+    if (any(miss)) Z0[miss, j] <- col_means[j]
+  }
+  # Any residual non-finite -> 0
+  Z0[!is.finite(Z0)] <- 0
+
+  # 4) kmeans init with fallback
+  km <- tryCatch(stats::kmeans(Z0, centers=K, nstart=10, algorithm="Lloyd"),
+                 error=function(e) NULL)
+  if (is.null(km)) {
+    # random hard assignment fallback
+    cl <- sample.int(K, n, replace=TRUE)
+  } else {
+    cl <- km$cluster
+  }
+
+  mu <- matrix(0, K, p)
+  for (k in 1:K) {
+    rows <- which(cl == k); if (!length(rows)) rows <- sample.int(n, 1)
+    for (j in 1:p) {
+      idx <- rows[Obs[rows, j]]
+      mu[k, j] <- if (length(idx)) mean(Z[idx, j]) else col_means[j]
+    }
+  }
+  v0 <- apply(Z0, 2, stats::var)
+  v0[!is.finite(v0)] <- 1
+  v0[v0 < min_var] <- min_var
+  sigma2 <- matrix(v0, K, p, byrow=TRUE)
+  pi_k <- rep(1/K, K)
+
+  # 5) EM
+  ll_old <- -Inf
+  for (it in 1:maxit) {
+    # E-step
+    log_gamma <- matrix(0, n, K)
+    for (i in 1:n) {
+      obs_i <- which(Obs[i, ])
+      zi <- Z[i, obs_i]
+      for (k in 1:K) {
+        mk <- mu[k, obs_i]; vk <- pmax(sigma2[k, obs_i], min_var)
+        loglik_ik <- -0.5 * sum(log(2*pi*vk) + (zi - mk)^2 / vk)
+        log_gamma[i, k] <- log(pmax(pi_k[k], 1e-12)) + loglik_ik
+      }
+      lse <- logsumexp(log_gamma[i, ])
+      log_gamma[i, ] <- log_gamma[i, ] - lse
+    }
+    gamma <- pmax(exp(log_gamma), 1e-12); gamma <- sweep(gamma, 1, rowSums(gamma), "/")
+    Nk <- colSums(gamma)
+
+    # M-step
+    pi_k <- pmax(Nk / n, 1e-12); pi_k <- pi_k / sum(pi_k)
+    for (k in 1:K) {
+      for (j in 1:p) {
+        obs_ij <- Obs[, j]
+        if (any(obs_ij)) {
+          w <- gamma[obs_ij, k]; sw <- sum(w)
+          if (sw > 1e-12) {
+            z <- Z[obs_ij, j]
+            m_kj <- sum(w * z) / sw
+            mu[k, j] <- if (is.finite(m_kj)) m_kj else mu[k, j]
+            v_kj <- sum(w * (z - mu[k, j])^2) / sw
+            v_kj <- if (is.finite(v_kj) && v_kj > 0) v_kj else min_var
+            sigma2[k, j] <- v_kj
+          }
+        }
+      }
+    }
+
+    # log-likelihood
+    ll <- 0
+    for (i in 1:n) {
+      obs_i <- which(Obs[i, ])
+      zi <- Z[i, obs_i]
+      lp <- numeric(K)
+      for (k in 1:K) {
+        mk <- mu[k, obs_i]; vk <- pmax(sigma2[k, obs_i], min_var)
+        lp[k] <- log(pmax(pi_k[k], 1e-12)) - 0.5 * sum(log(2*pi*vk) + (zi - mk)^2 / vk)
+      }
+      ll <- ll + logsumexp(lp)
+    }
+    if (abs(ll - ll_old) < tol * (1 + abs(ll_old))) break
+    ll_old <- ll
+  }
+
+  # 6) Impute
+  Zimp <- Z
+  for (i in 1:n) {
+    miss_i <- which(!Obs[i, ])
+    if (length(miss_i)) {
+      Zimp[i, miss_i] <- as.numeric(gamma[i, ] %*% mu[, miss_i, drop=FALSE])
+    }
+  }
+  Yimp_keep <- asinh_scale * sinh(Zimp)
+
+  # 7) Write back (restore dropped quarters as NA)
+  out <- cleaned_data
+  out[, qs_keep] <- Yimp_keep
+  if (length(qs_drop)) {
+    for (nm in qs_drop) out[[nm]] <- NA_real_
+    # keep column order (original q order)
+    out <- out %>% select(all_of(setdiff(names(out), qs_drop)), all_of(qs_drop))
+  }
+
+  # Attach a few things
+  attr(out, "gmm_logLik") <- ll_old
+  attr(out, "gmm_assign") <- max.col(gamma, "first")
+  out
+}
+
+```
+
+
+# Train/Test Split for EM Imputation Performance Evaluation
+
+
+```{r}
+library(dplyr)
+library(stringr)
+
+# Split: last `years_test` full years → test; others → train
+split_train_test_by_years <- function(df, years_test = 3, q_regex = "^\\d{4}Q[1-4]$") {
+  qcols <- quarter_cols(df, q_regex)
+  if (!length(qcols)) stop("No quarter columns found (pattern ", q_regex, ").")
+
+  # Extract years present
+  years <- sort(unique(as.integer(substr(qcols, 1, 4))))
+  max_year <- max(years, na.rm = TRUE)
+  test_years <- seq.int(max_year - years_test + 1, max_year)
+
+  # Quarter columns by split
+  test_q  <- qcols[as.integer(substr(qcols, 1, 4)) %in% test_years]
+  train_q <- setdiff(qcols, test_q)
+
+  id_cols <- setdiff(names(df), qcols)
+
+  # Keep the rest of info (id/meta) in BOTH datasets
+  train_df <- df %>% select(all_of(id_cols), all_of(train_q))
+  test_df  <- df %>% select(all_of(id_cols), all_of(test_q))
+
+  attr(train_df, "years_train") <- setdiff(years, test_years)
+  attr(test_df,  "years_test")  <- test_years
+  list(train = train_df, test = test_df)
+}
+
+
+res <- split_train_test_by_years(cleaned_data, years_test = 3)
+train_df <- res$train
+test_df  <- res$test
+```
+
+```{r}
+head(train_df)
+head(test_df)
+```
+
+# EM Imputation for missingness in Train dataset
+
+```{r}
+train_full <- gmm_impute_panel_safe(train_df, K = 12, maxit = 200, asinh_scale = 1e6)
+head(train_full)
+```
+
+
+```{r}
+order_quarters <- function(qnames) {
+  qnames[order(as.integer(substr(qnames, 1, 4)),
+               as.integer(sub(".*Q", "", qnames)))]
+}
+
+sic_to_division <- function(sic) {
+  s <- suppressWarnings(as.integer(sic))
+  dplyr::case_when(
+    is.na(s) ~ "Unknown",
+    s >= 100  & s <= 999   ~ "Agriculture/Forestry/Fishing",
+    s >= 1000 & s <= 1499  ~ "Mining",
+    s >= 1500 & s <= 1799  ~ "Construction",
+    s >= 2000 & s <= 3999  ~ "Manufacturing",
+    s >= 4000 & s <= 4999  ~ "Transportation/Public Utilities",
+    s >= 5000 & s <= 5199  ~ "Wholesale Trade",
+    s >= 5200 & s <= 5999  ~ "Retail Trade",
+    s >= 6000 & s <= 6799  ~ "Finance/Insurance/Real Estate",
+    s >= 7000 & s <= 8999  ~ "Services",
+    s >= 9100 & s <= 9729  ~ "Public Administration",
+    s >= 9900 & s <= 9999  ~ "Nonclassifiable",
+    TRUE ~ "Other"
+  )
+}
+
+make_temporal_df <- function(cleaned_data,
+                             quarter_regex = "^\\d{4}Q[1-4]$",
+                             noise_sd = 1,
+                             seed = NULL,
+                             id_cols = c("cik","entityName","sic")) {
+
+  qcols <- grep(quarter_regex, names(cleaned_data), value = TRUE)
+  stopifnot(length(qcols) > 0)
+  qcols <- order_quarters(qcols)
+
+  long <- cleaned_data %>%
+    select(any_of(c(id_cols, qcols))) %>%
+    pivot_longer(all_of(qcols), names_to = "quarter", values_to = "y") %>%
+    mutate(
+      year = as.integer(substr(.data$quarter, 1, 4)),
+      qtr  = as.integer(sub(".*Q", "", .data$quarter))
+    ) %>%
+    arrange(.data$year, .data$qtr)
+
+  uniq_q <- long %>%
+    distinct(.data$quarter, .data$year, .data$qtr) %>%
+    arrange(.data$year, .data$qtr) %>%
+    mutate(t_index = row_number())
+
+  long <- long %>% left_join(uniq_q, by = c("quarter","year","qtr"))
+
+  if (!is.null(seed)) set.seed(seed)
+  long <- long %>%
+    group_by(.data$quarter) %>%
+    mutate(x_latent = rnorm(n(), mean = first(.data$t_index), sd = noise_sd)) %>%
+    ungroup() %>%
+    mutate(
+      sic_division = sic_to_division(.data$sic)
+    )
+
+  # one-hot SIC division indicators
+  dummies <- model.matrix(~ factor(long$sic_division) - 1)
+  colnames(dummies) <- sub("^factor\\(long\\$sic_division\\)", "ind_", colnames(dummies))
+  dummies <- as.data.frame(dummies)
+
+  bind_cols(long, dummies) %>%
+    select(any_of(id_cols),
+           sic_division, quarter, year, qtr, t_index, x_latent, y,
+           starts_with("ind_")) %>%
+    arrange(.data$cik, .data$year, .data$qtr)
+}
+
+sic_to_division <- function(s) {
+  s <- suppressWarnings(as.integer(s))
+  dplyr::case_when(
+    is.na(s) ~ "Unknown",
+    s>=100  & s<=999   ~ "Agriculture/Forestry/Fishing",
+    s>=1000 & s<=1499  ~ "Mining",
+    s>=1500 & s<=1799  ~ "Construction",
+    s>=2000 & s<=3999  ~ "Manufacturing",
+    s>=4000 & s<=4999  ~ "Transportation/Public Utilities",
+    s>=5000 & s<=5199  ~ "Wholesale Trade",
+    s>=5200 & s<=5999  ~ "Retail Trade",
+    s>=6000 & s<=6799  ~ "Finance/Insurance/Real Estate",
+    s>=7000 & s<=8999  ~ "Services",
+    s>=9100 & s<=9729  ~ "Public Administration",
+    s>=9900 & s<=9999  ~ "Nonclassifiable",
+    TRUE ~ "Other"
+  )
+}
+
+# --- Build per-company CI; x = SIC + Normal noise ---
+make_company_ci_df <- function(cleaned_data,
+                               quarter_regex = "^\\d{4}Q[1-4]$",
+                               noise_sd = 1,
+                               seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+  qcols <- grep(quarter_regex, names(cleaned_data), value = TRUE)
+  stopifnot(length(qcols) > 0)
+
+  long <- cleaned_data %>%
+    select(cik, entityName, sic, all_of(qcols)) %>%
+    pivot_longer(all_of(qcols), names_to = "quarter", values_to = "gross_income") %>%
+    filter(!is.na(gross_income))
+
+  ci <- long %>%
+    group_by(cik, entityName, sic) %>%
+    summarise(
+      n      = n(),
+      mean_y = mean(gross_income),
+      sd_y   = sd(gross_income),
+      se_y   = sd_y / sqrt(n),
+      y_lo   = mean_y - 1.96*se_y,
+      y_hi   = mean_y + 1.96*se_y,
+      .groups = "drop"
+    ) %>%
+    mutate(
+      sic_num      = suppressWarnings(as.integer(sic)),
+      sic_num      = ifelse(is.na(sic_num), as.numeric(factor(sic)), sic_num),
+      x            = sic_num + rnorm(n(), 0, noise_sd),
+      sic_division = sic_to_division(sic)
+    )
+
+  ci
+}
+```
+
+```{r}
+temporal_df_train <- make_temporal_df(train_full, noise_sd = 1, seed = 4210)
+temporal_df_test <- make_temporal_df(test_df, noise_sd = 1, seed = 4210)
+```
+
+
+```{r}
+company_ci_train <- make_company_ci_df(train_full, noise_sd = 1, seed = 4210)
+company_ci_test <- make_company_ci_df(test_df, noise_sd = 1, seed = 4210)
+```
+
+
+```{r}
+imputated_full <- gmm_impute_panel_safe(cleaned_data, K = 12, maxit = 200, asinh_scale = 1e6)
+temporal_df <- make_temporal_df(imputated_full, noise_sd = 1, seed = 4210)
+company_ci <- make_company_ci_df(imputated_full, noise_sd = 1, seed = 4210)
+```
+
+```{r}
+head(temporal_df)
+head(company_ci)
+```
+
+# Get all companies with full quarterly data.
+
+```{r}
+filter_by_missingness <- function(wide,
+                                  quarter_regex = "^\\d{4}Q[1-4]$",
+                                  max_na = 17,            # ≤25% of 68
+                                  require_recent = 4) {   # last 4 quarters must be non-NA
+  qcols <- grep(quarter_regex, names(wide), value = TRUE)
+  stopifnot(length(qcols) > 0)
+
+  summ <- wide %>%
+    mutate(
+      n_quarters  = length(qcols),
+      n_na        = rowSums(is.na(pick(all_of(qcols)))),
+      n_non_na    = n_quarters - n_na,
+      pct_missing = n_na / n_quarters
+    )
+
+  recent_ok <- summ %>%
+    transmute(recent_na = rowSums(is.na(pick(all_of(tail(qcols, require_recent)))))) %>%
+    pull(recent_na) == 0
+
+  cleaned <- summ %>%
+    filter(n_na <= max_na & recent_ok) %>%
+    select(-n_quarters, -n_na, -n_non_na, -pct_missing)  # drop helper cols if you like
+
+  list(
+    data    = cleaned,
+    summary = summ %>% select(any_of(c("cik","entityName")), n_non_na, n_na, pct_missing),
+    kept    = nrow(cleaned),
+    dropped = nrow(wide) - nrow(cleaned)
+  )
+}
+
+filter_full <- filter_by_missingness(cleaned_data, max_na = 6, require_recent = 1)
+
+filter_full_data  <- filter_full$data
+head(filter_full_data)
+head(filter_full$summary)          # NA counts per firm
+filter_full$kept; filter_full$dropped      # how many kept/dropped
+```
+
+```{r}
+introduce_mar_missing <- function(df, prop = 0.25, id_cols = NULL) {
+  # df: data.frame / tibble
+  # prop: proportion of NON-missing entries (in non-ID cols) to turn into NA
+  # id_cols: vector of column names you DON'T want to touch (e.g. IDs)
+  
+  df2 <- df
+  
+  # Columns we allow to become NA
+  all_cols_idx <- seq_along(df2)
+  if (!is.null(id_cols)) {
+    id_idx <- which(names(df2) %in% id_cols)
+    cand_cols_idx <- setdiff(all_cols_idx, id_idx)
+  } else {
+    cand_cols_idx <- all_cols_idx
+  }
+  
+  # Work on candidate columns only
+  mat <- as.matrix(df2[, cand_cols_idx])
+  
+  # Coordinates of currently non-missing cells
+  non_na_idx <- which(!is.na(mat), arr.ind = TRUE)
+  n_cells <- nrow(non_na_idx)
+  
+  if (n_cells == 0L) return(df2)  # nothing to do
+  
+  # How many to turn into NA
+  n_to_mask <- floor(prop * n_cells)
+  if (n_to_mask < 1L) return(df2)
+  
+  # Sample cells to mask
+  set.seed(123)  # remove or change for non-reproducible behavior
+  pick <- non_na_idx[sample(seq_len(n_cells), n_to_mask), , drop = FALSE]
+  
+  # Apply the NAs back to df2
+  for (k in seq_len(nrow(pick))) {
+    row_i <- pick[k, "row"]
+    col_local <- pick[k, "col"]       # index within candidate columns
+    col_global <- cand_cols_idx[col_local]  # index in df2
+    df2[row_i, col_global] <- NA
+  }
+  
+  df2
+}
+
+filtered_out_mar <- introduce_mar_missing(
+  filter_full_data,
+  prop    = 0.25,
+  id_cols = c("cik", "entityName", "sic")
+)
+```
+
+```{r}
+filtered_out_mar_gaussian <- gmm_impute_panel_safe(filtered_out_mar, K = 9, maxit = 200, asinh_scale = 1e6)
+```
+
+```{r}
+compute_imputation_error <- function(df_original, df_mar, df_imputed, id_cols = NULL) {
+  # df_original: full data before adding MAR missingness
+  # df_mar: data after masking (MAR)
+  # df_imputed: result of EM imputation applied to df_mar
+  # id_cols: vector of ID column names to exclude from numeric comparison
+  
+  # 1. figure out which columns to compare
+  compare_cols <- setdiff(names(df_original), id_cols)
+  numeric_cols <- compare_cols[sapply(df_original[compare_cols], is.numeric)]
+  
+  if (length(numeric_cols) == 0L) {
+    stop("No numeric columns to compare after excluding id_cols.")
+  }
+  
+  orig_num <- as.matrix(df_original[, numeric_cols, drop = FALSE])
+  mar_num  <- as.matrix(df_mar[, numeric_cols, drop = FALSE])
+  imp_num  <- as.matrix(df_imputed[, numeric_cols, drop = FALSE])
+  
+  # 2. locations that were truly imputed:
+  # originally non-NA -> became NA in MAR -> then filled by EM
+  mask_idx <- which(!is.na(orig_num) & is.na(mar_num), arr.ind = TRUE)
+  
+  if (nrow(mask_idx) == 0L) {
+    return(list(message = "No imputed entries to evaluate (no masked cells)."))
+  }
+  
+  orig_vals <- orig_num[mask_idx]
+  imp_vals  <- imp_num[mask_idx]
+  
+  # safety: drop any leftover NA (shouldn't happen, but just in case)
+  ok <- !is.na(orig_vals) & !is.na(imp_vals)
+  orig_vals <- orig_vals[ok]
+  imp_vals  <- imp_vals[ok]
+  mask_idx  <- mask_idx[ok, , drop = FALSE]
+  
+  # 3. overall error metrics
+  abs_err <- abs(orig_vals - imp_vals)
+  mae  <- mean(abs_err)
+  rmse <- sqrt(mean((orig_vals - imp_vals)^2))
+  
+  # relative MAE: average error relative to typical magnitude of true values
+  rel_mae <- mae / mean(abs(orig_vals))
+  
+  # 4. column-wise error (optional but handy)
+  col_names_for_each_cell <- numeric_cols[mask_idx[, "col"]]
+  
+  col_mae <- tapply(abs_err, col_names_for_each_cell, mean)
+  col_rmse <- tapply(
+    (orig_vals - imp_vals)^2,
+    col_names_for_each_cell,
+    function(v) sqrt(mean(v))
+  )
+  
+  list(
+    n_imputed      = length(orig_vals),
+    overall_mae    = mae,
+    overall_rmse   = rmse,
+    overall_rel_mae = rel_mae,
+    column_mae     = col_mae,
+    column_rmse    = col_rmse,
+    # expose these so you can do further analysis/plots
+    orig_values    = orig_vals,
+    imputed_values = imp_vals
+  )
+}
+```
+
+```{r}
+for (i in seq(1, 15)){
+  
+  filtered_out_mar_gaussian <- gmm_impute_panel_safe(filtered_out_mar, K = i, maxit = 200, asinh_scale = 1e6)
+  
+  error_result <- compute_imputation_error(
+    df_original = filter_full_data,
+    df_mar      = filtered_out_mar,
+    df_imputed  = filtered_out_mar_gaussian,   # your EM result
+    id_cols     = c("cik", "entityName", "sic")
+  )
+  
+  masked_orig_values <- error_result$orig_values
+
+  relative_mae <- error_result$overall_mae / mean(abs(masked_orig_values))
+  relative_rmse <- error_result$overall_rmse / sd(masked_orig_values)
+  print(sprintf("%dth result is mae:%.4f, and rmse:%.4f", i, relative_mae, relative_rmse))
+}
+```
+
+```{r}
+masked_orig_values <- error_result$orig_values
+
+relative_mae <- error_result$overall_mae / mean(abs(masked_orig_values))
+relative_rmse <- error_result$overall_rmse / sd(masked_orig_values)
+
+relative_mae
+relative_rmse
+
+```

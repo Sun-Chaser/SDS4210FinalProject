@@ -234,6 +234,9 @@ cat("Rows after join:", nrow(cleaned_data), "\n")
 cat("Missing SIC after join:", sum(is.na(cleaned_data$sic)), "\n")
 ```
 
+```{r}
+head(cleaned_data)
+```
 
 
 # Dataset 1: Temporal Data
