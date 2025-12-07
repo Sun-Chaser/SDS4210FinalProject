@@ -156,8 +156,8 @@ ggplot(pred_df, aes(x = actual, y = predicted)) +
   geom_point(alpha = 0.6) +
   geom_abline(slope = 1, intercept = 0, color = "red") +
   labs(title = "Predicted vs Actual Gross Income (2024)",
-       x = "Actual",
-       y = "Predicted") +
+       x = "Actual (billions of $)",
+       y = "Predicted (billions of $)") +
   theme_minimal()
 
 # ============================================================
@@ -195,8 +195,8 @@ Box.test(residuals, lag=1, type="Ljung-Box")
 future <- df %>% filter(year == 2024) %>%
   mutate(year = 2025, year_numeric = year_numeric + 1, yearly_gross = NA)
 
-forecast_epred <- posterior_epred(final_fit, newdata = future)
-forecast_mean <- colMeans(forecast_epred)
+forecast_epred <- posterior_epred(final_fit, newdata = bind_rows(df, future)) 
+forecast_mean <- colMeans(forecast_epred[, 1665:2080])
 
 
 # aggregate by industry
@@ -204,7 +204,15 @@ future$predicted_2025 <- forecast_mean
 
 future %>%
   group_by(pred_cluster) %>%
-  summarise(mean_income = mean(predicted_2025))
+  summarise(mean_income = mean(predicted_2025)) %>% 
+  ggplot(aes(x=reorder(pred_cluster, -mean_income), y=mean_income)) + 
+  geom_col() + 
+  labs(
+    x = "Labeled Cluster", 
+    y = "Predicted 2025 Gross Income", 
+    title = "Our Predictions for 2025"
+  ) + 
+  theme_bw() 
 
 
 # END OF FILE
