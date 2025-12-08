@@ -42,17 +42,38 @@ df = df %>%
 df$region = factor(df$region)
 table(df$region)
 
+df %>% 
+  group_by(region) %>% 
+  summarize(
+    count = n()
+  ) %>% 
+  ggplot(aes(x=reorder(region, -count), y=count)) + 
+  geom_col(fill="skyblue") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  labs(
+    x = "US Regional Division", 
+    y = "Company Count", 
+    title = "Where Are Most Companies Located?"
+  )
+
 region_lm = lm(
   yearly_gross ~ region, data = df
 )
-summary(region_lm) 
+region_lm_results = broom::tidy(summary(region_lm)) 
+region_lm_results = region_lm_results %>% 
+  purrr::modify_if(is.numeric, round, digits = 3)
 
-broom::tidy(summary(region_lm)) 
+gt::gt(region_lm_results)
 
 region_cluster_lm = lm(
   yearly_gross ~ region + pred_cluster, data = df 
 ) 
-summary(region_cluster_lm) 
+
+region_cluster_lm_results = broom::tidy(summary(region_cluster_lm))
+region_cluster_lm_results = region_cluster_lm_results %>% 
+  purrr::modify_if(is.numeric, round, digits = 3)
+
+gt::gt(region_cluster_lm_results)
 
 # build a bayesian time series model 
 # we'll train on 2021-23 and predict on 2024 
