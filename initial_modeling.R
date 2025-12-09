@@ -42,17 +42,38 @@ df = df %>%
 df$region = factor(df$region)
 table(df$region)
 
+df %>% 
+  group_by(region) %>% 
+  summarize(
+    count = n()
+  ) %>% 
+  ggplot(aes(x=reorder(region, -count), y=count)) + 
+  geom_col(fill="skyblue") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  labs(
+    x = "US Regional Division", 
+    y = "Company Count", 
+    title = "Where Are Most Companies Located?"
+  )
+
 region_lm = lm(
   yearly_gross ~ region, data = df
 )
-summary(region_lm) 
+region_lm_results = broom::tidy(summary(region_lm)) 
+region_lm_results = region_lm_results %>% 
+  purrr::modify_if(is.numeric, round, digits = 3)
 
-broom::tidy(summary(region_lm)) 
+gt::gt(region_lm_results)
 
 region_cluster_lm = lm(
   yearly_gross ~ region + pred_cluster, data = df 
 ) 
-summary(region_cluster_lm) 
+
+region_cluster_lm_results = broom::tidy(summary(region_cluster_lm))
+region_cluster_lm_results = region_cluster_lm_results %>% 
+  purrr::modify_if(is.numeric, round, digits = 3)
+
+gt::gt(region_cluster_lm_results)
 
 # build a bayesian time series model 
 # we'll train on 2021-23 and predict on 2024 
@@ -60,7 +81,7 @@ train = df %>% filter(between(year, 2021, 2023))
 test = df %>% filter(year == 2024) 
 
 priors = get_prior(
-  yearly_gross ~ region + pred_cluster + arma(time = year, gr = cik, p = 1, q = 1), 
+  yearly_gross ~ pred_cluster + arma(time = year, gr = cik, p = 1, q = 1), 
   data = train, family = student()
 )
 
@@ -75,10 +96,11 @@ priors = priors %>%
   )
 
 fit = brm(
-  yearly_gross ~ region + pred_cluster + arma(time = year, gr = cik, p = 1, q = 1), 
-  data = train, family = student(), 
+  yearly_gross ~ pred_cluster + arma(time = year, gr = cik, p = 1, q = 1), 
+  data = train, prior = priors, family = student(), 
   chains = 4, cores = 4, 
-  warmup = 1000, iter = 2500, seed = 76
+  warmup = 1000, iter = 5000, seed = 76, 
+  control = list(adapt_delta = 0.95)
 )
 
 # model summary 
@@ -128,4 +150,3 @@ results %>%
 
 # save the model for later 
 saveRDS(fit, "test_arma_bayesian_model.rds") 
-
